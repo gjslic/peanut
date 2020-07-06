@@ -1,11 +1,18 @@
 ---------------------------------------------------------------
+<<<<<<< HEAD
 [ 2020-07-04T13:58:32+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/auction/Auction/vehicle
 [运行时间：1.165785s] [吞吐率：0.86req/s] [内存消耗：2,526.01kb] [文件加载：53]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ 2020-07-04T00:00:42+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.350514s] [吞吐率：2.85req/s] [内存消耗：2,513.89kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'auction',
     1 => 'Auction',
     2 => 'vehicle',
@@ -13,12 +20,22 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'connection' => 'close',
@@ -8996,11 +9013,19 @@
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -9015,10 +9040,23 @@
 [ 2020-07-04T20:49:30+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：2.013373s] [吞吐率：0.50req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.125239s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.077290s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.088461s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:01:11+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/add
+[运行时间：0.438336s] [吞吐率：2.28req/s] [内存消耗：2,516.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9026,20 +9064,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '99',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9051,10 +9107,26 @@
 [ 2020-07-04T20:49:31+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：2.838473s] [吞吐率：0.35req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"roleName":"QQ群q","roleDesc":"qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->add[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130478s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.084233s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_role` (`role_name` , `desc`) VALUES ('QQ群q' , 'qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq') [ RunTime:0.091564s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.084811s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:01:17+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/delete
+[运行时间：0.476688s] [吞吐率：2.10req/s] [内存消耗：2,578.52kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9062,20 +9134,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '104',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9091,10 +9181,27 @@
 [ 2020-07-04T20:53:54+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.767042s] [吞吐率：1.30req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":12,"role_name":"QQ群q","desc":"qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.127647s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.087539s ]
+[ sql ] [ SQL ] DELETE FROM `peanut_role`    WHERE  `id` = 12 [ RunTime:0.089430s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.088633s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:01:57+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/add
+[运行时间：0.454548s] [吞吐率：2.20req/s] [内存消耗：2,516.37kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9102,20 +9209,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '59',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9127,10 +9252,26 @@
 [ 2020-07-04T20:53:55+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.391061s] [吞吐率：0.72req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"roleName":"2222222222","roleDesc":"22222222222222222222"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->add[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.137102s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.076931s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_role` (`role_name` , `desc`) VALUES ('2222222222' , '22222222222222222222') [ RunTime:0.080906s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.074627s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:02:16+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/add
+[运行时间：0.426786s] [吞吐率：2.34req/s] [内存消耗：2,516.45kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9138,20 +9279,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '59',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9167,10 +9326,26 @@
 [ 2020-07-04T20:54:02+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.565313s] [吞吐率：1.77req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"roleName":"2222222222","roleDesc":"22222222222222222222"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->add[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131021s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.080075s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_role` (`role_name` , `desc`) VALUES ('2222222222' , '22222222222222222222') [ RunTime:0.084547s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.080112s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:04:15+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/update
+[运行时间：0.417901s] [吞吐率：2.39req/s] [内存消耗：2,579.74kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9178,20 +9353,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9203,10 +9396,27 @@
 [ 2020-07-04T20:54:02+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.966384s] [吞吐率：1.03req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":13,"role_name":"2222222222","desc":"22233333333·····"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.118121s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.079085s ]
+[ sql ] [ SQL ] UPDATE `peanut_role`  SET `role_name`='2222222222',`desc`='22233333333·····'  WHERE  `id` = 13 [ RunTime:0.083308s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.084225s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:04:30+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.381318s] [吞吐率：2.62req/s] [内存消耗：2,514.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9214,21 +9424,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -9243,10 +9471,23 @@
 [ 2020-07-04T20:54:26+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.456312s] [吞吐率：2.19req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133514s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.087600s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.083836s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:04:39+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/update
+[运行时间：0.414536s] [吞吐率：2.41req/s] [内存消耗：2,579.76kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9254,20 +9495,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '68',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9279,10 +9538,27 @@
 [ 2020-07-04T20:54:26+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.745511s] [吞吐率：1.34req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":13,"role_name":"2222222222","desc":"222！！！！！！！"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122612s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.083819s ]
+[ sql ] [ SQL ] UPDATE `peanut_role`  SET `role_name`='2222222222',`desc`='222！！！！！！！'  WHERE  `id` = 13 [ RunTime:0.078897s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.076276s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:05:40+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/update
+[运行时间：0.551401s] [吞吐率：1.81req/s] [内存消耗：2,579.66kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9290,20 +9566,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '54',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9319,10 +9613,27 @@
 [ 2020-07-04T20:54:30+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：1.003071s] [吞吐率：1.00req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":11,"role_name":"111","desc":"1@@@@@@@@@@@@@@@@"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116488s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.090993s ]
+[ sql ] [ SQL ] UPDATE `peanut_role`  SET `role_name`='111',`desc`='1@@@@@@@@@@@@@@@@'  WHERE  `id` = 11 [ RunTime:0.093226s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.200955s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:06:37+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.384733s] [吞吐率：2.60req/s] [内存消耗：2,514.19kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9330,21 +9641,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -9355,10 +9684,23 @@
 [ 2020-07-04T20:54:30+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.227011s] [吞吐率：0.81req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121112s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.081209s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.099497s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:06:50+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/update
+[运行时间：0.435771s] [吞吐率：2.29req/s] [内存消耗：2,579.55kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9366,20 +9708,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '43',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9395,10 +9755,27 @@
 [ 2020-07-04T20:54:32+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.354459s] [吞吐率：2.82req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":11,"role_name":"111","desc":"111111"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122774s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.085557s ]
+[ sql ] [ SQL ] UPDATE `peanut_role`  SET `role_name`='111',`desc`='111111'  WHERE  `id` = 11 [ RunTime:0.085073s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.083437s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:06:57+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/delete
+[运行时间：0.484813s] [吞吐率：2.06req/s] [内存消耗：2,578.57kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9406,20 +9783,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '68',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9431,10 +9826,27 @@
 [ 2020-07-04T20:54:33+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.726566s] [吞吐率：1.38req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":13,"role_name":"2222222222","desc":"222！！！！！！！"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132227s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.084868s ]
+[ sql ] [ SQL ] DELETE FROM `peanut_role`    WHERE  `id` = 13 [ RunTime:0.101575s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.081892s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:07:00+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/delete
+[运行时间：0.499190s] [吞吐率：2.00req/s] [内存消耗：2,578.39kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9442,20 +9854,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '64',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9471,10 +9901,27 @@
 [ 2020-07-04T20:56:12+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.850859s] [吞吐率：1.18req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":14,"role_name":"2222222222","desc":"22222222222222222222"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.138093s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.084236s ]
+[ sql ] [ SQL ] DELETE FROM `peanut_role`    WHERE  `id` = 14 [ RunTime:0.085278s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.097630s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:09:22+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/update
+[运行时间：0.035738s] [吞吐率：27.98req/s] [内存消耗：1,630.73kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9482,20 +9929,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '71',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9507,10 +9972,21 @@
 [ 2020-07-04T20:56:12+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.995758s] [吞吐率：1.00req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":1,"role_name":"超级管理员","desc":"超级管理员11111111"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T00:09:29+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/delete
+[运行时间：0.048562s] [吞吐率：20.59req/s] [内存消耗：1,630.67kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9518,20 +9994,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9547,10 +10041,21 @@
 [ 2020-07-04T20:56:24+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.398029s] [吞吐率：2.51req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":2,"role_name":"经理","desc":"经理人员"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T00:09:35+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/delete
+[运行时间：0.451990s] [吞吐率：2.21req/s] [内存消耗：2,578.22kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9558,20 +10063,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '43',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9583,10 +10106,27 @@
 [ 2020-07-04T20:56:25+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.706088s] [吞吐率：1.42req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":11,"role_name":"111","desc":"111111"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116378s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.079374s ]
+[ sql ] [ SQL ] DELETE FROM `peanut_role`    WHERE  `id` = 11 [ RunTime:0.098839s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.075950s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:11:24+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/index
+[运行时间：0.359624s] [吞吐率：2.78req/s] [内存消耗：2,513.71kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9594,21 +10134,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -9623,10 +10181,23 @@
 [ 2020-07-04T20:57:07+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.361810s] [吞吐率：2.76req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminNotice\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.127375s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.074851s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.080785s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:11:31+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/update
+[运行时间：0.033147s] [吞吐率：30.17req/s] [内存消耗：1,630.76kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9634,20 +10205,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9659,10 +10248,21 @@
 [ 2020-07-04T20:57:07+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.826130s] [吞吐率：1.21req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":4,"notice_Publisher":"ddd","notice_cont":"奔驰热销11111"}' => '',
+)
+[ info ] [ RUN ] app\adminNotice\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T00:11:34+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/update
+[运行时间：0.031467s] [吞吐率：31.78req/s] [内存消耗：1,630.76kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9670,20 +10270,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9699,10 +10317,21 @@
 [ 2020-07-04T21:02:06+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.673962s] [吞吐率：1.48req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":4,"notice_Publisher":"ddd","notice_cont":"奔驰热销11111"}' => '',
+)
+[ info ] [ RUN ] app\adminNotice\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T00:11:36+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/update
+[运行时间：0.028021s] [吞吐率：35.69req/s] [内存消耗：1,630.76kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9710,20 +10339,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9735,10 +10382,21 @@
 [ 2020-07-04T21:02:07+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.438736s] [吞吐率：0.70req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":4,"notice_Publisher":"ddd","notice_cont":"奔驰热销11111"}' => '',
+)
+[ info ] [ RUN ] app\adminNotice\controller\Index->update[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T00:11:46+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.353452s] [吞吐率：2.83req/s] [内存消耗：2,513.80kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9746,21 +10404,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -9775,10 +10451,23 @@
 [ 2020-07-04T21:02:08+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.130811s] [吞吐率：0.88req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.124314s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.085565s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.079634s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:11:50+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/delete
+[运行时间：0.503662s] [吞吐率：1.99req/s] [内存消耗：2,578.05kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9786,20 +10475,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '38',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9815,10 +10522,27 @@
 [ 2020-07-04T21:02:08+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.508862s] [吞吐率：1.97req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":10,"role_name":"111","desc":"1"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.140796s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.096149s ]
+[ sql ] [ SQL ] DELETE FROM `peanut_role`    WHERE  `id` = 10 [ RunTime:0.087533s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.083508s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:12:12+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/delete
+[运行时间：0.045173s] [吞吐率：22.14req/s] [内存消耗：1,630.67kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9826,20 +10550,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9851,10 +10593,21 @@
 [ 2020-07-04T21:03:06+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.734777s] [吞吐率：1.36req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":4,"role_name":"客服","desc":"客服人员"}' => '',
+)
+[ info ] [ RUN ] app\adminRole\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T00:12:32+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/index
+[运行时间：1.696490s] [吞吐率：0.59req/s] [内存消耗：2,513.71kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9862,21 +10615,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -9887,10 +10658,23 @@
 [ 2020-07-04T21:03:07+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.444589s] [吞吐率：0.69req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminNotice\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.318647s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.212138s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.113890s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:12:43+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/add
+[运行时间：0.898308s] [吞吐率：1.11req/s] [内存消耗：2,516.57kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9898,20 +10682,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '93',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9927,10 +10729,26 @@
 [ 2020-07-04T21:03:18+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.371780s] [吞吐率：2.69req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"publish":"111","noticeCont":"啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"}' => '',
+)
+[ info ] [ RUN ] app\adminNotice\controller\Index->add[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.250545s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.226085s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_notice` (`notice_Publisher` , `notice_cont`) VALUES ('111' , '啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊') [ RunTime:0.154677s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.224080s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:12:49+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/delete
+[运行时间：0.512618s] [吞吐率：1.95req/s] [内存消耗：2,578.36kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -9938,20 +10756,38 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'delete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '110',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -9963,10 +10799,27 @@
 [ 2020-07-04T21:03:18+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.663925s] [吞吐率：1.51req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"id":8,"notice_Publisher":"111","notice_cont":"啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"}' => '',
+)
+[ info ] [ RUN ] app\adminNotice\controller\Index->delete[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.186761s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.082651s ]
+[ sql ] [ SQL ] DELETE FROM `peanut_notice`    WHERE  `id` = 8 [ RunTime:0.083254s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.082842s ]
+---------------------------------------------------------------
+[ 2020-07-04T00:13:19+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.375058s] [吞吐率：2.67req/s] [内存消耗：2,513.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -9974,21 +10827,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10003,10 +10874,23 @@
 [ 2020-07-04T21:03:19+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.310386s] [吞吐率：3.22req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134378s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.086373s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.086431s ]
+---------------------------------------------------------------
+[ 2020-07-04T16:37:50+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：2.109169s] [吞吐率：0.47req/s] [内存消耗：1,757.38kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10014,20 +10898,40 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '39',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -10039,10 +10943,22 @@
 [ 2020-07-04T21:03:20+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.766133s] [吞吐率：1.31req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"userName":"admin","password":"admin"}' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]����Ŀ�����������ܾ����޷����ӡ�
+[D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php:32]
+---------------------------------------------------------------
+[ 2020-07-04T16:37:57+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：2.064637s] [吞吐率：0.48req/s] [内存消耗：1,757.38kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10050,20 +10966,40 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '39',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -10079,10 +11015,22 @@
 [ 2020-07-04T21:03:24+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.341946s] [吞吐率：2.92req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"userName":"admin","password":"admin"}' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]����Ŀ�����������ܾ����޷����ӡ�
+[D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php:32]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:05+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：2.103880s] [吞吐率：0.48req/s] [内存消耗：1,757.49kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10090,20 +11038,40 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '44',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -10115,10 +11083,22 @@
 [ 2020-07-04T21:03:24+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.754316s] [吞吐率：1.33req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"token":"70849b4b34ad9cb1877a2eb18655c9c8"}' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]����Ŀ�����������ܾ����޷����ӡ�
+[D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php:32]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:15+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：2.071584s] [吞吐率：0.48req/s] [内存消耗：1,757.38kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10126,20 +11106,40 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '35',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -10155,10 +11155,22 @@
 [ 2020-07-04T21:05:12+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.806872s] [吞吐率：1.24req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"userName":"111","password":"111"}' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]����Ŀ�����������ܾ����޷����ӡ�
+[D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php:32]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:18+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：2.063954s] [吞吐率：0.48req/s] [内存消耗：1,757.38kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10166,20 +11178,40 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '35',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -10191,10 +11223,22 @@
 [ 2020-07-04T21:05:13+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.626069s] [吞吐率：0.61req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"userName":"111","password":"111"}' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]����Ŀ�����������ܾ����޷����ӡ�
+[D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php:32]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:18+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：2.085358s] [吞吐率：0.48req/s] [内存消耗：1,757.38kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10202,20 +11246,40 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '35',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -10231,10 +11295,22 @@
 [ 2020-07-04T21:06:38+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：0.991958s] [吞吐率：1.01req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"userName":"111","password":"111"}' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]����Ŀ�����������ܾ����޷����ӡ�
+[D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php:32]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:26+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：0.930651s] [吞吐率：1.07req/s] [内存消耗：2,495.10kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10242,20 +11318,40 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '35',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
+<<<<<<< HEAD
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
@@ -10271,10 +11367,29 @@
 [ 2020-07-04T21:06:39+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：1.320248s] [吞吐率：0.76req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+  '{"userName":"111","password":"111"}' => '',
+)
+[ info ] [ RUN ] app\adminLogin\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.335918s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.086432s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111'  AND `state` = '0' LIMIT 1 [ RunTime:0.087706s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.083782s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.084285s ]
+[ sql ] [ SQL ] SELECT `token` FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.084252s ]
+[ sql ] [ SQL ] UPDATE `peanut_staff`  SET `token`='1375e4d4c22e81d2d8a754e1d98f0eba'  WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.088303s ]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:33+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.377553s] [吞吐率：2.65req/s] [内存消耗：2,513.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10282,21 +11397,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10307,10 +11440,23 @@
 [ 2020-07-04T21:07:15+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.691694s] [吞吐率：1.45req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116226s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.077514s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.076275s ]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:37+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.404265s] [吞吐率：2.47req/s] [内存消耗：2,513.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10318,21 +11464,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10343,10 +11507,23 @@
 [ 2020-07-04T21:07:16+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.452073s] [吞吐率：0.69req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142043s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.088032s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.089753s ]
+---------------------------------------------------------------
+[ 2020-07-04T16:38:47+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/index
+[运行时间：0.409230s] [吞吐率：2.44req/s] [内存消耗：2,513.71kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10354,21 +11531,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10383,10 +11578,23 @@
 [ 2020-07-04T21:09:21+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：3.657893s] [吞吐率：0.27req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminNotice\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116200s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.073500s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.075070s ]
+---------------------------------------------------------------
+[ 2020-07-04T16:41:51+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.393293s] [吞吐率：2.54req/s] [内存消耗：2,513.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10394,21 +11602,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10419,10 +11645,23 @@
 [ 2020-07-04T21:09:23+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：5.915891s] [吞吐率：0.17req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.119763s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.081020s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.078245s ]
+---------------------------------------------------------------
+[ 2020-07-04T16:49:22+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminNotice/index/index
+[运行时间：0.338060s] [吞吐率：2.96req/s] [内存消耗：2,513.71kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10430,21 +11669,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminNotice',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10459,10 +11716,23 @@
 [ 2020-07-04T21:09:32+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.846936s] [吞吐率：1.18req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminNotice\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminNotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110519s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.073790s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.079456s ]
+---------------------------------------------------------------
+[ 2020-07-04T16:52:44+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.314716s] [吞吐率：3.18req/s] [内存消耗：2,513.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10470,21 +11740,39 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10495,10 +11783,23 @@
 [ 2020-07-04T21:09:35+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：4.335296s] [吞吐率：0.23req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105071s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.071300s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.073349s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:01:17+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：0.539962s] [吞吐率：1.85req/s] [内存消耗：2,522.83kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10516,11 +11817,30 @@
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SK_UUID=1588556237312-C8E460769D8000018C57B97013D611CC',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'dnt' => '1',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10535,10 +11855,24 @@
 [ 2020-07-04T21:10:09+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/vehicle
 [运行时间：0.648275s] [吞吐率：1.54req/s] [内存消耗：2,583.28kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminLogin\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133276s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.087180s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` IS NULL  AND `password` IS NULL  AND `state` = '0' LIMIT 1 [ RunTime:0.088059s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` IS NULL  AND `password` IS NULL LIMIT 1 [ RunTime:0.090769s ]
+---------------------------------------------------------------
+[ 2020-07-04T17:01:39+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.099755s] [吞吐率：10.02req/s] [内存消耗：1,636.27kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'vehicle',
@@ -10556,11 +11890,30 @@
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'SK_UUID=1588556237312-C8E460769D8000018C57B97013D611CC',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'dnt' => '1',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10571,10 +11924,19 @@
 [ 2020-07-04T21:10:10+08:00 ] 127.0.0.1 GET 127.0.0.1/th5/public/buyCar/Buycar/queryCar
 [运行时间：1.248728s] [吞吐率：0.80req/s] [内存消耗：2,523.59kb] [文件加载：47]
 [ info ] [ LANG ] E:\phpS\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+=======
+[ info ] [ RUN ] app\adminLogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-04T17:06:04+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[运行时间：0.379489s] [吞吐率：2.64req/s] [内存消耗：2,514.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+>>>>>>> master
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
+<<<<<<< HEAD
     0 => 'buyCar',
     1 => 'Buycar',
     2 => 'queryCar',
@@ -10582,21 +11944,41 @@
 )
 [ info ] [ HEADER ] array (
   'accept-language' => 'zh-CN,zh;q=0.9',
+=======
+    0 => 'adminRole',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+>>>>>>> master
   'accept-encoding' => 'gzip, deflate, br',
   'referer' => 'http://localhost:8080/',
   'sec-fetch-dest' => 'empty',
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
+<<<<<<< HEAD
   'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
   'cache-control' => 'no-cache',
   'pragma' => 'no-cache',
+=======
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36',
+  'dnt' => '1',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '0',
+>>>>>>> master
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
+<<<<<<< HEAD
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ E:\phpS\phpstudy_pro\WWW\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
@@ -10607,3 +11989,11 @@
 [ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.196589s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.134760s ]
 [ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.099331s ]
+=======
+[ info ] [ RUN ] app\adminRole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminRole\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.118115s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.082092s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.089042s ]
+>>>>>>> master

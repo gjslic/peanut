@@ -12,4 +12,8 @@
 // 应用公共文件
 function getPost(){
     return json_decode(file_get_contents("php://input"),true);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
