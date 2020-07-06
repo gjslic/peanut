@@ -36,10 +36,14 @@ class ModuleBaseController extends Controller
      * 页码大小
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $limit = 20;
 =======
     protected $limit = 8;
 >>>>>>> long
+=======
+    protected $limit = 20;
+>>>>>>> master
 
     /**
      * 构造函数

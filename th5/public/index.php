@@ -9,27 +9,36 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-header('Access-Control-Allow-Methods: GET, POST, PUT');
 // [ 应用入口文件 ]
 
-<<<<<<< HEAD
 //跨域接收
-header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-header('Access-Control-Allow-Methods: GET, POST, PUT');
+// header('Access-Control-Allow-Origin: *');
+// header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept,Access-Token");
+// header('Access-Control-Allow-Methods: GET, POST, PUT');
 // 定义应用目录
-define('APP_PATH', __DIR__ . '/../application/');
-=======
-// 定义应用目录
-define('APP_PATH', __DIR__ . '/../application/');
+// 加载框架引导文件
+/*设置头部 start*/
+if ( strtolower( $_SERVER[ 'REQUEST_METHOD' ] ) == 'options' ) {
+  header( "Access-Control-Allow-Origin:*" );
+  header( 'Access-Control-Allow-Methods:OPTIONS , GET, PUT, POST, DELETE' );
+  header( 'Access-Control-Allow-Headers:Origin, Content-Type, X-Auth-Token , Authorization , Access-Token , X-Requested-With' );
+  header( 'Accept: application/json' );
+  header( 'Content-Type: application/json' );
+  exit;
+}
 
-//如果需要设置允许所有域名发起的跨域请求，可以使用通配符 *
+
+// header('Access-Control-Allow-Origin: *');
+// header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+// header('Access-Control-Allow-Methods: GET, POST, PUT');
+
+
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE");
-header('Access-Control-Allow-Headers:x-requested-with,content-type');
->>>>>>> long
-// 加载框架引导文件
+header('Access-Control-Allow-Headers:x-requested-with,content-type,token,Access-Token');
+
+
+define('APP_PATH', __DIR__ . '/../application/');
+
 require __DIR__ . '/../thinkphp/start.php';
