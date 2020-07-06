@@ -35,7 +35,7 @@ class ModuleBaseController extends Controller
     /**
      * 页码大小
      */
-    protected $limit = 8;
+    protected $limit = 20;
 
     /**
      * 构造函数

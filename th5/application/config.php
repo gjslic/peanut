@@ -15,9 +15,9 @@ return [
     // +----------------------------------------------------------------------
 
     // 应用调试模式
-    'app_debug'              => true,
+    'app_debug'              => false,
     // 应用Trace
-    'app_trace'              => true,
+    'app_trace'              => false,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -241,13 +241,4 @@ return [
         'list_rows' => 15,
     ],
 
-    // 权限认证
-    'auth' => [
-        'auth_on'        => 1,                  // 认证开关
-        'auth_type'      => 1,                  // 认证方式，1为时时认证；2为登录认证。
-        'auth_role'      => 'peanut_role',        // 角色表名
-        'auth_user_role' => 'auth_user_role',   // 用户-角色明细表
-        'auth_rule'      => 'peanut_jurisdition',        // 权限表
-        'auth_user'      => 'peanut_staff',             // 用户信息表
-    ],
 ];
