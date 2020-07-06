@@ -393,3 +393,38 @@
 )
 [ info ] [ RUN ] app\adminLogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-06T10:58:41+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112612s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.068975s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111'  AND `state` = '0' LIMIT 1 [ RunTime:0.065233s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.063042s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.063439s ]
+[ sql ] [ SQL ] SELECT `token` FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.063755s ]
+[ sql ] [ SQL ] UPDATE `peanut_staff`  SET `token`='9e9a837eb3c81f3f56752ae4ae28d466'  WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.070886s ]
+---------------------------------------------------------------
+[ 2020-07-06T10:58:43+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103417s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.067237s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.067495s ]
+---------------------------------------------------------------
+[ 2020-07-06T10:58:49+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminEcharts/index/sale
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105650s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] select count(*) as sum , MONTH(transaction_time) as months from peanut_order  where 1 = 1 GROUP BY months [ RunTime:0.077637s ]
+---------------------------------------------------------------
+[ 2020-07-06T10:58:49+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminEcharts/index/user
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108289s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] select count(*) as sum , MONTH(register_time) as months from peanut_user  where 1 = 1 GROUP BY months [ RunTime:0.070793s ]
+---------------------------------------------------------------
+[ 2020-07-06T10:58:56+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminEcharts/index/sale
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104113s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] select count(*) as sum , MONTH(transaction_time) as months from peanut_order  where 1 = 1 GROUP BY months [ RunTime:0.070891s ]
+---------------------------------------------------------------
+[ 2020-07-06T10:58:56+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminEcharts/index/user
+[ sql ] [ DB ] CONNECT:[ UseTime:0.125080s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] select count(*) as sum , MONTH(register_time) as months from peanut_user  where 1 = 1 GROUP BY months [ RunTime:0.081051s ]
+---------------------------------------------------------------
+[ 2020-07-06T10:59:06+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminRole/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115102s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.074847s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.073829s ]
