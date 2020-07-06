@@ -10,3 +10,7 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+//接收前端来的数据
+function getPost(){
+    return json_decode(file_get_contents("php://input"),true);
+}
