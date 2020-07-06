@@ -4448,3 +4448,76 @@ auction` `a` ON `v`.`auction_id`=`a`.`id` INNER JOIN `peanut_user` `u` ON `u`.`i
 )
 [ info ] [ RUN ] app\adminLogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-06T14:23:13+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：0.606035s] [吞吐率：1.65req/s] [内存消耗：2,480.91kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '35',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"userName":"111","password":"111"}' => '',
+)
+[ info ] [ RUN ] app\adminLogin\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102006s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111'  AND `state` = '0' LIMIT 1 [ RunTime:0.098005s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT `token` FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.069004s ]
+[ sql ] [ SQL ] UPDATE `peanut_staff`  SET `token`='0b8845cb7c20eeb6c10d358079f74981'  WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.070004s ]
+---------------------------------------------------------------
+[ 2020-07-06T14:23:14+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：1,621.47kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => '0b8845cb7c20eeb6c10d358079f74981',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\adminLogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
