@@ -1,0 +1,2820 @@
+---------------------------------------------------------------
+[ 2020-07-02T09:23:57+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129929s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.081456s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'head_img' doesn't have a default value
+---------------------------------------------------------------
+[ 2020-07-02T09:24:42+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113224s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.079537s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'head_img' doesn't have a default value
+---------------------------------------------------------------
+[ 2020-07-02T09:33:48+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ error ] [8]未定义变量: name
+---------------------------------------------------------------
+[ 2020-07-02T09:34:23+08:00 ] 127.0.0.1 OPTIONS 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ error ] [8]未定义变量: name
+---------------------------------------------------------------
+[ 2020-07-02T09:36:44+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ error ] [8]未定义变量: name
+---------------------------------------------------------------
+[ 2020-07-02T09:40:24+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ error ] [8]未定义变量: name
+---------------------------------------------------------------
+[ 2020-07-02T09:41:12+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ error ] [8]未定义变量: name
+---------------------------------------------------------------
+[ 2020-07-02T09:41:13+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ error ] [8]未定义变量: name
+---------------------------------------------------------------
+[ 2020-07-02T09:41:40+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.053108s] [吞吐率：18.83req/s] [内存消耗：1,353.17kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: name[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php:20]
+---------------------------------------------------------------
+[ 2020-07-02T09:42:11+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.018471s] [吞吐率：54.14req/s] [内存消耗：1,234.33kb] [文件加载：31]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-02T09:42:23+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.017075s] [吞吐率：58.56req/s] [内存消耗：1,233.91kb] [文件加载：31]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '53',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"11","name":"11","phone":"1","password":"111"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-02T09:59:40+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.025087s] [吞吐率：39.86req/s] [内存消耗：1,353.90kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"1","name":"1","phone":"1","password":"1"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: post.name[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php:11]
+---------------------------------------------------------------
+[ 2020-07-02T09:59:47+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.249164s] [吞吐率：4.01req/s] [内存消耗：2,210.41kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094267s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.062428s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'acc' cannot be null[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T10:00:52+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.263797s] [吞吐率：3.79req/s] [内存消耗：2,210.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099806s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.066053s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'acc' cannot be null[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T10:00:53+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.289312s] [吞吐率：3.46req/s] [内存消耗：2,210.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111337s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.073780s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'acc' cannot be null[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T10:01:13+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.296332s] [吞吐率：3.37req/s] [内存消耗：2,213.51kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"1","name":"1","phone":"1","password":"1"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117534s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.076099s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'head_img' doesn't have a default value[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T10:05:25+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.274708s] [吞吐率：3.64req/s] [内存消耗：2,212.95kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"1","name":"1","phone":"1","password":"1"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105020s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.068120s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'head_img' doesn't have a default value[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T10:08:00+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.305194s] [吞吐率：3.28req/s] [内存消耗：2,212.95kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"1","name":"1","phone":"1","password":"1"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115487s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.076790s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'head_img' doesn't have a default value[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T10:10:17+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.303951s] [吞吐率：3.29req/s] [内存消耗：2,208.44kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"1","name":"柚子略略略","phone":"133","password":"1"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101774s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.068711s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password`) VALUES ('1' , '柚子略略略' , 133 , '1') [ RunTime:0.071565s ]
+[ error ] [0]致命错误: Call to undefined method app\register\controller\Register::actionSuccess()[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php:28]
+---------------------------------------------------------------
+[ 2020-07-02T10:11:33+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.300566s] [吞吐率：3.33req/s] [内存消耗：2,483.33kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"1","name":"1","phone":"1","password":"1"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114126s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.076502s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password`) VALUES ('1' , '1' , 1 , '1') [ RunTime:0.078121s ]
+---------------------------------------------------------------
+[ 2020-07-02T10:25:11+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.339485s] [吞吐率：2.95req/s] [内存消耗：2,484.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"1","name":"1","phone":"1","password":"1"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.127073s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.087080s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password` , `age`) VALUES ('1' , '1' , 1 , '1' , 0) [ RunTime:0.085354s ]
+---------------------------------------------------------------
+[ 2020-07-02T11:01:00+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.375920s] [吞吐率：2.66req/s] [内存消耗：2,534.58kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134966s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.110878s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'acc' cannot be null[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T11:01:14+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.276192s] [吞吐率：3.62req/s] [内存消耗：2,534.58kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100768s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.067533s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'acc' cannot be null[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2020-07-02T12:48:22+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.268128s] [吞吐率：3.73req/s] [内存消耗：2,483.95kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '95',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"11111111111","name":"柚子噜噜噜","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095165s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.064132s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password`) VALUES ('11111111111' , '柚子噜噜噜' , 13395059606 , 'lihongyou1021') [ RunTime:0.066178s ]
+---------------------------------------------------------------
+[ 2020-07-02T13:51:08+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.473104s] [吞吐率：2.11req/s] [内存消耗：2,523.95kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '93',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"11111111111","name":"柚子啦啦啦","phone":"13395059606","password":"q1234567890"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107502s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.072119s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦啦' LIMIT 1 [ RunTime:0.071514s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059606 LIMIT 1 [ RunTime:0.071109s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '11111111111' LIMIT 1 [ RunTime:0.070157s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:01:01+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.443111s] [吞吐率：2.26req/s] [内存消耗：2,523.98kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '94',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"11111111111","name":"柚子啦啦啦","phone":"13395059606","password":"qazxswedcvfr"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108803s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.073321s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦啦' LIMIT 1 [ RunTime:0.074391s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059606 LIMIT 1 [ RunTime:0.071357s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '11111111111' LIMIT 1 [ RunTime:0.079352s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:04:06+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.386128s] [吞吐率：2.59req/s] [内存消耗：2,523.29kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '92',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子啦啦啦","phone":"13395059606","password":"qweasdzxcv"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092130s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.062359s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦啦' LIMIT 1 [ RunTime:0.062300s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059606 LIMIT 1 [ RunTime:0.065397s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.068716s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:04:15+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.421660s] [吞吐率：2.37req/s] [内存消耗：2,523.29kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '89',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子啦啦","phone":"13395059606","password":"qweasdzxcv"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105912s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.071162s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦' LIMIT 1 [ RunTime:0.071098s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059606 LIMIT 1 [ RunTime:0.071192s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.072769s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:05:06+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.372136s] [吞吐率：2.69req/s] [内存消耗：2,523.29kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '89',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子啦啦","phone":"13395059606","password":"qweasdzxcv"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094649s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.060591s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦' LIMIT 1 [ RunTime:0.062049s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059606 LIMIT 1 [ RunTime:0.063560s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.060511s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:06:04+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.496980s] [吞吐率：2.01req/s] [内存消耗：2,493.07kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '89',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子啦啦","phone":"13395059605","password":"qweasdzxcv"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113685s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.066866s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦' LIMIT 1 [ RunTime:0.071258s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059605 LIMIT 1 [ RunTime:0.072801s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.068904s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password`) VALUES ('13395059606' , '柚子啦啦' , 13395059605 , '0fa7db03b87cb17812753707a17ecc50') [ RunTime:0.073915s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:07:10+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.421463s] [吞吐率：2.37req/s] [内存消耗：2,524.01kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '90',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子啦啦1","phone":"13395059604","password":"qweasdzxcv"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104632s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.070509s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦1' LIMIT 1 [ RunTime:0.069701s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059604 LIMIT 1 [ RunTime:0.071608s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.070425s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:07:27+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.391175s] [吞吐率：2.56req/s] [内存消耗：2,524.00kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '90',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子啦啦1","phone":"13395059604","password":"qweasdzxcv"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097448s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.064592s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦1' LIMIT 1 [ RunTime:0.064439s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059604 LIMIT 1 [ RunTime:0.066407s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.064235s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:20:09+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.435757s] [吞吐率：2.29req/s] [内存消耗：2,523.31kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '95',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子啦啦啦","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109308s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.072728s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子啦啦啦' LIMIT 1 [ RunTime:0.073604s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059606 LIMIT 1 [ RunTime:0.070151s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.071748s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:20:21+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.465935s] [吞吐率：2.15req/s] [内存消耗：2,493.04kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '86',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","name":"柚子","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099721s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.066181s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '柚子' LIMIT 1 [ RunTime:0.065651s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13395059606 LIMIT 1 [ RunTime:0.067161s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606' LIMIT 1 [ RunTime:0.066310s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password`) VALUES ('13395059606' , '柚子' , 13395059606 , 'a034f4d9417c9ac69d4316014d782e3d') [ RunTime:0.070580s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:22:06+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.623130s] [吞吐率：1.60req/s] [内存消耗：2,493.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '86',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13385059606","name":"小柚子","phone":"13385059606","password":"qwertyuiop"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094739s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.069225s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '小柚子' LIMIT 1 [ RunTime:0.089574s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13385059606 LIMIT 1 [ RunTime:0.111217s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13385059606' LIMIT 1 [ RunTime:0.110061s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password`) VALUES ('13385059606' , '小柚子' , 13385059606 , '6eea9b7ef19179a06954edd0f6c05ceb') [ RunTime:0.117660s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:22:37+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.426694s] [吞吐率：2.34req/s] [内存消耗：2,523.98kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '86',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13385059606","name":"小柚子","phone":"13385059606","password":"qwertyuiop"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108379s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.072984s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '小柚子' LIMIT 1 [ RunTime:0.070855s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13385059606 LIMIT 1 [ RunTime:0.069932s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13385059606' LIMIT 1 [ RunTime:0.069894s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:24:14+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[运行时间：0.521154s] [吞吐率：1.92req/s] [内存消耗：2,493.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'Register',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '87',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13385059601","name":"小柚子1","phone":"13385059601","password":"qwertyuiop"}' => '',
+)
+[ info ] [ RUN ] app\register\controller\Register->register[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\register\controller\Register.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112904s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.075080s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `name` = '小柚子1' LIMIT 1 [ RunTime:0.074423s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `phone` = 13385059601 LIMIT 1 [ RunTime:0.078019s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13385059601' LIMIT 1 [ RunTime:0.073752s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_user` (`acc` , `name` , `phone` , `password`) VALUES ('13385059601' , '小柚子1' , 13385059601 , '6eea9b7ef19179a06954edd0f6c05ceb') [ RunTime:0.076918s ]
+---------------------------------------------------------------
+[ 2020-07-02T14:39:00+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/
+[运行时间：0.035879s] [吞吐率：27.87req/s] [内存消耗：1,299.38kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-02T14:39:07+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login
+[运行时间：0.099505s] [吞吐率：10.05req/s] [内存消耗：1,347.51kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-02T14:39:18+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.026565s] [吞吐率：37.64req/s] [内存消耗：1,624.98kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-02T16:14:52+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.550279s] [吞吐率：1.82req/s] [内存消耗：2,516.22kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.356928s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.069273s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.081970s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:15:46+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.321510s] [吞吐率：3.11req/s] [内存消耗：2,516.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyo1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.128553s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.078531s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'd3f33770f0664d3eb8ec6cba3bbc8399' LIMIT 1 [ RunTime:0.082911s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:16:20+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.345169s] [吞吐率：2.90req/s] [内存消耗：2,517.49kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyo1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120587s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.097034s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'd3f33770f0664d3eb8ec6cba3bbc8399' LIMIT 1 [ RunTime:0.093955s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:20:03+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.029152s] [吞吐率：34.30req/s] [内存消耗：1,625.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '69',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyo1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-02T16:20:53+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.025369s] [吞吐率：39.42req/s] [内存消耗：1,625.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-02T16:28:53+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.302136s] [吞吐率：3.31req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114123s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.075464s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.074921s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:29:40+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.260391s] [吞吐率：3.84req/s] [内存消耗：2,517.10kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094337s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.062377s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' [ RunTime:0.068235s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:29:53+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.254689s] [吞吐率：3.93req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093868s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.066049s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.063622s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:29:55+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.313928s] [吞吐率：3.19req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120886s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.078300s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.078515s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:30:24+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.570648s] [吞吐率：1.75req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114942s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.337779s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.083765s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:30:26+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.301211s] [吞吐率：3.32req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111729s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.079803s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.072442s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:30:31+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.287151s] [吞吐率：3.48req/s] [内存消耗：2,517.10kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104154s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.071212s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' [ RunTime:0.069792s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:30:34+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.280261s] [吞吐率：3.57req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108174s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.068952s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.072113s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:30:35+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.296410s] [吞吐率：3.37req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114619s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.073524s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.073855s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:30:36+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.304302s] [吞吐率：3.29req/s] [内存消耗：2,516.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117516s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.077614s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' [ RunTime:0.076741s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:31:05+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.338320s] [吞吐率：2.96req/s] [内存消耗：2,517.23kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105231s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.080952s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.112057s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:31:07+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.302525s] [吞吐率：3.31req/s] [内存消耗：2,517.23kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111230s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.076912s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.082160s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:31:07+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.257624s] [吞吐率：3.88req/s] [内存消耗：2,517.23kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095501s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.063435s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.065189s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:31:12+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.251524s] [吞吐率：3.98req/s] [内存消耗：2,516.18kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092353s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.063370s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.061995s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:31:47+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.326088s] [吞吐率：3.07req/s] [内存消耗：2,517.13kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117400s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.082634s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.090712s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:22+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.265901s] [吞吐率：3.76req/s] [内存消耗：2,567.18kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097152s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.064554s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.064073s ]
+[ error ] [8]未定义变量: data[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php:23]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:39+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.307504s] [吞吐率：3.25req/s] [内存消耗：2,518.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115245s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.077405s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.077315s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:44+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.289111s] [吞吐率：3.46req/s] [内存消耗：2,518.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107170s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.073951s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.072478s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:50+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.290165s] [吞吐率：3.45req/s] [内存消耗：2,518.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105806s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.069583s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.073729s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:51+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.321279s] [吞吐率：3.11req/s] [内存消耗：2,518.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121598s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.082773s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.085497s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:52+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.277776s] [吞吐率：3.60req/s] [内存消耗：2,518.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103992s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.072208s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.069250s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:53+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.273804s] [吞吐率：3.65req/s] [内存消耗：2,518.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099189s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.068197s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.072625s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:32:54+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.270357s] [吞吐率：3.70req/s] [内存消耗：2,518.16kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103179s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.068141s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.067051s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:33:40+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.285321s] [吞吐率：3.50req/s] [内存消耗：2,518.22kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099763s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.066396s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.069224s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:34:00+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.365609s] [吞吐率：2.74req/s] [内存消耗：2,567.40kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.140245s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.093753s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.093310s ]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php:23]
+---------------------------------------------------------------
+[ 2020-07-02T16:34:13+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.290475s] [吞吐率：3.44req/s] [内存消耗：2,567.40kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109528s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.071737s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.072043s ]
+[ error ] [2]Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP)[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php:23]
+---------------------------------------------------------------
+[ 2020-07-02T16:34:24+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.254272s] [吞吐率：3.93req/s] [内存消耗：2,518.22kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095049s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.062308s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.062017s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:34:43+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.289088s] [吞吐率：3.46req/s] [内存消耗：2,518.22kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106128s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.072768s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.071110s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:34:57+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.309258s] [吞吐率：3.23req/s] [内存消耗：2,517.63kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108239s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.073971s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.079542s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:35:22+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.292987s] [吞吐率：3.41req/s] [内存消耗：2,567.35kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107654s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.070934s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.072018s ]
+[ error ] [2]Use of undefined constant int - assumed 'int' (this will throw an Error in a future version of PHP)[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php:23]
+---------------------------------------------------------------
+[ 2020-07-02T16:37:45+08:00 ] 127.0.0.1 GET 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.315828s] [吞吐率：3.17req/s] [内存消耗：2,516.58kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_d214947968792b839fd669a4decaaffc=1586486259',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120154s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.084686s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` IS NULL  AND `phone` IS NULL  AND `password` = 'd41d8cd98f00b204e9800998ecf8427e' LIMIT 1 [ RunTime:0.072179s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:38:28+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.285557s] [吞吐率：3.50req/s] [内存消耗：2,517.63kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112381s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.070970s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.072791s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:41:55+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.305561s] [吞吐率：3.27req/s] [内存消耗：2,517.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108020s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.077871s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.074101s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:42:57+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.410048s] [吞吐率：2.44req/s] [内存消耗：2,565.23kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109105s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.078341s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.085385s ]
+[ error ] [0]致命错误: Call to undefined function app\login\controller\int()[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php:24]
+---------------------------------------------------------------
+[ 2020-07-02T16:43:13+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.343592s] [吞吐率：2.91req/s] [内存消耗：2,567.39kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114876s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.075313s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.082453s ]
+[ error ] [2]Use of undefined constant int - assumed 'int' (this will throw an Error in a future version of PHP)[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php:24]
+---------------------------------------------------------------
+[ 2020-07-02T16:44:19+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.024291s] [吞吐率：41.17req/s] [内存消耗：1,347.42kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'int' (T_STRING), expecting ']'[D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php:24]
+---------------------------------------------------------------
+[ 2020-07-02T16:44:34+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：1.300030s] [吞吐率：0.77req/s] [内存消耗：2,517.66kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.112580s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.073452s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.071906s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:46:15+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.333818s] [吞吐率：3.00req/s] [内存消耗：2,517.61kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115739s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.075638s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.080449s ]
+---------------------------------------------------------------
+[ 2020-07-02T16:47:00+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/login/Login/login
+[运行时间：0.339964s] [吞吐率：2.94req/s] [内存消耗：2,520.19kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '70',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"acc":"13395059606","phone":"13395059606","password":"lihongyou1021"}' => '',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097302s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.065433s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = 'a034f4d9417c9ac69d4316014d782e3d' LIMIT 1 [ RunTime:0.064316s ]

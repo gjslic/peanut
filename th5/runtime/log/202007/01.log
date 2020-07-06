@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+[ 2020-07-01T20:35:40+08:00 ] 127.0.0.1 OPTIONS 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.584907s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.068759s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'head_img' doesn't have a default value
+---------------------------------------------------------------
+[ 2020-07-01T20:40:24+08:00 ] 127.0.0.1 OPTIONS 127.0.0.1/node_yzlll/peanut/th5/public/register/Register/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.150017s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.072204s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'head_img' doesn't have a default value
