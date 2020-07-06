@@ -11,7 +11,7 @@
 
 // 应用公共文件
 
-namespace app\common\behavior;
+// namespace app\common\behavior;
 
 use think\Response;
 class Cors{
