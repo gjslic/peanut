@@ -10,6 +10,7 @@
 // +----------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // 应用公共文件
 <<<<<<< HEAD
 function getPost(){
@@ -42,3 +43,9 @@ class Cors{
 =======
 // 应用公共文件
 >>>>>>> 09de929b58364d9bfb3a503caa6ef8231eff9ae8
+=======
+// 应用公共文件
+function getPost(){
+  return json_decode(file_get_contents("php://input"),true);
+}
+>>>>>>> e3d823c45f98a8032833288a7c22953b8bc5608a

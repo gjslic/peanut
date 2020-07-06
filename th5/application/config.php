@@ -17,10 +17,14 @@ return [
     // 应用调试模式
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'app_debug'              => false,
 =======
 
 >>>>>>> 09de929b58364d9bfb3a503caa6ef8231eff9ae8
+=======
+    'app_debug'              => true,
+>>>>>>> e3d823c45f98a8032833288a7c22953b8bc5608a
     // 应用Trace
     'app_trace'              => false,
 =======
@@ -250,6 +254,7 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -274,4 +279,12 @@ return [
         
 >>>>>>> 09de929b58364d9bfb3a503caa6ef8231eff9ae8
     ],
+=======
+    // 错误码
+    'ErrorCode' => [
+      10000 => '请求数据成功',
+      10001 => '当前没有数据',
+      10002 => '验证码错误'
+    ]
+>>>>>>> e3d823c45f98a8032833288a7c22953b8bc5608a
 ];
