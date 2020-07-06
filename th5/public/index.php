@@ -11,10 +11,26 @@
 
 // [ 应用入口文件 ]
 
+
+
+
+
+
+
+/*设置头部*/ 
+if ( strtolower( $_SERVER[ 'REQUEST_METHOD' ] ) == 'options' ) {
+  header( "Access-Control-Allow-Origin:*" );
+  header( 'Access-Control-Allow-Methods:OPTIONS , GET, PUT, POST, DELETE' );
+  header( 'Access-Control-Allow-Headers:Origin, Content-Type, X-Auth-Token , Authorization , Access-Token , X-Requested-With' );
+  header( 'Accept: application/json' );
+  header( 'Content-Type: application/json' );
+  exit;
+}
+
 //跨域接收
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, POST, PUT');
-header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
+// header('Access-Control-Allow-Origin: *');
+// header('Access-Control-Allow-Methods: GET, POST, PUT');
+// header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 
 
 // 定义应用目录
