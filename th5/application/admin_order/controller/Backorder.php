@@ -1,10 +1,10 @@
 <?php
-namespace app\adminOrder\controller;
+namespace app\admin_order\controller;
 
 use app\base\controller\ModuleBaseController;
 
 use think\Model;
-use app\adminOrder\model\OrderManage;
+use app\admin_order\model\OrderManage;
 
 class Backorder extends ModuleBaseController{
     // 获取订单列表

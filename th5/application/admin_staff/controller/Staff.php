@@ -1,10 +1,10 @@
 <?php
-namespace app\adminStaffManage\controller;
+namespace app\admin_staff\controller;
 
 use app\base\controller\ModuleBaseController;
 use think\Model;
 use think\Db;
-use app\AdminStaffManage\model\StaffManage;
+use app\admin_staff\model\StaffManage;
 
 
 class Staff extends ModuleBaseController{
