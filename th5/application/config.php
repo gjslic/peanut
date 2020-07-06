@@ -16,7 +16,11 @@ return [
 
     // 应用调试模式
 <<<<<<< HEAD
+<<<<<<< HEAD
     'app_debug'              => false,
+=======
+
+>>>>>>> 09de929b58364d9bfb3a503caa6ef8231eff9ae8
     // 应用Trace
     'app_trace'              => false,
 =======
@@ -248,6 +252,7 @@ return [
     ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     //系统错误码配置
     'ErrorCode' => [
         30000 => '成功',
@@ -263,5 +268,10 @@ return [
         'auth_rule'      => 'peanut_jurisdition',        // 权限表
         'auth_user'      => 'peanut_staff',             // 用户信息表
 >>>>>>> long
+=======
+    //错误码
+    'ErrorCode' =>[
+        
+>>>>>>> 09de929b58364d9bfb3a503caa6ef8231eff9ae8
     ],
 ];
