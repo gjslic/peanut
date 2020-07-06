@@ -3068,3 +3068,544 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.114456s ] mysql:host=118.190.149.14;dbname=peanut;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.076421s ]
 [ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.076961s ]
+---------------------------------------------------------------
+[ 2020-07-06T14:14:35+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/
+[运行时间：0.017001s] [吞吐率：58.82req/s] [内存消耗：1,282.03kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/peanut/th5/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-06T14:14:50+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：2.237128s] [吞吐率：0.45req/s] [内存消耗：1,344.77kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => 'a3e8cdfec88a9cc6114f8a3459bcb902',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:15:13+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,344.77kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => 'a3e8cdfec88a9cc6114f8a3459bcb902',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:15:24+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/user/index/get
+[运行时间：0.091005s] [吞吐率：10.99req/s] [内存消耗：1,341.98kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:15:54+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/user/index/get
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,341.98kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:15:54+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.035002s] [吞吐率：28.57req/s] [内存消耗：1,344.77kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => 'a3e8cdfec88a9cc6114f8a3459bcb902',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:16:33+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/user/index/get
+[运行时间：0.025001s] [吞吐率：40.00req/s] [内存消耗：1,342.02kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:17:44+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.037002s] [吞吐率：27.03req/s] [内存消耗：1,344.77kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => 'a3e8cdfec88a9cc6114f8a3459bcb902',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:17:44+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/user/index/get
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,341.98kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '<<' (T_SL), expecting function (T_FUNCTION) or const (T_CONST)[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:38]
+---------------------------------------------------------------
+[ 2020-07-06T14:19:12+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/user/index/get
+[运行时间：0.154009s] [吞吐率：6.49req/s] [内存消耗：1,745.67kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\user\controller\Index::$limit[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:49]
+---------------------------------------------------------------
+[ 2020-07-06T14:19:12+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.153008s] [吞吐率：6.54req/s] [内存消耗：1,747.84kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => 'a3e8cdfec88a9cc6114f8a3459bcb902',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\adminLogin\controller\Index::$limit[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:49]
+---------------------------------------------------------------
+[ 2020-07-06T14:20:22+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/user/index/get
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,745.67kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\user\controller\Index::$limit[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:46]
+---------------------------------------------------------------
+[ 2020-07-06T14:20:22+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：1,747.84kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => 'a3e8cdfec88a9cc6114f8a3459bcb902',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\adminLogin\controller\Index::$limit[D:\phpstudy_pro\WWW\peanut\th5\application\base\controller\ModuleBaseController.php:46]
+---------------------------------------------------------------
+[ 2020-07-06T14:21:40+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.059004s] [吞吐率：16.95req/s] [内存消耗：1,619.91kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => 'a3e8cdfec88a9cc6114f8a3459bcb902',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\adminLogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-06T14:21:41+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/user/index/get
+[运行时间：0.983057s] [吞吐率：1.02req/s] [内存消耗：2,521.32kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\user\controller\Index->get[ D:\phpstudy_pro\WWW\peanut\th5\application\user\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.087005s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` [ RunTime:0.085005s ]
+---------------------------------------------------------------
+[ 2020-07-06T14:22:00+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/index
+[运行时间：2.810161s] [吞吐率：0.36req/s] [内存消耗：2,479.41kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '35',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"userName":"111","password":"111"}' => '',
+)
+[ info ] [ RUN ] app\adminLogin\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095005s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111'  AND `state` = '0' LIMIT 1 [ RunTime:0.064003s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT `token` FROM `peanut_staff` WHERE  `account` = '111'  AND `password` = '111' LIMIT 1 [ RunTime:0.066004s ]
+[ sql ] [ SQL ] UPDATE `peanut_staff`  SET `token`='5fc4ee8056781dd28c063ef013ab0819'  WHERE  `account` = '111'  AND `password` = '111' [ RunTime:0.064004s ]
+---------------------------------------------------------------
+[ 2020-07-06T14:22:01+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/adminLogin/index/validateToken
+[运行时间：0.032001s] [吞吐率：31.25req/s] [内存消耗：1,619.91kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'adminLogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => '5fc4ee8056781dd28c063ef013ab0819',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\adminLogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\adminLogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
