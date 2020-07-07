@@ -11,7 +11,12 @@
 
 // [ 应用入口文件 ]
 
+
+
+
 /*设置头部*/ 
+
+//跨域接收
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 header('Access-Control-Allow-Methods: GET, POST, PUT');
@@ -28,6 +33,7 @@ if($dispatch instanceof Response) {
   $response = new Response('', 200, $headers);
   $dispatch['response'] = $response;
 }
+
 
 
 // 定义应用目录
