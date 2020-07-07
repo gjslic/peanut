@@ -1,5 +1,5 @@
 <?php
-namespace app\adminJurisdiction\model;
+namespace app\admin_jurisdiction\model;
 
 use think\Model;
 

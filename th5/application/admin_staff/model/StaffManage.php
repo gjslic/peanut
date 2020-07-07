@@ -1,5 +1,5 @@
 <?php
-namespace app\adminStaffManage\model;
+namespace app\admin_staff\model;
 
 use think\Model;
 
