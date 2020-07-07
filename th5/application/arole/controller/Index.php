@@ -1,5 +1,5 @@
 <?php
-namespace app\adminRole\controller;
+namespace app\arole\controller;
 
 use think\Controller;
 use think\Db;
@@ -35,6 +35,7 @@ class Index extends ModuleBaseController
             echo json_encode($this->actionFail('失败'));
         }
     }
+    
 
     // 修改数据
     public function update()

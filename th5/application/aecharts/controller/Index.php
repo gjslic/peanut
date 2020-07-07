@@ -1,5 +1,5 @@
 <?php
-namespace app\adminEcharts\controller;
+namespace app\aecharts\controller;
 
 
 use think\Controller;
@@ -60,4 +60,67 @@ class Index extends ModuleBaseController
             echo json_encode(array("code"=>1001,"msg"=>'失败'));
         }
     }
+
+
+     // 月份搜索
+     public function regMonth()
+     {
+        $starTime = getPost()['starTime'];
+        $endTime = getPost()['endTime'];
+         $result = Db::query("select count(*) as sum , MONTH(register_time) as months from peanut_user where register_time BETWEEN
+         '$starTime' and '$endTime' GROUP BY months");
+         if($result){
+             $newArr = array();//新数组
+             foreach ($result as $key => $value) {
+                 //构建以key为月份  value为具体数值的新数组
+                 $newArr[$value['months']] = $value['sum'];
+             }
+             $info = array(
+                 //array_keys获取数组key集合
+                 "categories"=>array_keys($newArr),
+                 //array_values获取数组的value集合
+                 "data"=> array_values($newArr)
+             );
+             echo json_encode(array("code"=>1000,"msg"=>"成功","data"=>$info));
+         }else{
+             echo json_encode(array("code"=>1001,"msg"=>'失败'));
+         }
+     }
+    
+
+    // 月份搜索
+    public function saleMonth()
+    {
+        // 接收前端传的值
+        $starTime = getPost()['starTime'];
+        $endTime = getPost()['endTime'];
+        $result = Db::query("select count(*) as sum , MONTH(transaction_time) as months from peanut_order where transaction_time BETWEEN
+        '$starTime' and '$endTime' GROUP BY months");
+        if($result){
+            $newArr = array();//新数组
+            foreach ($result as $key => $value) {
+                //构建以key为月份  value为具体数值的新数组
+                $newArr[$value['months']] = $value['sum'];
+            }
+            $info = array(
+                //array_keys获取数组key集合
+                "categories"=>array_keys($newArr),
+                //array_values获取数组的value集合
+                "data"=> array_values($newArr)
+            );
+            echo json_encode(array("code"=>1000,"msg"=>"成功","data"=>$info));
+        }else{
+            echo json_encode(array("code"=>1001,"msg"=>'失败'));
+        }
+    }
+         
+
+
+
+
+
+
+
+
+
 }

@@ -1,5 +1,5 @@
 <?php
-namespace app\adminComplain\controller;
+namespace app\acomplain\controller;
 
 class Index
 {

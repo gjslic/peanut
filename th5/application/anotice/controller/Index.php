@@ -1,5 +1,5 @@
 <?php
-namespace app\adminNotice\controller;
+namespace app\anotice\controller;
 
 use think\Controller;
 use think\Db;
