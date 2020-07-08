@@ -1,10 +1,10 @@
 <?php
-namespace app\adminStaffManage\controller;
+namespace app\admin_staff\controller;
 
 use app\base\controller\ModuleBaseController;
 use think\Model;
 use think\Db;
-use app\AdminStaffManage\model\StaffManage;
+use app\admin_staff\model\StaffManage;
 
 
 class Staff extends ModuleBaseController{
@@ -12,16 +12,34 @@ class Staff extends ModuleBaseController{
      * [getStaffArr 获取员工列表]
      */
     public function getStaffArr(){
-        $keyWord = input('post.keyWord');
+        $searchType = input('post.type') ?? '';
+        $keyWord = input('post.keyWord') ?? '';
         $nowPage = input('post.nowPage');
         $limitPage = 8;
         $nowTotal = ($nowPage - 1) * $limitPage;
         $countList = db('staff')->count();
-        $res = db("staff s,peanut_role r")->field('s.*,r.id as rid,r.role_name')->where("s.role_id = r.id")->limit($nowTotal,$limitPage)->select();
+        $keyWords = explode(' ',$keyWord);
+        switch($searchType){
+            case '1':
+                $where = "s.account like '%$keyWords[0]%'";
+            break;
+            case '2':
+                $where = " s.name like '%$keyWords[0]%'";
+            break;
+            case '3':
+                $where = " s.phone like '%$keyWords[0]%'";
+            break;
+            case '4':
+                $where = " r.role_name like '%$keyWords[0]%'";
+            break;
+            default:
+                $where = '1 = 1';
+        }
+        $res = db("staff s,peanut_role r")->field('s.*,r.id as rid,r.role_name')->where("s.role_id = r.id AND r.id <> 1")->where($where)->limit($nowTotal,$limitPage)->select();
         if($res){
             echo json_encode($this->actionSuccess($res,$countList,''));
         }else{
-            echo json_encode($this->actionFail([],0,'连接异常'));
+            echo json_encode($this->actionFail('网络异常'));
         }
     }
     /**

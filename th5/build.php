@@ -21,5 +21,4 @@ return [
         'model'      => ['Main'],
         'view'       => ['main/main'],
     ],
-    // 其他更多的模块定义
 ];

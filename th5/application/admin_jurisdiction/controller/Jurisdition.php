@@ -1,11 +1,11 @@
 <?php
-namespace app\adminJurisdiction\controller;
+namespace app\admin_jurisdiction\controller;
 
 use app\base\controller\ModuleBaseController;
 
 use think\Db;
 use think\Model;
-use app\adminJurisdiction\model\JurisditionManage;
+use app\admin_jurisdiction\model\JurisditionManage;
 
 class Jurisdition extends ModuleBaseController{
   /**
