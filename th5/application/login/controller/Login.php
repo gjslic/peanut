@@ -85,7 +85,7 @@ class Login extends ModuleBaseController
      */
     private function deleteOldToken($oldToken)
     {
-        $this->redis->delete($oldToken);
+        $this->redis->del($oldToken);
     }
 
     /**
