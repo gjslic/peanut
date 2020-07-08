@@ -108,7 +108,6 @@ class Index extends ModuleBaseController
   // 验证token
   public function validateToken()
   {
-    
     //Request::instance()->header();
     $token = $this->header['access-token'];
     // redis取数据
@@ -126,6 +125,8 @@ class Index extends ModuleBaseController
     }
     return json_encode($this->actionSuccess($userData, 0, '查到后台redis数据'));
   }
+
+  
   // 退出
   public function delToken(){
     $token = $this->header['access-token'];
