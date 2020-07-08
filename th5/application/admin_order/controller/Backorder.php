@@ -12,8 +12,8 @@ class Backorder extends ModuleBaseController{
         $type = input('post.showType');
         $orderNum = input('post.searchInfo') ?? '';
 
-        $endOrder = "'交易完成','退款成功','已过期','退款失败'";
-        $unfinish = "'待付款','待验收','待评价','退款审核中'";
+        $endOrder = "'交易完成','退款完成'";
+        $unfinish = "'待验收','待评价','退款审核中'";
         switch($type){
             case '全部订单':
                 $where = ' 1 = 1';
@@ -37,12 +37,7 @@ class Backorder extends ModuleBaseController{
         ->field('o.id,o.order_num as orderNum,o.state,o.transaction_time as orderTime,u.acc as buyer,u.phone,u.head_img,u.name as uName,v.price,v.vehicle_name as carName,v.img as carImg')
         ->where($where)
         ->select();
-
-        if($order){
-            return json_encode($this->actionSuccess($order));
-        }else{
-            echo json_encode($this->actionFail('空数据'));
-        }
+        return $order ? json_encode($this->actionSuccess($order)) : json_encode($this->actionFail('空数据'));
     }
 
     /**

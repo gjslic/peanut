@@ -14,10 +14,7 @@ class Staff extends ModuleBaseController{
     public function getStaffArr(){
         $searchType = input('post.type') ?? '';
         $keyWord = input('post.keyWord') ?? '';
-        $nowPage = input('post.nowPage');
-        $limitPage = 8;
-        $nowTotal = ($nowPage - 1) * $limitPage;
-        $countList = db('staff')->count();
+        $staffAcc = input('post.acc');
         $keyWords = explode(' ',$keyWord);
         switch($searchType){
             case '1':
@@ -33,14 +30,10 @@ class Staff extends ModuleBaseController{
                 $where = " r.role_name like '%$keyWords[0]%'";
             break;
             default:
-                $where = '1 = 1';
+                $where = "s.account like '%$keyWords[0]%'";
         }
-        $res = db("staff s,peanut_role r")->field('s.*,r.id as rid,r.role_name')->where("s.role_id = r.id AND r.id <> 1")->where($where)->limit($nowTotal,$limitPage)->select();
-        if($res){
-            echo json_encode($this->actionSuccess($res,$countList,''));
-        }else{
-            echo json_encode($this->actionFail('网络异常'));
-        }
+        $res = db("staff s,peanut_role r")->field('s.*,r.id as rid,r.role_name')->where("s.role_id = r.id AND r.id <> 1 AND s.account <> $staffAcc")->where($where)->select();
+        return $res ? json_encode($this->actionSuccess($res,0,'')) : json_encode($this->actionFail('网络异常,请刷新重试'));
     }
     /**
      * [getRoleArr 获取角色列表]
@@ -94,7 +87,7 @@ class Staff extends ModuleBaseController{
         $where['account'] = ['<>' , $infos['account']];
         $getPhone = db('staff')->where($where)->find();
         if($getPhone){
-            echo json_encode($this->actionFail('账号重复'));
+            echo json_encode($this->actionFail('手机号重复'));
         }else{
             $staff = new staffManage;
             $res = $staff->save([
@@ -104,7 +97,7 @@ class Staff extends ModuleBaseController{
                 'head_img' => $infos['head_img'],
                 'role_id' => $infos['role_id']
             ],['id' => $infos['id']]);
-            return $res ? json_encode($this->actionSuccess([],0,'修改成功')) : json_encode($this->actionFail('修改失败'));
+            return $res ? json_encode($this->actionSuccess([],0,'修改成功')) : json_encode($this->actionFail('无信息更新'));
         }
     }
     /**
