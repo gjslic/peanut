@@ -46,7 +46,7 @@ class Index extends ModuleBaseController
   {
     $id = getPost()['id'];
     // 新密码
-    $newPwd = md5('q11');
+    $newPwd = md5('qweasdzxcv');
 
     $res = db('user')->update(['password' => $newPwd, 'id' => $id]);
 
