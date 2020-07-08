@@ -10,10 +10,10 @@ use think\Request;
 
 class Index extends ModuleBaseController
 {
-  private $redis = null;
+  protected $redis = null;
 
 
-  private $header = null;
+  protected $header = null;
 
 
   const TOKEN_EXPIRE_TIME = 7 * 24 * 60 * 60;
@@ -27,7 +27,7 @@ class Index extends ModuleBaseController
   }
 
 
-  private function getRedis()
+  protected function getRedis()
   {
     $redis = new \Redis();
     $redis->connect('127.0.0.1', 6379);
