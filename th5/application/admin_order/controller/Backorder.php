@@ -10,7 +10,9 @@ class Backorder extends ModuleBaseController{
     // 获取订单列表
     public function getOrderArr(){
         $type = input('post.showType');
-        $endOrder = "'交易完成','退款完成','已过期','退款失败'";
+        $orderNum = input('post.searchInfo') ?? '';
+
+        $endOrder = "'交易完成','退款成功','已过期','退款失败'";
         $unfinish = "'待付款','待验收','待评价','退款审核中'";
         switch($type){
             case '全部订单':
@@ -26,7 +28,9 @@ class Backorder extends ModuleBaseController{
                 $where = 'o.state = "退款审核中"';
             break;
         }
-        // $where = '1 = 1';
+        if($orderNum){
+            $where .= " and o.order_num = '$orderNum'";
+        }
         $order = db('order')->alias('o')
         ->join('peanut_user u','o.buy_id = u.id')
         ->join('peanut_vehicle v','o.vehicle_id = v.vehicle_id')
