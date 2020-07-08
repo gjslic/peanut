@@ -2870,3 +2870,77 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.107690s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_collection_category` [ RunTime:0.074109s ]
 [ sql ] [ SQL ] SELECT * FROM `peanut_collection_category` `o` INNER JOIN `peanut_collection` `c` ON `o`.`collection_id`=`c`.`id` INNER JOIN `peanut_vehicle` `v` ON `c`.`vehicle_id`=`v`.`vehicle_id` INNER JOIN `peanut_user` `u` ON `o`.`sell_id`=`u`.`id` WHERE  `c`.`user_id` = 15 [ RunTime:0.075668s ]
+---------------------------------------------------------------
+[ 2020-07-08T10:03:01+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/personal/Personal/personal
+[运行时间：0.310100s] [吞吐率：3.22req/s] [内存消耗：2,557.45kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'personal',
+    1 => 'Personal',
+    2 => 'personal',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"token":"2537dc62a12cd5d2dc78cca3591c36bc"}' => '',
+)
+[ info ] [ RUN ] app\personal\controller\Personal->personal[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\personal\controller\Personal.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102618s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.067746s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.067535s ]
+---------------------------------------------------------------
+[ 2020-07-08T10:03:01+08:00 ] 127.0.0.1 POST 127.0.0.1/node_yzlll/peanut/th5/public/personal/Personal/collection
+[运行时间：0.315883s] [吞吐率：3.17req/s] [内存消耗：2,572.22kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'personal',
+    1 => 'Personal',
+    2 => 'collection',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"token":"2537dc62a12cd5d2dc78cca3591c36bc"}' => '',
+)
+[ info ] [ RUN ] app\personal\controller\Personal->collection[ D:\phpstudy_pro\WWW\node_yzlll\peanut\th5\application\personal\controller\Personal.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107443s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_collection_category` [ RunTime:0.070879s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_collection_category` `o` INNER JOIN `peanut_collection` `c` ON `o`.`collection_id`=`c`.`id` INNER JOIN `peanut_vehicle` `v` ON `c`.`vehicle_id`=`v`.`vehicle_id` INNER JOIN `peanut_user` `u` ON `o`.`sell_id`=`u`.`id` WHERE  `c`.`user_id` = 15 [ RunTime:0.074301s ]
