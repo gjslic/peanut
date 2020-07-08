@@ -1,6 +1,788 @@
 ---------------------------------------------------------------
-[ 2020-07-08T10:36:16+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
-[运行时间：0.039003s] [吞吐率：25.64req/s] [内存消耗：1,743.35kb] [文件加载：42]
+[ 2020-07-08T12:14:18+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/get
+[运行时间：0.439026s] [吞吐率：2.28req/s] [内存消耗：2,520.26kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'detail',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"id":"13"}' => '',
+)
+[ info ] [ RUN ] app\detail\controller\Index->get[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.067003s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` `v` INNER JOIN `peanut_city` `c` ON `v`.`city_id`=`c`.`city_id` INNER JOIN `peanut_user` `u` ON `u`.`id`=`v`.`sell_id` WHERE  `v`.`vehicle_id` = '13' [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:14:18+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.309018s] [吞吐率：3.24req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.080004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.077005s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:14:18+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/remark
+[运行时间：0.312017s] [吞吐率：3.20req/s] [内存消耗：2,518.45kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'detail',
+    1 => 'index',
+    2 => 'remark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"uid":2}' => '',
+)
+[ info ] [ RUN ] app\detail\controller\Index->remark[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_comment` [ RunTime:0.076004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_comment` `c` INNER JOIN `peanut_user` `u` ON `u`.`id`=`c`.`user_id` WHERE  `c`.`sell_id` = 2 [ RunTime:0.074004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:14:18+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/like
+[运行时间：0.298017s] [吞吐率：3.36req/s] [内存消耗：2,520.34kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'detail',
+    1 => 'index',
+    2 => 'like',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"tid":2}' => '',
+)
+[ info ] [ RUN ] app\detail\controller\Index->like[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 2 LIMIT 4 [ RunTime:0.071004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:54:38+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/get
+[运行时间：0.313018s] [吞吐率：3.19req/s] [内存消耗：2,520.27kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'detail',
+    1 => 'index',
+    2 => 'get',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"id":"13"}' => '',
+)
+[ info ] [ RUN ] app\detail\controller\Index->get[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` `v` INNER JOIN `peanut_city` `c` ON `v`.`city_id`=`c`.`city_id` INNER JOIN `peanut_user` `u` ON `u`.`id`=`v`.`sell_id` WHERE  `v`.`vehicle_id` = '13' [ RunTime:0.072005s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:54:38+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.325019s] [吞吐率：3.08req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.080004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.080005s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:54:39+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/remark
+[运行时间：0.291017s] [吞吐率：3.44req/s] [内存消耗：2,518.45kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'detail',
+    1 => 'index',
+    2 => 'remark',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"uid":2}' => '',
+)
+[ info ] [ RUN ] app\detail\controller\Index->remark[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_comment` [ RunTime:0.061003s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_comment` `c` INNER JOIN `peanut_user` `u` ON `u`.`id`=`c`.`user_id` WHERE  `c`.`sell_id` = 2 [ RunTime:0.062004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:54:39+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/like
+[运行时间：0.298017s] [吞吐率：3.36req/s] [内存消耗：2,520.34kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'detail',
+    1 => 'index',
+    2 => 'like',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"tid":2}' => '',
+)
+[ info ] [ RUN ] app\detail\controller\Index->like[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 2 LIMIT 4 [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:55:18+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.278016s] [吞吐率：3.60req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.071004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:55:20+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.270015s] [吞吐率：3.70req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.069004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:55:20+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.547031s] [吞吐率：1.83req/s] [内存消耗：2,528.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'queryCar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.069004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:55:20+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.176010s] [吞吐率：5.68req/s] [内存消耗：1,792.77kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","citID":""}' => '',
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php:32]
+---------------------------------------------------------------
+[ 2020-07-08T12:55:39+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.291016s] [吞吐率：3.44req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.063003s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:55:39+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.584033s] [吞吐率：1.71req/s] [内存消耗：2,528.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'queryCar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.069003s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.077005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:55:39+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.060003s] [吞吐率：16.67req/s] [内存消耗：1,792.77kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","citID":""}' => '',
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php:32]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:01+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.285017s] [吞吐率：3.51req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103005s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.069003s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:04+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.323019s] [吞吐率：3.10req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.116007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.079004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.076004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:04+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.562033s] [吞吐率：1.78req/s] [内存消耗：2,528.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'queryCar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.072004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:05+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.029002s] [吞吐率：34.48req/s] [内存消耗：1,792.77kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","citID":""}' => '',
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php:32]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:13+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.258015s] [吞吐率：3.88req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093005s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.061004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.063003s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:14+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.701040s] [吞吐率：1.43req/s] [内存消耗：2,528.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'queryCar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.133008s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.089005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.085005s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:14+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.080005s] [吞吐率：12.50req/s] [内存消耗：1,792.77kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","citID":""}' => '',
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: search[D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php:32]
+---------------------------------------------------------------
+[ 2020-07-08T12:57:46+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.577033s] [吞吐率：1.73req/s] [内存消耗：1,743.36kb] [文件加载：42]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -31,8 +813,8 @@
 [ info ] [ RUN ] app\alogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
-[ 2020-07-08T10:36:17+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
-[运行时间：0.708041s] [吞吐率：1.41req/s] [内存消耗：2,544.62kb] [文件加载：49]
+[ 2020-07-08T12:57:46+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.412024s] [吞吐率：2.43req/s] [内存消耗：2,544.62kb] [文件加载：49]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -64,20 +846,91 @@
 [ info ] [ RUN ] app\info\controller\Center->getMenu[ D:\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.187010s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.108007s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 2 [ RunTime:0.109006s ]
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.118007s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.102005s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100005s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 2 [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.066004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.066004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:36:20+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/arole/index/index
-[运行时间：0.372021s] [吞吐率：2.69req/s] [内存消耗：2,516.20kb] [文件加载：48]
+[ 2020-07-08T12:57:51+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.066004s] [吞吐率：15.15req/s] [内存消耗：1,743.36kb] [文件加载：42]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'arole',
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => '311982bba480a903fcdce4f1592f7cc7',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-08T12:57:51+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.411023s] [吞吐率：2.43req/s] [内存消耗：2,544.62kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":2}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ D:\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093005s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 2 [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.061004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:58:13+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/index
+[运行时间：0.726042s] [吞吐率：1.38req/s] [内存消耗：2,498.77kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
     1 => 'index',
     2 => 'index',
   ),
@@ -93,29 +946,105 @@
   'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
+  'content-length' => '35',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"userName":"222","password":"111"}' => '',
+)
+[ info ] [ RUN ] app\alogin\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '222'  AND `password` = '698d51a19d8a121ce581499d7b701668'  AND `state` = '0' LIMIT 1 [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '222'  AND `password` = '698d51a19d8a121ce581499d7b701668' LIMIT 1 [ RunTime:0.077005s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = '222'  AND `password` = '698d51a19d8a121ce581499d7b701668' [ RunTime:0.078005s ]
+[ sql ] [ SQL ] SELECT `token` FROM `peanut_staff` WHERE  `account` = '222'  AND `password` = '698d51a19d8a121ce581499d7b701668' LIMIT 1 [ RunTime:0.071004s ]
+[ sql ] [ SQL ] UPDATE `peanut_staff`  SET `token`='42d8d5c5f4dc8e45444922dbc0c7dbef'  WHERE  `account` = '222'  AND `password` = '698d51a19d8a121ce581499d7b701668' [ RunTime:0.078005s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:58:13+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.019001s] [吞吐率：52.63req/s] [内存消耗：1,743.36kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'access-token' => '42d8d5c5f4dc8e45444922dbc0c7dbef',
+  'accept' => 'application/json, text/plain, */*',
   'content-length' => '0',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\arole\controller\Index->index[ D:\phpstudy_pro\WWW\peanut\th5\application\arole\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ D:\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.110007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.093005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.115007s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:36:25+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/goods/index/get
-[运行时间：0.365021s] [吞吐率：2.74req/s] [内存消耗：2,691.81kb] [文件加载：48]
+[ 2020-07-08T12:58:13+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.435025s] [吞吐率：2.30req/s] [内存消耗：2,544.62kb] [文件加载：49]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'goods',
-    1 => 'index',
-    2 => 'get',
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":2}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ D:\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 2 [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:58:22+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.295017s] [吞吐率：3.39req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -133,15 +1062,15 @@
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\goods\controller\Index->get[ D:\phpstudy_pro\WWW\peanut\th5\application\goods\controller\Index.php ]
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.107006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.065003s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` `v` INNER JOIN `peanut_series` `s` ON `v`.`series_id`=`s`.`series_id` INNER JOIN `peanut_brand` `b` ON `s`.`brand_id`=`b`.`brand_id` INNER JOIN `peanut_user` `u` ON `u`.`id`=`v`.`sell_id` WHERE  `vehicle_state` = '已上架' OR `vehicle_state` = '已下架' [ RunTime:0.105006s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.075004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.077004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:38:36+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carbran
-[运行时间：0.729042s] [吞吐率：1.37req/s] [内存消耗：2,210.11kb] [文件加载：41]
+[ 2020-07-08T12:58:22+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carbran
+[运行时间：0.271015s] [吞吐率：3.69req/s] [内存消耗：2,210.77kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -170,114 +1099,12 @@
 [ info ] [ RUN ] app\homepage\controller\Homepage->carbran[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.148008s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.407023s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.119007s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.071004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:38:36+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
-[运行时间：0.641037s] [吞吐率：1.56req/s] [内存消耗：2,211.25kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'getcity',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.145008s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.092005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.356021s ]
----------------------------------------------------------------
-[ 2020-07-08T10:38:37+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getreccar
-[运行时间：1.484085s] [吞吐率：0.67req/s] [内存消耗：2,213.46kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'getreccar',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->getreccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:1.217070s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.106006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` LIMIT 4 [ RunTime:0.107006s ]
----------------------------------------------------------------
-[ 2020-07-08T10:38:37+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carstyle
-[运行时间：1.491085s] [吞吐率：0.67req/s] [内存消耗：2,208.77kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'carstyle',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->carstyle[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:1.218070s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_style` [ RunTime:0.108006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_style` [ RunTime:0.114007s ]
----------------------------------------------------------------
-[ 2020-07-08T10:38:38+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carprice
-[运行时间：3.449197s] [吞吐率：0.29req/s] [内存消耗：2,208.29kb] [文件加载：41]
+[ 2020-07-08T12:58:22+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carprice
+[运行时间：0.296017s] [吞吐率：3.38req/s] [内存消耗：2,208.29kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -306,12 +1133,12 @@
 [ info ] [ RUN ] app\homepage\controller\Homepage->carprice[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:3.204183s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.099006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.093005s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.072004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:38:53+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/homepage/Homepage/reccar
-[运行时间：0.438025s] [吞吐率：2.28req/s] [内存消耗：2,215.49kb] [文件加载：41]
+[ 2020-07-08T12:58:24+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carstyle
+[运行时间：0.372021s] [吞吐率：2.69req/s] [内存消耗：2,209.14kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -319,7 +1146,7 @@
   array (
     0 => 'homepage',
     1 => 'Homepage',
-    2 => 'reccar',
+    2 => 'carstyle',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -330,25 +1157,22 @@
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
-  'content-length' => '20',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
-  '{"tab_num":"second"}' => '',
 )
-[ info ] [ RUN ] app\homepage\controller\Homepage->reccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ RUN ] app\homepage\controller\Homepage->carstyle[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.176010s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.116007s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 2 LIMIT 4 [ RunTime:0.114006s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.149008s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_style` [ RunTime:0.099006s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_style` [ RunTime:0.092005s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:39:00+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/homepage/Homepage/reccar
-[运行时间：0.943054s] [吞吐率：1.06req/s] [内存消耗：2,215.70kb] [文件加载：41]
+[ 2020-07-08T12:58:24+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getreccar
+[运行时间：0.494029s] [吞吐率：2.02req/s] [内存消耗：2,213.46kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -356,7 +1180,7 @@
   array (
     0 => 'homepage',
     1 => 'Homepage',
-    2 => 'reccar',
+    2 => 'getreccar',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -367,25 +1191,22 @@
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
-  'content-length' => '19',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
-  '{"tab_num":"third"}' => '',
 )
-[ info ] [ RUN ] app\homepage\controller\Homepage->reccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ RUN ] app\homepage\controller\Homepage->getreccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.439025s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.375022s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 3 LIMIT 4 [ RunTime:0.102006s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.336019s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.063004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` LIMIT 4 [ RunTime:0.065003s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:39:03+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/homepage/Homepage/reccar
-[运行时间：0.394022s] [吞吐率：2.54req/s] [内存消耗：2,215.74kb] [文件加载：41]
+[ 2020-07-08T12:58:46+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carprice
+[运行时间：0.268015s] [吞吐率：3.73req/s] [内存消耗：2,208.29kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -393,7 +1214,7 @@
   array (
     0 => 'homepage',
     1 => 'Homepage',
-    2 => 'reccar',
+    2 => 'carprice',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -404,25 +1225,22 @@
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
-  'content-length' => '20',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
-  '{"tab_num":"fourth"}' => '',
 )
-[ info ] [ RUN ] app\homepage\controller\Homepage->reccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ RUN ] app\homepage\controller\Homepage->carprice[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.168010s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.104006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 4 LIMIT 4 [ RunTime:0.093005s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.066004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:39:08+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/homepage/Homepage/reccar
-[运行时间：0.391023s] [吞吐率：2.56req/s] [内存消耗：2,215.49kb] [文件加载：41]
+[ 2020-07-08T12:58:46+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carbran
+[运行时间：0.271015s] [吞吐率：3.69req/s] [内存消耗：2,210.77kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -430,7 +1248,7 @@
   array (
     0 => 'homepage',
     1 => 'Homepage',
-    2 => 'reccar',
+    2 => 'carbran',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -441,136 +1259,22 @@
   'sec-fetch-mode' => 'cors',
   'sec-fetch-site' => 'cross-site',
   'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
-  'content-length' => '20',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
-  '{"tab_num":"second"}' => '',
 )
-[ info ] [ RUN ] app\homepage\controller\Homepage->reccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ RUN ] app\homepage\controller\Homepage->carbran[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.150008s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.105006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 2 LIMIT 4 [ RunTime:0.108006s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.067004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:39:31+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/homepage/Homepage/reccar
-[运行时间：0.380022s] [吞吐率：2.63req/s] [内存消耗：2,215.74kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'reccar',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '20',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"tab_num":"fourth"}' => '',
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->reccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.151008s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.094006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 4 LIMIT 4 [ RunTime:0.103006s ]
----------------------------------------------------------------
-[ 2020-07-08T10:39:33+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/homepage/Homepage/reccar
-[运行时间：0.428024s] [吞吐率：2.34req/s] [内存消耗：2,215.70kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'reccar',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '19',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"tab_num":"fifth"}' => '',
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->reccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.167010s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.107006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 5 LIMIT 4 [ RunTime:0.122007s ]
----------------------------------------------------------------
-[ 2020-07-08T10:39:35+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/homepage/Homepage/reccar
-[运行时间：0.605035s] [吞吐率：1.65req/s] [内存消耗：2,215.48kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'reccar',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '19',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"tab_num":"first"}' => '',
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->reccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.172010s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.110006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 1 LIMIT 4 [ RunTime:0.288016s ]
----------------------------------------------------------------
-[ 2020-07-08T10:40:03+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
-[运行时间：0.647037s] [吞吐率：1.55req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ 2020-07-08T12:58:46+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.301017s] [吞吐率：3.32req/s] [内存消耗：2,211.25kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -599,12 +1303,80 @@
 [ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.148009s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.102006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.364020s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.089006s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.071004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:40:06+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
-[运行时间：0.473027s] [吞吐率：2.11req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ 2020-07-08T12:58:47+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carstyle
+[运行时间：0.260015s] [吞吐率：3.85req/s] [内存消耗：2,209.14kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'carstyle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->carstyle[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_style` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_style` [ RunTime:0.068004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:58:47+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getreccar
+[运行时间：0.251015s] [吞吐率：3.98req/s] [内存消耗：2,213.46kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getreccar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getreccar[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093005s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.062004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` LIMIT 4 [ RunTime:0.066003s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:59:23+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.316018s] [吞吐率：3.16req/s] [内存消耗：2,211.25kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -633,12 +1405,12 @@
 [ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.190011s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.122007s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.113007s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.118007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.076004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.076005s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:40:07+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/buyCar/Buycar/queryCar
-[运行时间：0.858049s] [吞吐率：1.17req/s] [内存消耗：2,528.05kb] [文件加载：48]
+[ 2020-07-08T12:59:23+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.561032s] [吞吐率：1.78req/s] [内存消耗：2,528.13kb] [文件加载：48]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -667,16 +1439,16 @@
 [ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.167010s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.098005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.099006s ]
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.113006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.104006s ]
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.108007s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.107006s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.068004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:40:10+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
-[运行时间：3.340191s] [吞吐率：0.30req/s] [内存消耗：2,583.36kb] [文件加载：49]
+[ 2020-07-08T12:59:23+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.031002s] [吞吐率：32.26req/s] [内存消耗：1,792.77kb] [文件加载：46]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -698,29 +1470,27 @@
   'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
-  'content-length' => '84',
+  'content-length' => '83',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
-  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","search":""}' => '',
+  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","citID":""}' => '',
 )
 [ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
-[ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:3.156181s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SELECT `v`.* FROM peanut_vehicle v,peanut_brand b,peanut_series s WHERE  (  v.series_id=s.series_id and s.brand_id=b.brand_id and v.vehicle_state="已上架" ) [ RunTime:0.111006s ]
+[ error ] [8]未定义数组索引: search[D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php:32]
 ---------------------------------------------------------------
-[ 2020-07-08T10:40:27+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/get
-[运行时间：0.434025s] [吞吐率：2.30req/s] [内存消耗：2,520.27kb] [文件加载：48]
+[ 2020-07-08T12:59:28+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：1,792.77kb] [文件加载：46]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'get',
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -734,22 +1504,19 @@
   'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
-  'content-length' => '9',
+  'content-length' => '83',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
-  '{"id":13}' => '',
+  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","citID":""}' => '',
 )
-[ info ] [ RUN ] app\detail\controller\Index->get[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.175010s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.113007s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` `v` INNER JOIN `peanut_city` `c` ON `v`.`city_id`=`c`.`city_id` INNER JOIN `peanut_user` `u` ON `u`.`id`=`v`.`sell_id` WHERE  `v`.`vehicle_id` = 13 [ RunTime:0.101005s ]
+[ error ] [8]未定义数组索引: search[D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php:32]
 ---------------------------------------------------------------
-[ 2020-07-08T10:40:27+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
-[运行时间：0.421024s] [吞吐率：2.38req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ 2020-07-08T12:59:29+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.292017s] [吞吐率：3.42req/s] [内存消耗：2,211.25kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -778,86 +1545,12 @@
 [ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.181011s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.114006s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.080005s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.071004s ]
 ---------------------------------------------------------------
-[ 2020-07-08T10:40:27+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/like
-[运行时间：0.301017s] [吞吐率：3.32req/s] [内存消耗：2,520.34kb] [文件加载：48]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'like',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '9',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"tid":2}' => '',
-)
-[ info ] [ RUN ] app\detail\controller\Index->like[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.104006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.070004s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 2 LIMIT 4 [ RunTime:0.076004s ]
----------------------------------------------------------------
-[ 2020-07-08T10:40:27+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/remark
-[运行时间：0.349020s] [吞吐率：2.87req/s] [内存消耗：2,518.45kb] [文件加载：48]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'remark',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '9',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"uid":2}' => '',
-)
-[ info ] [ RUN ] app\detail\controller\Index->remark[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.121007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_comment` [ RunTime:0.081005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_comment` `c` INNER JOIN `peanut_user` `u` ON `u`.`id`=`c`.`user_id` WHERE  `c`.`sell_id` = 2 [ RunTime:0.090005s ]
----------------------------------------------------------------
-[ 2020-07-08T11:18:40+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
-[运行时间：2.320133s] [吞吐率：0.43req/s] [内存消耗：2,211.25kb] [文件加载：41]
+[ 2020-07-08T12:59:34+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.380022s] [吞吐率：2.63req/s] [内存消耗：2,211.25kb] [文件加载：41]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
@@ -886,22 +1579,58 @@
 [ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
 [ info ] [ DB ] INIT mysql
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.451025s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.090005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.070004s ]
-95005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` `v` INNER JOIN `peanut_city` `c` ON `v`.`city_id`=`c`.`city_id` INNER JOIN `peanut_user` `u` ON `u`.`id`=`v`.`sell_id` WHERE  `v`.`vehicle_id` = 13 [ RunTime:0.080005s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.159009s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.075004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.102006s ]
 ---------------------------------------------------------------
-[ 2020-07-08T12:08:45+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/get
-[运行时间：0.288016s] [吞吐率：3.47req/s] [内存消耗：2,520.27kb] [文件加载：48]
+[ 2020-07-08T12:59:34+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/buyCar/Buycar/queryCar
+[运行时间：0.664038s] [吞吐率：1.51req/s] [内存消耗：2,528.13kb] [文件加载：48]
 [ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'get',
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'queryCar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\buyCar\controller\Buycar->queryCar[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.107006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_series` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_series` ORDER BY `sales_volume` DESC LIMIT 5 [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.068004s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.070004s ]
+---------------------------------------------------------------
+[ 2020-07-08T12:59:35+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/buyCar/Buycar/vehicle
+[运行时间：0.148008s] [吞吐率：6.76req/s] [内存消耗：1,792.77kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'buyCar',
+    1 => 'Buycar',
+    2 => 'vehicle',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -915,269 +1644,13 @@
   'content-type' => 'application/x-www-form-urlencoded',
   'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
   'accept' => 'application/json, text/plain, */*',
-  'content-length' => '11',
+  'content-length' => '83',
   'connection' => 'close',
   'host' => '127.0.0.1',
 )
 [ info ] [ PARAM ] array (
-  '{"id":"13"}' => '',
+  '{"brandID":0,"seriesID":0,"price":"","timeBaseNum":"","priceBaseNum":"","citID":""}' => '',
 )
-[ info ] [ RUN ] app\detail\controller\Index->get[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\buyCar\controller\Buycar->vehicle[ D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php ]
 [ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.107006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.066004s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` `v` INNER JOIN `peanut_city` `c` ON `v`.`city_id`=`c`.`city_id` INNER JOIN `peanut_user` `u` ON `u`.`id`=`v`.`sell_id` WHERE  `v`.`vehicle_id` = '13' [ RunTime:0.070004s ]
----------------------------------------------------------------
-[ 2020-07-08T12:08:45+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
-[运行时间：0.282017s] [吞吐率：3.55req/s] [内存消耗：2,211.25kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'getcity',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.104006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.070004s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.070004s ]
----------------------------------------------------------------
-[ 2020-07-08T12:08:45+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/remark
-[运行时间：0.348020s] [吞吐率：2.87req/s] [内存消耗：2,518.45kb] [文件加载：48]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'remark',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '9',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"uid":2}' => '',
-)
-[ info ] [ RUN ] app\detail\controller\Index->remark[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.145008s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_comment` [ RunTime:0.079005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_comment` `c` INNER JOIN `peanut_user` `u` ON `u`.`id`=`c`.`user_id` WHERE  `c`.`sell_id` = 2 [ RunTime:0.078004s ]
----------------------------------------------------------------
-[ 2020-07-08T12:08:45+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/like
-[运行时间：0.329019s] [吞吐率：3.04req/s] [内存消耗：2,520.34kb] [文件加载：48]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'like',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '9',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"tid":2}' => '',
-)
-[ info ] [ RUN ] app\detail\controller\Index->like[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.121007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.080005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 2 LIMIT 4 [ RunTime:0.082005s ]
----------------------------------------------------------------
-[ 2020-07-08T12:10:32+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/get
-[运行时间：0.298017s] [吞吐率：3.36req/s] [内存消耗：2,520.27kb] [文件加载：48]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'get',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '11',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"id":"13"}' => '',
-)
-[ info ] [ RUN ] app\detail\controller\Index->get[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.113006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.074005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` `v` INNER JOIN `peanut_city` `c` ON `v`.`city_id`=`c`.`city_id` INNER JOIN `peanut_user` `u` ON `u`.`id`=`v`.`sell_id` WHERE  `v`.`vehicle_id` = '13' [ RunTime:0.076004s ]
----------------------------------------------------------------
-[ 2020-07-08T12:10:32+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
-[运行时间：0.324018s] [吞吐率：3.09req/s] [内存消耗：2,211.25kb] [文件加载：41]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'homepage',
-    1 => 'Homepage',
-    2 => 'getcity',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-)
-[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ D:\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.115007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.080004s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.082005s ]
----------------------------------------------------------------
-[ 2020-07-08T12:10:33+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/like
-[运行时间：0.279016s] [吞吐率：3.58req/s] [内存消耗：2,520.34kb] [文件加载：48]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'like',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '9',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"tid":2}' => '',
-)
-[ info ] [ RUN ] app\detail\controller\Index->like[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.094006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.063003s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` WHERE  `tab_id` = 2 LIMIT 4 [ RunTime:0.071004s ]
----------------------------------------------------------------
-[ 2020-07-08T12:10:33+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/detail/index/remark
-[运行时间：0.348020s] [吞吐率：2.87req/s] [内存消耗：2,518.45kb] [文件加载：48]
-[ info ] [ LANG ] D:\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'detail',
-    1 => 'index',
-    2 => 'remark',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'accept-language' => 'zh-CN,zh;q=0.9',
-  'accept-encoding' => 'gzip, deflate, br',
-  'referer' => 'http://localhost:8080/',
-  'sec-fetch-dest' => 'empty',
-  'sec-fetch-mode' => 'cors',
-  'sec-fetch-site' => 'cross-site',
-  'origin' => 'http://localhost:8080',
-  'content-type' => 'application/x-www-form-urlencoded',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.9 Safari/537.36',
-  'accept' => 'application/json, text/plain, */*',
-  'content-length' => '9',
-  'connection' => 'close',
-  'host' => '127.0.0.1',
-)
-[ info ] [ PARAM ] array (
-  '{"uid":2}' => '',
-)
-[ info ] [ RUN ] app\detail\controller\Index->remark[ D:\phpstudy_pro\WWW\peanut\th5\application\detail\controller\Index.php ]
-[ info ] [ DB ] INIT mysql
-[ info ] [ LOG ] INIT File
-[ sql ] [ DB ] CONNECT:[ UseTime:0.124007s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
-[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_comment` [ RunTime:0.083005s ]
-[ sql ] [ SQL ] SELECT * FROM `peanut_comment` `c` INNER JOIN `peanut_user` `u` ON `u`.`id`=`c`.`user_id` WHERE  `c`.`sell_id` = 2 [ RunTime:0.084005s ]
+[ error ] [8]未定义数组索引: search[D:\phpstudy_pro\WWW\peanut\th5\application\buyCar\controller\Buycar.php:32]
