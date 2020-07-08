@@ -2,7 +2,7 @@
 
 namespace app\info\controller;
 use think\Controller;
-use app\adminLogin\controller\Index;
+use app\alogin\controller\Index;
 use SQL;
 use think\console\output\descriptor\Console;
 use think\Db;
