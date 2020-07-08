@@ -104,9 +104,22 @@ class Homepage
         //获取到传来的参数
         //到车辆表比对车标id
         $brandid = getPost()['brandid'];
-        $where = [
+  
+        $result = 
+        Db::table('peanut_vehicle')
+        ->alias('v')
+        ->join('peanut_series s','v.series_id = s.series_id')
+        ->where('brand_id',$brandid)
+        ->select();
+
+        if($result){
+            return json_encode($result);
+        }
+        // 路由跳轉
+        Route::get('view',function(){
+            return view('视图模板名称');
+        });
             
-        ];
      }
 
      //传递价格
@@ -115,6 +128,7 @@ class Homepage
         //获取到传来的参数
         //到车辆表比对车标id
         $price_id = getPost()['price_id'];
+
      }
 
      //传递车型
@@ -131,11 +145,49 @@ class Homepage
         //获取到传来的参数
         //到车辆表比对车标id
         $reccarid = getPost()['reccarid'];
+
+        $where = [
+            'tab_id' => $reccarid
+        ];
+        $result = db('vehicle')->where($where)->select();
+        
+        return json_encode($result);
+        // var_dump($result);
+        // exit();
+
      }
 
      //传递城市
      public function passCity()
      {
         $passCityid = getPost()['passCityid'];
+
+        
+        $where = [
+            'city_id' => $passCityid
+        ];
+        $result = db('vehicle')->where($where)->select();
+        
+        return json_encode($result);
+        
+        // var_dump($result);
+        // exit();
+     }
+
+     //買車頁城市
+     public function getsellingCity(){
+        $get = $_GET;
+        $where = [];
+        $result = db('city')->where($where)->select();
+        return json_encode($result);
+     }
+
+     //卖车页品牌
+     public function getsellingbrand()
+     {
+        $get = $_GET;
+        $where = [];
+        $result = db('brand')->where($where)->select();
+        return json_encode($result);
      }
 }
