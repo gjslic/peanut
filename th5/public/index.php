@@ -12,6 +12,11 @@
 // [ 应用入口文件 ]
 
 
+//跨域接收
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+header('Access-Control-Allow-Methods: GET, POST, PUT');
+
 /*设置头部 start*/
 if ( strtolower( $_SERVER[ 'REQUEST_METHOD' ] ) == 'options' ) {
   header( "Access-Control-Allow-Origin:*" );
@@ -21,10 +26,6 @@ if ( strtolower( $_SERVER[ 'REQUEST_METHOD' ] ) == 'options' ) {
   header( 'Content-Type: application/json' );
   exit;
 }
-
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE");
-header('Access-Control-Allow-Headers:x-requested-with,content-type,token,Access-Token');
 
 
 // 定义应用目录
