@@ -100,6 +100,23 @@ class Center extends Index
     }
   }
   /**
+   * [editAvatar修改头像]
+   */
+  public function editAvatar(){
+    $id = getPost()['id'];
+    $imgUrl = getPost()['imgUrl'];
+    $res = db('staff')
+    ->where('id', $id)
+    ->data(['head_img' => $imgUrl])
+    ->update();
+    
+    if ($res) {
+      echo json_encode($this->actionSuccess());
+    } else {
+      echo json_encode($this->actionFail());
+    }
+  }
+  /**
    * getMenu渲染权限菜单
    */
   public function getMenu(){
