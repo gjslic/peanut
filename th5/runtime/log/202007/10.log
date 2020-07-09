@@ -1,0 +1,4233 @@
+---------------------------------------------------------------
+[ 2020-07-10T00:54:02+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.099598s] [吞吐率：10.04req/s] [内存消耗：1,745.44kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T00:54:03+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：1.193808s] [吞吐率：0.84req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.367081s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.160476s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.199535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.159971s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.159584s ]
+---------------------------------------------------------------
+[ 2020-07-10T00:54:03+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.982183s] [吞吐率：1.02req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.265094s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.169090s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.187773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.139636s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.119998s ]
+---------------------------------------------------------------
+[ 2020-07-10T00:54:19+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.473975s] [吞吐率：2.11req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.171178s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.114366s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.118998s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:03:57+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.073683s] [吞吐率：13.57req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:03:57+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.969991s] [吞吐率：1.03req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.321197s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.156961s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.119858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.119452s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.135079s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:03:58+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.830943s] [吞吐率：1.20req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.235695s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.131075s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.118635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.135085s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.126903s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:04:02+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.577330s] [吞吐率：1.73req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.222443s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.134532s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.143816s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:04:38+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.915169s] [吞吐率：1.09req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.258580s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.125375s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.150974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.160060s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.141680s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:04:42+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.538124s] [吞吐率：1.86req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.204518s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.125444s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.143377s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:05:53+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.781369s] [吞吐率：1.28req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.209996s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.122271s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.116273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.121808s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.140096s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:05:57+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.537484s] [吞吐率：1.86req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.194992s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.147434s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.127406s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:06:36+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.813351s] [吞吐率：1.23req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.240872s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.119448s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.119382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.120536s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.120002s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:06:41+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.864329s] [吞吐率：1.16req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.233189s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.148158s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.124742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.125809s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.135158s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:06:43+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.507525s] [吞吐率：1.97req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.206469s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.113778s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.119692s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:08+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carbran
+[运行时间：0.526789s] [吞吐率：1.90req/s] [内存消耗：2,212.78kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'carbran',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->carbran[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.184946s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.154865s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.124382s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:08+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.552997s] [吞吐率：1.81req/s] [内存消耗：2,213.27kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190159s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.134011s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.130424s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:09+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carprice
+[运行时间：0.539762s] [吞吐率：1.85req/s] [内存消耗：2,210.30kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'carprice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->carprice[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201408s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.137576s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.148773s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:09+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/anotice/index/index
+[运行时间：0.579447s] [吞吐率：1.73req/s] [内存消耗：2,519.42kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'anotice',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\anotice\controller\Index->index[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\anotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.204179s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.148304s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.127795s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:09+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carstyle
+[运行时间：0.555901s] [吞吐率：1.80req/s] [内存消耗：2,211.16kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'carstyle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->carstyle[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.232137s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_style` [ RunTime:0.116213s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_style` [ RunTime:0.120045s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:09+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getreccar
+[运行时间：0.602223s] [吞吐率：1.66req/s] [内存消耗：2,215.48kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getreccar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getreccar[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.240661s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.141335s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` LIMIT 4 [ RunTime:0.131462s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:13+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.065480s] [吞吐率：15.27req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:09:14+08:00 ] 0.0.0.0 POST localhost/peanut/th5/public/admin_staff/staff/getStaffArr
+[运行时间：0.452353s] [吞吐率：2.21req/s] [内存消耗：2,551.46kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_staff',
+    1 => 'staff',
+    2 => 'getStaffArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '',
+  'keyWord' => '',
+  'acc' => '"admin001"',
+)
+[ info ] [ RUN ] app\admin_staff\controller\Staff->getStaffArr[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_staff\controller\Staff.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.212070s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `s`.*,r.id as rid,`r`.`role_name` FROM peanut_staff s,peanut_role r WHERE  (  s.role_id = r.id AND r.id <> 1 AND s.account <> "admin001" )  AND (  s.account like '%%' ) [ RunTime:0.156841s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:14+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.838176s] [吞吐率：1.19req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.213268s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.143474s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.120120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.130129s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.145231s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:21+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.857902s] [吞吐率：1.17req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.229506s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.126026s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.151056s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.128080s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.129540s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:09:40+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.539704s] [吞吐率：1.85req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.191787s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.133675s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.132411s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:10:00+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.915089s] [吞吐率：1.09req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.210734s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.120955s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.152400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.167044s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.192745s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:10:02+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.561019s] [吞吐率：1.78req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.227605s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.125038s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.132099s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:11:02+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.760346s] [吞吐率：1.32req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199244s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.126530s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.118847s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.119209s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.120998s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:11:04+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.072032s] [吞吐率：13.88req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:11:05+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：1.046049s] [吞吐率：0.96req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.223707s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.159236s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.123803s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.119851s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.334977s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:11:05+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.919672s] [吞吐率：1.09req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.181881s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.111192s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.117725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.126142s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.304993s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:11:12+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.524668s] [吞吐率：1.91req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.191503s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.119052s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.121465s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:12:29+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.632262s] [吞吐率：1.58req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.254154s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.127079s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.143828s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:12:40+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.573738s] [吞吐率：1.74req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.206428s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.129478s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.149868s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:13:20+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.895655s] [吞吐率：1.12req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.255386s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.141067s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.127436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.133173s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.147318s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:13:23+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.561194s] [吞吐率：1.78req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.216429s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.132867s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.142842s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:13:30+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.581681s] [吞吐率：1.72req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.210307s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.125387s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.151916s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:14:15+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=3
+[运行时间：0.580165s] [吞吐率：1.72req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '3',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.211603s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.130306s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 3 [ RunTime:0.137455s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:14:47+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.751198s] [吞吐率：1.33req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.192936s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.118897s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.119380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.119434s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.120192s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:14:48+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.757971s] [吞吐率：1.32req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190214s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.116060s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.117079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.127368s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.126729s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:14:52+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.539071s] [吞吐率：1.86req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203137s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.121681s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.122992s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:14:58+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.560179s] [吞吐率：1.79req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.205592s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.120709s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.143505s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:15:22+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.892390s] [吞吐率：1.12req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.217784s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.134608s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.150895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.130394s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.147477s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:15:25+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.575391s] [吞吐率：1.74req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203797s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.136570s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.135140s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:15:36+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.546179s] [吞吐率：1.83req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.223327s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.117264s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.118104s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:17:42+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.829523s] [吞吐率：1.21req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.193669s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.135198s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.127748s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.126352s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.146033s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:17:45+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=3
+[运行时间：0.554466s] [吞吐率：1.80req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '3',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.195370s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.118983s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 3 [ RunTime:0.150092s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:18:04+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.836205s] [吞吐率：1.20req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.206749s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.158110s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.118913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.119172s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.123034s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:18:07+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.504728s] [吞吐率：1.98req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.180295s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.113818s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.127139s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:18:17+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.557594s] [吞吐率：1.79req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.208590s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.117990s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.142689s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:19:42+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.834019s] [吞吐率：1.20req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.207722s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.131426s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.129017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.131123s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.141843s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:19:45+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.578134s] [吞吐率：1.73req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.213696s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.158057s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.133923s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:19:51+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.790729s] [吞吐率：1.26req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.198344s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.127068s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.149133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.124704s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.117144s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:19:53+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=3
+[运行时间：0.599521s] [吞吐率：1.67req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '3',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.234972s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.146344s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 3 [ RunTime:0.135145s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:19:59+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.870572s] [吞吐率：1.15req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.212203s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.139711s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.127577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.130508s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.151631s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:20:51+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.836542s] [吞吐率：1.20req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.233033s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.146073s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.124404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.121115s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.131574s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:20:58+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.804429s] [吞吐率：1.24req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.188567s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.131493s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.114700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.140681s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.125522s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:21:01+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.590699s] [吞吐率：1.69req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.235203s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.146111s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.132973s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:21:25+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.940966s] [吞吐率：1.06req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.220274s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.130944s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.150617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.129344s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.147771s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:21:28+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.817965s] [吞吐率：1.22req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.189431s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.124775s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.119280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.144967s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.131242s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:21:31+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.513184s] [吞吐率：1.95req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.205643s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.119409s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.117070s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:21:37+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.840262s] [吞吐率：1.19req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.216771s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.124670s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.130174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.126372s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.140804s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:22:00+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.867527s] [吞吐率：1.15req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.223267s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.144398s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.126148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.119771s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.118905s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:22:03+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.549618s] [吞吐率：1.82req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.207189s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.140609s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.126138s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:22:08+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.814363s] [吞吐率：1.23req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.212754s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.129380s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.138860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.138813s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.124470s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:22:11+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.564427s] [吞吐率：1.77req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.222849s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.121455s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.133818s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:26:23+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.090513s] [吞吐率：11.05req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:26:24+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.925119s] [吞吐率：1.08req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.233341s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.128860s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.160948s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.140442s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.160081s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:26:24+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.864485s] [吞吐率：1.16req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.216703s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.124533s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.140739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.138241s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.153541s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:26:29+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.527955s] [吞吐率：1.89req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.206034s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.127081s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.125066s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:26:35+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.524036s] [吞吐率：1.91req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.194787s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.118294s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.119431s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:26:42+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.636536s] [吞吐率：1.57req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.240418s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.162395s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.153555s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:26:50+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.655839s] [吞吐率：1.52req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.237417s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.143460s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.147278s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:26:57+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=3
+[运行时间：0.593050s] [吞吐率：1.69req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '3',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.188501s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.117327s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 3 [ RunTime:0.210875s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:27:28+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.511582s] [吞吐率：1.95req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199192s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.114777s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.119851s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:27:34+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.559856s] [吞吐率：1.79req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.212408s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.136037s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.129038s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:27:56+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.822032s] [吞吐率：1.22req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.184110s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.151718s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.125150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.137832s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.149066s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:27:59+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.597037s] [吞吐率：1.67req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.198464s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.128627s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.196179s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:28:04+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.577262s] [吞吐率：1.73req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190398s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.150418s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.161607s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:28:47+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.064100s] [吞吐率：15.60req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:28:47+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.875855s] [吞吐率：1.14req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.210838s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.148052s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.148068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.125659s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.118595s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:28:47+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.766747s] [吞吐率：1.30req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203541s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.125797s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.124495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.118264s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.117296s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:28:50+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=3
+[运行时间：0.628232s] [吞吐率：1.59req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '3',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.260154s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.127199s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 3 [ RunTime:0.147694s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:32:00+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.070790s] [吞吐率：14.13req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:32:01+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：1.035543s] [吞吐率：0.97req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.237823s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.148189s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.165941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.192951s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.163050s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:32:01+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.938023s] [吞吐率：1.07req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.224115s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.161954s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.193505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.128848s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.148934s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:32:12+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.558208s] [吞吐率：1.79req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.208786s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.124164s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.148646s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:32:54+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.053435s] [吞吐率：18.71req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:32:54+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.725742s] [吞吐率：1.38req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.180373s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.118977s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.122785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.117205s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.119100s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:32:55+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.899295s] [吞吐率：1.11req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.248260s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.152363s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.150847s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.138815s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.142868s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:33:00+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.563416s] [吞吐率：1.77req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.212373s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.128012s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.156032s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:01+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getcity
+[运行时间：0.487581s] [吞吐率：2.05req/s] [内存消耗：2,213.27kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getcity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getcity[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.177199s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_city` [ RunTime:0.126797s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_city` [ RunTime:0.117422s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:01+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/anotice/index/index
+[运行时间：0.548462s] [吞吐率：1.82req/s] [内存消耗：2,519.42kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'anotice',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\anotice\controller\Index->index[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\anotice\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.196885s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_notice` [ RunTime:0.124314s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_notice` [ RunTime:0.117831s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:02+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carbran
+[运行时间：0.548721s] [吞吐率：1.82req/s] [内存消耗：2,212.78kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'carbran',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->carbran[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.176120s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_brand` [ RunTime:0.141639s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_brand` [ RunTime:0.130377s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:02+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/getreccar
+[运行时间：0.580181s] [吞吐率：1.72req/s] [内存消耗：2,215.48kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'getreccar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->getreccar[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.206397s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_vehicle` [ RunTime:0.128936s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_vehicle` LIMIT 4 [ RunTime:0.150053s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:02+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carstyle
+[运行时间：0.519148s] [吞吐率：1.93req/s] [内存消耗：2,211.16kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'carstyle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->carstyle[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.213976s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_style` [ RunTime:0.120763s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_style` [ RunTime:0.116247s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:03+08:00 ] 127.0.0.1 GET 127.0.0.1/peanut/th5/public/homepage/Homepage/carprice
+[运行时间：0.579805s] [吞吐率：1.72req/s] [内存消耗：2,210.30kb] [文件加载：41]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homepage',
+    1 => 'Homepage',
+    2 => 'carprice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homepage\controller\Homepage->carprice[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\homepage\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.238595s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_price` [ RunTime:0.144378s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_price` [ RunTime:0.127478s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:05+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.067148s] [吞吐率：14.89req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:34:06+08:00 ] 0.0.0.0 POST localhost/peanut/th5/public/admin_staff/staff/getStaffArr
+[运行时间：0.495779s] [吞吐率：2.02req/s] [内存消耗：2,551.46kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_staff',
+    1 => 'staff',
+    2 => 'getStaffArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '',
+  'keyWord' => '',
+  'acc' => '"admin001"',
+)
+[ info ] [ RUN ] app\admin_staff\controller\Staff->getStaffArr[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_staff\controller\Staff.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.262864s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `s`.*,r.id as rid,`r`.`role_name` FROM peanut_staff s,peanut_role r WHERE  (  s.role_id = r.id AND r.id <> 1 AND s.account <> "admin001" )  AND (  s.account like '%%' ) [ RunTime:0.136677s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:06+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.905961s] [吞吐率：1.10req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.219487s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.134637s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.132550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.158819s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.158035s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:09+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.844098s] [吞吐率：1.18req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.195936s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.158159s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.150138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.132860s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.139673s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:34:11+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=3
+[运行时间：0.557607s] [吞吐率：1.79req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '3',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.203850s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.126428s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 3 [ RunTime:0.151202s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:40:58+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：1.234938s] [吞吐率：0.81req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.209354s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.127415s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.307745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.243124s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.235577s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:41:12+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.781979s] [吞吐率：1.28req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.225530s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.121100s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.119888s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.122990s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.119907s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:41:12+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.055567s] [吞吐率：18.00req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:41:13+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.791131s] [吞吐率：1.26req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199494s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.119155s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.122274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.152748s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.120338s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:41:16+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.535982s] [吞吐率：1.87req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.201136s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.141390s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.124855s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:42:42+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.794994s] [吞吐率：1.26req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.235738s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.128649s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.121377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.129997s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.113742s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:43:18+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.832378s] [吞吐率：1.20req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.215929s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.120066s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.135276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.141045s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.126571s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:43:21+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.571883s] [吞吐率：1.75req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.221006s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.156591s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.122735s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:43:57+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.551807s] [吞吐率：1.81req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.211168s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.121749s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.149100s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:45:17+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.801736s] [吞吐率：1.25req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.199775s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.122655s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.153515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.122903s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.130622s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:45:23+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.608459s] [吞吐率：1.64req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.217421s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.163354s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.127352s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:46:11+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.546693s] [吞吐率：1.83req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.214822s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.121211s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.138661s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:46:51+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.845072s] [吞吐率：1.18req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.231668s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.127565s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.143346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.126010s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.134769s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:47:03+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.805148s] [吞吐率：1.24req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.233420s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.128610s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.121318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.129254s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.111733s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:47:03+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/alogin/index/validateToken
+[运行时间：0.035447s] [吞吐率：28.21req/s] [内存消耗：1,745.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f6c01382704ab23266c7085fab4c0822',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-10T01:47:04+08:00 ] 127.0.0.1 POST 127.0.0.1/peanut/th5/public/info/Center/getMenu
+[运行时间：0.753752s] [吞吐率：1.33req/s] [内存消耗：2,546.92kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.209417s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.119523s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.123344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.120014s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.125224s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:47:07+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.517053s] [吞吐率：1.93req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.196792s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.107069s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.145393s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:47:16+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/editJurisdition?nowJurArr=[1,2,3,11,6]&nowRoleId=4
+[运行时间：0.755557s] [吞吐率：1.32req/s] [内存消耗：2,737.55kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'editJurisdition',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowJurArr' => '[1,2,3,11,6]',
+  'nowRoleId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->editJurisdition[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.211872s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.148829s ]
+[ sql ] [ SQL ] DELETE FROM `peanut_jurisdiction`    WHERE  `role_id` = 4 [ RunTime:0.189990s ]
+[ sql ] [ SQL ] INSERT INTO `peanut_jurisdiction` (`role_id` , `menu_id`) VALUES (4 , '1,2,3,11,6') [ RunTime:0.143888s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:47:19+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.597986s] [吞吐率：1.67req/s] [内存消耗：2,768.41kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.222510s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.159234s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.150999s ]
+---------------------------------------------------------------
+[ 2020-07-10T01:47:48+08:00 ] 0.0.0.0 GET localhost/peanut/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.885380s] [吞吐率：1.13req/s] [内存消耗：2,527.63kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\peanut\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\peanut\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.226614s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.153194s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.146986s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.134866s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.147695s ]
