@@ -66,6 +66,7 @@ class Login extends ModuleBaseController
     private function setToken($token,$res)
     {
         $this->redis->set($token, $res);
+        $this->redis->set($token, $res);
         $this->redis->expire($token, self::TOKEN_EXPIRE_TIME);
     }
     
@@ -84,7 +85,7 @@ class Login extends ModuleBaseController
      */
     private function deleteOldToken($oldToken)
     {
-        $this->redis->del($oldToken);
+        $this->redis->delete($oldToken);
     }
 
     /**
