@@ -51,7 +51,19 @@ class Backorder extends ModuleBaseController{
   }
   /**
    * [editState 修改订单状态]
-   * @pramas $money => 退款
+   * @pramas 
+   * $orderId      => 当前订单id
+   * $buyerAcc     => 买家账号
+   * $price        => 车辆价格
+   * $seller       => 卖家信息（账号，余额）
+   * $buyer        => 买家余额
+   * $money        => 退款
+   * $carState     => 当前车辆状态
+   * $editCarState => 修改当前车辆状态
+   * $editSell     => 卖家余额修改
+   * $editbuyer    => 买家余额修改
+   * $creditBuyer  => 扣除买家信誉分结果
+   * $editState    => 修改订单状态
    */
   public function editState(){
     $orderId = input('post.nowId');
@@ -61,6 +73,13 @@ class Backorder extends ModuleBaseController{
     $buyer = db('user')->field('money')->where("acc = '$buyerAcc'")->find();
     $money = ($price * 10000) - ($price * 0.05 * 10000);
     if($seller['money'] - $money > 0){
+      $carState = db('vehicle v,peanut_order o')->field('v.vehicle_state')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->find();
+      if($carState['vehicle_state'] == '已拍卖'){
+        $state = '拍卖中';
+      }else if($carState['vehicle_state'] == '已下架'){
+        $state = '已上架';
+      }
+      $editCarState = db('vehicle v,peanut_order o')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->update(['v.vehicle_state' => $state , 'v.buy_id' => null]);
       $editSell = db('user')->where('acc',$seller['acc'])->setDec('money',$money);
       $editbuyer = db('user')->where('acc',$buyerAcc)->setInc('money',$money);
       $orderWhere = "acc = $buyerAcc AND credit >= 80";

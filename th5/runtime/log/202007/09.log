@@ -8811,3 +8811,898 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.120275s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.077086s ]
 [ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.123753s ]
+---------------------------------------------------------------
+[ 2020-07-09T11:25:20+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.349803s] [吞吐率：2.86req/s] [内存消耗：2,540.16kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '待审核',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.107799s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.070781s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (  o.state = "退款审核中" or o.state = "待确认" ) [ RunTime:0.071127s ]
+---------------------------------------------------------------
+[ 2020-07-09T11:25:23+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/editState
+[运行时间：0.083191s] [吞吐率：12.02req/s] [内存消耗：2,476.88kb] [文件加载：51]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'editState',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => 19,
+  'buyId' => '13395059606',
+  'price' => 12.49,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->editState[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]method not exist:think\db\Query->filed[F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2020-07-09T11:25:38+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/editState
+[运行时间：0.220289s] [吞吐率：4.54req/s] [内存消耗：2,535.03kb] [文件加载：54]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'editState',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => 19,
+  'buyId' => '13395059606',
+  'price' => 12.49,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->editState[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113710s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order o WHERE  (  v.vehicle_id = o.vehicle_id and o.id = '19' ) LIMIT 1' at line 1[F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2020-07-09T11:26:36+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/editState
+[运行时间：0.250728s] [吞吐率：3.99req/s] [内存消耗：2,574.13kb] [文件加载：53]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'editState',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => 19,
+  'buyId' => '13395059606',
+  'price' => 12.49,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->editState[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104747s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `v`.`vehicle_state` FROM peanut_vehicle v,peanut_order o WHERE  (  v.vehicle_id = o.vehicle_id and o.id = '19' ) LIMIT 1 [ RunTime:0.070501s ]
+[ error ] [8]Array to string conversion[F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php:59]
+---------------------------------------------------------------
+[ 2020-07-09T11:26:56+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/editState
+[运行时间：0.242426s] [吞吐率：4.12req/s] [内存消耗：2,572.32kb] [文件加载：52]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'editState',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => 19,
+  'buyId' => '13395059606',
+  'price' => 12.49,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->editState[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101300s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `v`.`vehicle_state` FROM peanut_vehicle v,peanut_order o WHERE  (  v.vehicle_id = o.vehicle_id and o.id = '19' ) LIMIT 1 [ RunTime:0.066136s ]
+[ error ] [0]致命错误: Call to undefined function app\admin_order\controller\var_ddump()[F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php:59]
+---------------------------------------------------------------
+[ 2020-07-09T11:27:03+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/editState
+[运行时间：0.241828s] [吞吐率：4.14req/s] [内存消耗：2,377.90kb] [文件加载：46]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'editState',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => 19,
+  'buyId' => '13395059606',
+  'price' => 12.49,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->editState[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100956s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `v`.`vehicle_state` FROM peanut_vehicle v,peanut_order o WHERE  (  v.vehicle_id = o.vehicle_id and o.id = '19' ) LIMIT 1 [ RunTime:0.075374s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:14:45+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/editState
+[运行时间：0.838171s] [吞吐率：1.19req/s] [内存消耗：2,576.41kb] [文件加载：52]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'editState',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '48',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => 23,
+  'buyId' => '13395059606',
+  'price' => 12.49,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->editState[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095021s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `u`.`acc`,`u`.`money` FROM peanut_order o , peanut_user u WHERE  (  o.id = '23' and o.sell_id = u.id ) LIMIT 1 [ RunTime:0.060940s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.061961s ]
+[ sql ] [ SQL ] SELECT `money` FROM `peanut_user` WHERE  (  acc = '13395059606' ) LIMIT 1 [ RunTime:0.062468s ]
+[ sql ] [ SQL ] SELECT `v`.`vehicle_state` FROM peanut_vehicle v,peanut_order o WHERE  (  v.vehicle_id = o.vehicle_id and o.id = '23' ) LIMIT 1 [ RunTime:0.062723s ]
+[ sql ] [ SQL ] UPDATE peanut_vehicle v,peanut_order o  SET `v`.`vehicle_state`='拍卖中',`v`.`buy_id`=NULL  WHERE  (  v.vehicle_id = o.vehicle_id and o.id = '23' ) [ RunTime:0.064441s ]
+[ sql ] [ SQL ] UPDATE `peanut_user`  SET `money`=`money`-118655  WHERE  `acc` = '13395059606' [ RunTime:0.062490s ]
+[ sql ] [ SQL ] UPDATE `peanut_user`  SET `money`=`money`+118655  WHERE  `acc` = '13395059606' [ RunTime:0.067182s ]
+[ sql ] [ SQL ] UPDATE `peanut_user`  SET `credit`=`credit`-3  WHERE  (  acc = 13395059606 AND credit >= 80 ) [ RunTime:0.064065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.061241s ]
+[ sql ] [ SQL ] UPDATE `peanut_order`  SET `state`='退款完成'  WHERE  `id` = 23 [ RunTime:0.068066s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:23:57+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.062436s] [吞吐率：16.02req/s] [内存消耗：1,743.78kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => '022f402638a75d5b540adcf7f60e62ce',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-09T12:23:58+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.387867s] [吞吐率：2.58req/s] [内存消耗：2,613.89kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '全部订单',
+  'searchInfo' => '',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103569s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.068514s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.107670s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:23:58+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/info/Center/getMenu
+[运行时间：0.498445s] [吞吐率：2.01req/s] [内存消耗：2,545.06kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.114809s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.078714s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.075851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.076825s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.074882s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:24:01+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.333604s] [吞吐率：3.00req/s] [内存消耗：2,543.89kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '待审核',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108171s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.074302s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (  o.state = "退款审核中" or o.state = "待确认" ) [ RunTime:0.077380s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:24:04+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.370015s] [吞吐率：2.70req/s] [内存消耗：2,599.98kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '已完成',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111263s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.073227s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (  o.state in ('交易完成','退款完成') ) [ RunTime:0.115277s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:25:04+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.352096s] [吞吐率：2.84req/s] [内存消耗：2,543.89kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '待审核',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.117732s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.077300s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (  o.state = "退款审核中" or o.state = "待确认" ) [ RunTime:0.078375s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:26:43+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.381742s] [吞吐率：2.62req/s] [内存消耗：2,613.76kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '全部订单',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115036s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.078143s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.123406s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:28:50+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.344935s] [吞吐率：2.90req/s] [内存消耗：2,613.89kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '全部订单',
+  'searchInfo' => '',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108374s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.070045s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.107197s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:29:16+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.068674s] [吞吐率：14.56req/s] [内存消耗：1,743.78kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => '022f402638a75d5b540adcf7f60e62ce',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-09T12:29:16+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.385448s] [吞吐率：2.59req/s] [内存消耗：2,613.89kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '全部订单',
+  'searchInfo' => '',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111172s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.074150s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.123460s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:29:17+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/info/Center/getMenu
+[运行时间：0.501069s] [吞吐率：2.00req/s] [内存消耗：2,545.06kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115053s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.077708s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.079771s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.079343s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.078291s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:29:34+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.415393s] [吞吐率：2.41req/s] [内存消耗：2,613.89kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '全部订单',
+  'searchInfo' => '',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121436s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.086131s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.127932s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:29:50+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_staff/staff/getStaffArr
+[运行时间：0.255072s] [吞吐率：3.92req/s] [内存消耗：2,549.55kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_staff',
+    1 => 'staff',
+    2 => 'getStaffArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '',
+  'keyWord' => '',
+  'acc' => '"admin001"',
+)
+[ info ] [ RUN ] app\admin_staff\controller\Staff->getStaffArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_staff\controller\Staff.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109362s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `s`.*,r.id as rid,`r`.`role_name` FROM peanut_staff s,peanut_role r WHERE  (  s.role_id = r.id AND r.id <> 1 AND s.account <> "admin001" )  AND (  s.account like '%%' ) [ RunTime:0.074796s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:30:26+08:00 ] 0.0.0.0 GET localhost/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.492326s] [吞吐率：2.03req/s] [内存消耗：2,525.57kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115580s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.077325s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.075743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.075987s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.075590s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:31:30+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_staff/staff/getStaffArr
+[运行时间：0.281776s] [吞吐率：3.55req/s] [内存消耗：2,549.55kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_staff',
+    1 => 'staff',
+    2 => 'getStaffArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '',
+  'keyWord' => '',
+  'acc' => '"admin001"',
+)
+[ info ] [ RUN ] app\admin_staff\controller\Staff->getStaffArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_staff\controller\Staff.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121865s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `s`.*,r.id as rid,`r`.`role_name` FROM peanut_staff s,peanut_role r WHERE  (  s.role_id = r.id AND r.id <> 1 AND s.account <> "admin001" )  AND (  s.account like '%%' ) [ RunTime:0.094134s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:31:34+08:00 ] 0.0.0.0 GET localhost/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.583713s] [吞吐率：1.71req/s] [内存消耗：2,525.57kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112552s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.076769s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.111993s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.089282s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.124588s ]
+---------------------------------------------------------------
+[ 2020-07-09T12:31:38+08:00 ] 0.0.0.0 GET localhost/th5/public/admin_jurisdiction/Jurisdition/getJurisditionList?nowId=4
+[运行时间：0.359479s] [吞吐率：2.78req/s] [内存消耗：2,766.53kb] [文件加载：50]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getJurisditionList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'nowId' => '4',
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getJurisditionList[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123019s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.083033s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 4 [ RunTime:0.083070s ]
