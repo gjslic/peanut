@@ -221,7 +221,7 @@ class Auction extends ModuleBaseController
     }
     //获取用户金额
     private function userMoney($id){
-        return Db::name('user')->field('money')->where("id = $id")->select();
+        return Db::name('user')->field('money,credit')->where("id = $id")->select();
     }
     //获取拍卖 出价的价格 修改
     public function Price(){
@@ -230,83 +230,89 @@ class Auction extends ModuleBaseController
         $sellID = getPost()['sellID'];
         $token = getPost()['token'];
         $userArr = $this->validateToken($token);
+        
         if($userArr){
             $money = $this->userMoney($userArr->id);
-            if($money){
-                if($money[0]['money']>($price*10000)){
-                    // $AuctionArr = $this->getAuction();
-                    // if($AuctionArr){
-                        // $flag = 0;
-                        // foreach($AuctionArr as $key=>$val){
-                        //     if($val->vehicle_id == $id){
-                        //         $flag = 1;
-                        //         $AuctionArr[$key] = [
-                        //             'vehicle_id'=>$id,
-                        //             'buy_id'=>$userArr->id
-                        //         ];
-                        //     }
-                        // }
-                        $surplusMoney = number_format($money[0]['money'],0,'','')-($price*10000);
-                        // $userRes = Db::name('user')->where("id = $userArr->id")->update(['price' => $price,'buy_id'=>$userArr->id,'vehicle_state'=>'已拍卖']);
-                        // $res = Db::name('vehicle')->where("vehicle_id = $id")->update(['price' => $price,'buy_id'=>$userArr->id,'vehicle_state'=>'已拍卖']);
-                        //订单数据
-                        $orderData = [
-                            'order_num'=>"HS".time().mt_rand(1,100),
-                            'sell_id'=>$sellID,
-                            'buy_id'=>$userArr->id,
-                            'vehicle_id'=>$id,
-                            'transaction_time'=>date('Y-m-d H:i:s', time()),
-                            'state'=>'待验收'
-                        ];
-                        $collection = Db::name('collection')->where("vehicle_id = $id")->select();
-                        $where = ' 1=2 ';
-                        foreach ($collection as $key => $value) {
-                            $where .= " or collection_id = ".$value['id'];
-                        };
-                        $affairBool = true;
-                        Db::startTrans();
-                        try{
-
-                            Db::name('user')->where("id = $userArr->id")->update(['money'=>$surplusMoney]);
-                            Db::name('vehicle')->where("vehicle_id = $id")->update(['price' => $price,'buy_id'=>$userArr->id,'vehicle_state'=>'已拍卖']);
-                            Db::name('order')->insert($orderData);
-                            Db::name('collection')->where("vehicle_id = $id")->delete();
-                            Db::name('collection_category')->where($where)->delete();
-                            // 提交事务
-                            Db::commit();    
-                        } catch (\Exception $e) {
-                            // 回滚事务
-                            Db::rollback();
-                            $affairBool = false;
-                            $msg = $e->getMessage();
-                        }
-                        if($affairBool){
-                            echo json_encode(["code"=>1,'msg'=>'出价成功,为您跳转个人中心']);
-                        }else{
-                            echo json_encode(["code"=>0,'msg'=>'服务器繁忙，请稍后在试']);
-                        }
-                        // if($flag == 1){
-                        //     $res = $this->setAuction($AuctionArr);
+            if($money[0]['credit']>=80){
+                if($money){
+                    if($money[0]['money']>($price*10000)){
+                        // $AuctionArr = $this->getAuction();
+                        // if($AuctionArr){
+                            // $flag = 0;
+                            // foreach($AuctionArr as $key=>$val){
+                            //     if($val->vehicle_id == $id){
+                            //         $flag = 1;
+                            //         $AuctionArr[$key] = [
+                            //             'vehicle_id'=>$id,
+                            //             'buy_id'=>$userArr->id
+                            //         ];
+                            //     }
+                            // }
+                            $surplusMoney = number_format($money[0]['money'],0,'','')-($price*10000);
+                            // $userRes = Db::name('user')->where("id = $userArr->id")->update(['price' => $price,'buy_id'=>$userArr->id,'vehicle_state'=>'已拍卖']);
+                            // $res = Db::name('vehicle')->where("vehicle_id = $id")->update(['price' => $price,'buy_id'=>$userArr->id,'vehicle_state'=>'已拍卖']);
+                            //订单数据
+                            $orderData = [
+                                'order_num'=>"HS".time().mt_rand(1,100),
+                                'sell_id'=>$sellID,
+                                'buy_id'=>$userArr->id,
+                                'vehicle_id'=>$id,
+                                'transaction_time'=>date('Y-m-d H:i:s', time()),
+                                'state'=>'待验收'
+                            ];
+                            $collection = Db::name('collection')->where("vehicle_id = $id")->select();
+                            $where = ' 1=2 ';
+                            foreach ($collection as $key => $value) {
+                                $where .= " or collection_id = ".$value['id'];
+                            };
+                            $affairBool = true;
+                            Db::startTrans();
+                            try{
+    
+                                Db::name('user')->where("id = $userArr->id")->update(['money'=>$surplusMoney]);
+                                Db::name('vehicle')->where("vehicle_id = $id")->update(['price' => $price,'buy_id'=>$userArr->id,'vehicle_state'=>'已拍卖']);
+                                Db::name('order')->insert($orderData);
+                                Db::name('collection')->where("vehicle_id = $id")->delete();
+                                Db::name('collection_category')->where($where)->delete();
+                                // 提交事务
+                                Db::commit();    
+                            } catch (\Exception $e) {
+                                // 回滚事务
+                                Db::rollback();
+                                $affairBool = false;
+                                $msg = $e->getMessage();
+                            }
+                            if($affairBool){
+                                echo json_encode(["code"=>1,'msg'=>'出价成功,为您跳转个人中心']);
+                            }else{
+                                echo json_encode(["code"=>0,'msg'=>'服务器繁忙，请稍后在试']);
+                            }
+                            // if($flag == 1){
+                            //     $res = $this->setAuction($AuctionArr);
+                            // }else{
+                            //     $AuctionArr[] = [
+                            //         'vehicle_id'=>$id,
+                            //         'buy_id'=>$userArr->id
+                            //     ];
+                            //     $res = $this->setAuction($AuctionArr); 
+                            // }
                         // }else{
-                        //     $AuctionArr[] = [
+                        //     $collectionArr[]=[
                         //         'vehicle_id'=>$id,
                         //         'buy_id'=>$userArr->id
                         //     ];
-                        //     $res = $this->setAuction($AuctionArr); 
+                        //     $res = $this->setAuction($collectionArr);
                         // }
-                    // }else{
-                    //     $collectionArr[]=[
-                    //         'vehicle_id'=>$id,
-                    //         'buy_id'=>$userArr->id
-                    //     ];
-                    //     $res = $this->setAuction($collectionArr);
-                    // }
+                    }else{
+                        echo json_encode(["code"=>0,'msg'=>'金额不足，请先充值']);
+                    }
                 }else{
-                    echo json_encode(["code"=>0,'msg'=>'金额不足，请先充值']);
+                    echo json_encode(["code"=>0,'msg'=>'服务器繁忙，请稍后在试']);
                 }
             }else{
-                echo json_encode(["code"=>0,'msg'=>'服务器繁忙，请稍后在试']);
+                echo json_encode(["code"=>0,'msg'=>'您的信誉值不知，暂不能消费']);
             }
+            
             
         }else{
             echo json_encode(["code"=>0,'msg'=>'请先登录']);

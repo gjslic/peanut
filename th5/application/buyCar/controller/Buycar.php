@@ -65,7 +65,7 @@ class Buycar extends ModuleBaseController
             if($citID !=''){
                 $where = $where." and v.city_id = $citID ";
             }
-            $vehicleArr = db('vehicle v,peanut_brand b,peanut_series ')->field("v.*")->where($where)->orderRaw($order)->select();
+            $vehicleArr = db('vehicle v,peanut_brand b,peanut_series s')->field("v.*")->where($where)->orderRaw($order)->select();
         }else{
             $vehicleArr = Db::name('vehicle')->where('vehicle_state','=','已上架')->select();
         }
