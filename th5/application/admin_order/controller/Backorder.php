@@ -14,7 +14,7 @@ class Backorder extends ModuleBaseController{
     $type = input('post.showType');
     $orderNum = input('post.searchInfo') ?? '';
     $endOrder = "'交易完成','退款完成'";
-    $unfinish = "'待验收','待评价','退款审核中'";
+    $unfinish = "'待验收','待评价','待确认','退款审核中'";
     switch($type){
       case '全部订单':
         $where = ' 1 = 1';
@@ -26,7 +26,7 @@ class Backorder extends ModuleBaseController{
         $where = "o.state in ($endOrder)";
       break;
       case '待审核':
-        $where = 'o.state = "退款审核中"';
+        $where = 'o.state = "退款审核中" or o.state = "待确认"';
       break;
     }
     if($orderNum){
@@ -63,13 +63,16 @@ class Backorder extends ModuleBaseController{
     if($seller['money'] - $money > 0){
       $editSell = db('user')->where('acc',$seller['acc'])->setDec('money',$money);
       $editbuyer = db('user')->where('acc',$buyerAcc)->setInc('money',$money);
-      $creditBuyer = db('user')->where('acc',$buyerAcc)->setDec('credit',7);
-      $editState = db('order')->where('id',$orderId)->setField('state','退款成功');
+      $orderWhere = "acc = $buyerAcc AND credit >= 80";
+      $creditBuyer = db('user')->where($orderWhere)->setDec('credit',3);
+      $editState = db('order')->where('id',$orderId)->setField('state','退款完成');
       echo json_encode($this->actionSuccess([],0,'退款成功'));
     }else{
-      $creditSeller = db('user')->where('acc',$seller['acc'])->setDec('credit',7);
-      $editState = db('order')->where('id',$orderId)->setField('state','退款失败');
-      echo json_encode($this->actionFail('卖家余额不足，退款失败'));
+      $sellerAcc = $seller['acc'];
+      $orderWhere = "acc = '$sellerAcc' AND credit >= 80";
+      $creditSeller = db('user')->where($orderWhere)->setDec('credit',3);
+      $editState = db('order')->where('id',$orderId)->setField('state','待确认');
+      echo json_encode($this->actionFail('卖家余额不足，请提醒卖家尽快充值'));
     }
   }
 }
