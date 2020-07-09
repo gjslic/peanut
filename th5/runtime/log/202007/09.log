@@ -2914,3 +2914,458 @@
 [ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.563406s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.185670s ]
 [ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.172131s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:16:50+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.063942s] [吞吐率：15.64req/s] [内存消耗：1,743.78kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => '15c3ddbcce818da86bfad6c9c295a941',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-09T08:16:50+08:00 ] 0.0.0.0 GET localhost/th5/public/admin_jurisdiction/Jurisdition/getRoleList
+[运行时间：0.642045s] [吞吐率：1.56req/s] [内存消耗：2,525.57kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_jurisdiction',
+    1 => 'Jurisdition',
+    2 => 'getRoleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin_jurisdiction\controller\Jurisdition->getRoleList[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_jurisdiction\controller\Jurisdition.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.233606s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_role` [ RunTime:0.087745s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_role` [ RunTime:0.070845s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.071758s ]
+[ sql ] [ SQL ] SELECT `id`,menu_name as label,`menu_url`,`fid`,`menu_class` FROM `peanut_menu` [ RunTime:0.071919s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:16:50+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/info/Center/getMenu
+[运行时间：0.487317s] [吞吐率：2.05req/s] [内存消耗：2,545.06kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":2}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110920s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.078274s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 2 [ RunTime:0.072840s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.072843s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.076895s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:17:18+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_staff/staff/getStaffArr
+[运行时间：0.279698s] [吞吐率：3.58req/s] [内存消耗：2,548.84kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_staff',
+    1 => 'staff',
+    2 => 'getStaffArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '',
+  'keyWord' => '',
+  'acc' => '"222"',
+)
+[ info ] [ RUN ] app\admin_staff\controller\Staff->getStaffArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_staff\controller\Staff.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.121043s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `s`.*,r.id as rid,`r`.`role_name` FROM peanut_staff s,peanut_role r WHERE  (  s.role_id = r.id AND r.id <> 1 AND s.account <> "222" )  AND (  s.account like '%%' ) [ RunTime:0.082983s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:18:08+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.058838s] [吞吐率：17.00req/s] [内存消耗：1,743.78kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => '15c3ddbcce818da86bfad6c9c295a941',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-09T08:18:08+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_staff/staff/getStaffArr
+[运行时间：0.305245s] [吞吐率：3.28req/s] [内存消耗：2,548.84kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_staff',
+    1 => 'staff',
+    2 => 'getStaffArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'type' => '',
+  'keyWord' => '',
+  'acc' => '"222"',
+)
+[ info ] [ RUN ] app\admin_staff\controller\Staff->getStaffArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_staff\controller\Staff.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.156644s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SELECT `s`.*,r.id as rid,`r`.`role_name` FROM peanut_staff s,peanut_role r WHERE  (  s.role_id = r.id AND r.id <> 1 AND s.account <> "222" )  AND (  s.account like '%%' ) [ RunTime:0.077637s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:18:08+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/info/Center/getMenu
+[运行时间：0.473305s] [吞吐率：2.11req/s] [内存消耗：2,545.06kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":2}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109125s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.078564s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 2 [ RunTime:0.069649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.068407s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.071207s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:18:37+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.058780s] [吞吐率：17.01req/s] [内存消耗：1,743.51kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => '[object Object]',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-09T08:18:49+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.053745s] [吞吐率：18.61req/s] [内存消耗：1,743.51kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => '[object Object]',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-09T08:19:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/index
+[运行时间：0.353191s] [吞吐率：2.83req/s] [内存消耗：2,528.45kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"userName":"admin001","password":"Qwe123"}' => '',
+)
+[ info ] [ RUN ] app\alogin\controller\Index->index[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099473s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.067942s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = 'admin001'  AND `password` = 'b144ef4a51d09eb8878c77bdc4ee8e6e'  AND `state` = '0' LIMIT 1 [ RunTime:0.067463s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = 'admin001'  AND `password` = 'b144ef4a51d09eb8878c77bdc4ee8e6e' LIMIT 1 [ RunTime:0.067296s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:19:58+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/index
+[运行时间：0.619055s] [吞吐率：1.62req/s] [内存消耗：2,499.29kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"userName":"admin001","password":"abc123"}' => '',
+)
+[ info ] [ RUN ] app\alogin\controller\Index->index[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103227s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_staff` [ RunTime:0.070393s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = 'admin001'  AND `password` = 'e99a18c428cb38d5f260853678922e03'  AND `state` = '0' LIMIT 1 [ RunTime:0.067210s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = 'admin001'  AND `password` = 'e99a18c428cb38d5f260853678922e03' LIMIT 1 [ RunTime:0.066684s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_staff` WHERE  `account` = 'admin001'  AND `password` = 'e99a18c428cb38d5f260853678922e03' [ RunTime:0.071066s ]
+[ sql ] [ SQL ] SELECT `token` FROM `peanut_staff` WHERE  `account` = 'admin001'  AND `password` = 'e99a18c428cb38d5f260853678922e03' LIMIT 1 [ RunTime:0.066587s ]
+[ sql ] [ SQL ] UPDATE `peanut_staff`  SET `token`='022f402638a75d5b540adcf7f60e62ce'  WHERE  `account` = 'admin001'  AND `password` = 'e99a18c428cb38d5f260853678922e03' [ RunTime:0.074249s ]
+---------------------------------------------------------------
+[ 2020-07-09T08:19:59+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.067911s] [吞吐率：14.73req/s] [内存消耗：1,743.78kb] [文件加载：42]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => '022f402638a75d5b540adcf7f60e62ce',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-09T08:19:59+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/info/Center/getMenu
+[运行时间：0.464446s] [吞吐率：2.15req/s] [内存消耗：2,545.06kb] [文件加载：49]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.110111s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.074033s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.074131s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.075761s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.074074s ]
