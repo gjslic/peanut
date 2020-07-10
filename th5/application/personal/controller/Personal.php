@@ -85,7 +85,7 @@ class Personal extends ModuleBaseController
      */
     private function deleteOldToken($oldToken)
     {
-        $this->redis->del($oldToken);
+        $this->redis->delete($oldToken);
     }
 
     /**
