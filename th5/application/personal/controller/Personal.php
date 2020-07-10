@@ -85,53 +85,66 @@ class Personal extends ModuleBaseController
      */
     private function deleteOldToken($oldToken)
     {
-        $this->redis->del($oldToken);
+        $this->redis->delete($oldToken);
     }
 
     /**
      * 验证token
      * @return false|string
      */
-    public function validateToken()
-    {
+    // public function validateToken()
+    // {
+    //     //Request::instance()->header();
+    //     $token = $this->header['access-token'];
+    //     $userData = $this->redis->get($token);
+    //     $this->refreshToken($token);
+    //     //1、判断redis key是否存在；2、判断用户数据是否存在
+    //     $exists = $this->redis->exists($token);
+    //     if (!$exists) {
+    //         return json_encode($this->actionFail());
+    //     }
+    //     if (empty($userData)) {
+    //         return json_encode($this->actionFail());
+    //     }
+    //     return json_encode($this->actionSuccess());
+    // }
+    /**
+     * 验证token
+     * @return false|string
+     */
+    public function validateToken($token){
         //Request::instance()->header();
-        $token = $this->header['access-token'];
         $userData = $this->redis->get($token);
-        $this->refreshToken($token);
         //1、判断redis key是否存在；2、判断用户数据是否存在
         $exists = $this->redis->exists($token);
         if (!$exists) {
-            return json_encode($this->actionFail());
+            return false;
         }
         if (empty($userData)) {
-            return json_encode($this->actionFail());
+            return false;
         }
-        return json_encode($this->actionSuccess());
+        return json_decode($userData);
     }
     //个人中心开局获取用户信息验证
     //个人信息渲染
     public function personal(){
         $token = getPost()['token'];
-        $userData = $this->redis->get($token);
-        $tokenJson = json_decode ($userData);
-        $tokenAdd = $tokenJson->token;
-        //用户id
-        $userId = $tokenJson->id;
-        //更新缓存时间
-        $this->refreshToken($token);
+        //使用分装好的验证方法
+        $userData = $this->validateToken($token);
         //1、判断redis key是否存在；2、判断用户数据是否存在
-        // $exists = $this->redis->exists($token);
-        // if (!$exists) {
-        //     echo json_encode($this->actionFail('您未登录无法进入'));
-        // }
-        if ($token == $tokenAdd) {
-            //将用户id拿来做判断条件，找出该用户所有信息
-            $userDataAdd = [
-                'id' => $userId
-            ];
-            $userContent = db('user')->where($userDataAdd)->find ();
-            //发给vue，做渲染
-            echo json_encode($this->actionSuccess($userContent,1,'已有用户信息'));
+        if($userData){
+            $tokenAdd = $userData->token;
+            //用户id
+            $userId = $userData->id;
+            //更新缓存时间
+            $this->refreshToken($token);
+                //将用户id拿来做判断条件，找出该用户所有信息
+                $userDataAdd = [
+                    'id' => $userId
+                ];
+                $userContent = db('user')->where($userDataAdd)->find ();
+                //发给vue，做渲染
+                echo json_encode($this->actionSuccess($userContent,1,'已有用户信息'));
         }else{
             echo json_encode($this->actionFail('您未登录无法进入'));
         }
@@ -191,12 +204,16 @@ class Personal extends ModuleBaseController
             $oldMoney = json_decode($userdb['money']);
             $newMoney = json_decode($money);
             $moneyAdd = ($oldMoney + $newMoney);
-            //存钱
-            $userMoney = db('user')->where('id',$userId)->update(['money' => $moneyAdd]);
-            if($userMoney){
-                echo json_encode($this->actionSuccess($moneyAdd,1,'恭喜你~充值成功~'));        
+            if($moneyAdd <= 999999999999){
+                //存钱
+                $userMoney = db('user')->where('id',$userId)->update(['money' => $moneyAdd]);
+                if($userMoney){
+                    echo json_encode($this->actionSuccess($moneyAdd,1,'恭喜你~充值成功~'));        
+                }else{
+                    echo json_encode($this->actionFail('充值失败'));
+                }
             }else{
-                echo json_encode($this->actionFail('请花完钱再冲,不然太浪费了~'));        
+                echo json_encode($this->actionFail('请花完钱再冲,不然太浪费了~'));
             }
         }else{
             echo json_encode($this->actionFail('您未输入充值密码或充值密码不正确~'));      
@@ -264,7 +281,7 @@ class Personal extends ModuleBaseController
         //用户id
         $userId = $tokenJson->id;
         $add = getPost()['add'];
-        //换性别
+        //换地址
         $userAdd = db('user')->where('id',$userId)->update(['add' => $add]);
         if($userAdd){
             echo json_encode($this->actionSuccess($add,1,'恭喜你~修改地址成功~'));    
@@ -322,8 +339,9 @@ class Personal extends ModuleBaseController
         $res = db('collection_category')
         ->alias('o')
         ->join('collection c','o.collection_id = c.id')
-        ->join('vehicle v','c.vehicle_id = v.vehicle_id')
         ->join('user u','o.sell_id = u.id')
+        ->join('vehicle v','c.vehicle_id = v.vehicle_id')
+        ->field('o.id o_id,v.*,u.*,o.*,c.*')
         ->where('c.user_id',$userId)
         ->select();
         if($res){
@@ -359,10 +377,340 @@ class Personal extends ModuleBaseController
         ];
         $collectionId = db('collection')->where($deleteCollection)->delete();
         if($categoryId){
-            echo json_encode($this->actionSuccess($categoryId,1,'取消收藏成功'));
+            $res = db('collection_category')
+            ->alias('o')
+            ->join('collection c','o.collection_id = c.id')
+            ->join('vehicle v','c.vehicle_id = v.vehicle_id')
+            ->join('user u','o.sell_id = u.id')
+            ->where('c.user_id',$userId)
+            ->select();
+            echo json_encode($this->actionSuccess($res,1,'取消收藏成功'));
         }else{
             echo json_encode($this->actionFail('取消收藏失败~'));
         }
 
+    }
+    //打印买的车
+    public function peanutOrder(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        $res = db('order')
+        ->alias('o')
+        ->join('user u','o.sell_id = u.id')
+        ->join('vehicle v','o.vehicle_id = v.vehicle_id')
+        ->field('o.state o_state,v.*,u.*,o.*')
+        ->where('o.buy_id',$userId)
+        ->select();
+        if($res){
+            echo json_encode($this->actionSuccess($res,1,'查找用户买车内容成功'));
+        }else{
+            echo json_encode($this->actionFail('查找用户买车失败~'));
+        }
+    }
+    //带验收
+    public function primary(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        //订单号
+        $order_num = getPost()['order_num'];
+        //卖家id
+        $sell_id = getPost()['sell_id'];
+        //买家id
+        $buy_id = getPost()['buy_id'];
+        //车辆id
+        $vehicle_id = getPost()['vehicle_id'];
+        //判断用户
+        if($buy_id == $userId){
+            //换状态
+            $res = db('order')->where('buy_id', $buy_id)->where('sell_id', $sell_id)->where('vehicle_id', $vehicle_id)->where('order_num', $order_num)->update(['state' => '待评价']);
+            if($res){
+                $data = db('order')
+                ->alias('o')
+                ->join('user u','o.sell_id = u.id')
+                ->join('vehicle v','o.vehicle_id = v.vehicle_id')
+                ->field('o.state o_state,v.*,u.*,o.*')
+                ->where('o.buy_id',$userId)
+                ->select();
+                echo json_encode($this->actionSuccess($data,1,'验收车辆成功'));
+            }else{
+                echo json_encode($this->actionFail('验收车辆失败~'));
+            }
+        }else{
+            echo json_encode($this->actionFail('用户id不正确'));
+        }
+
+        
+    }
+    //带退货
+    public function danger(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        //订单号
+        $order_num = getPost()['order_num'];
+        //卖家id
+        $sell_id = getPost()['sell_id'];
+        //买家id
+        $buy_id = getPost()['buy_id'];
+        //车辆id
+        $vehicle_id = getPost()['vehicle_id'];
+        //判断用户
+        if($buy_id == $userId){
+            //换状态
+            $res = db('order')->where('buy_id', $buy_id)->where('sell_id', $sell_id)->where('vehicle_id', $vehicle_id)->where('order_num', $order_num)->update(['state' => '退款审核中']);
+            if($res){
+                $data = db('order')
+                ->alias('o')
+                ->join('user u','o.sell_id = u.id')
+                ->join('vehicle v','o.vehicle_id = v.vehicle_id')
+                ->field('o.state o_state,v.*,u.*,o.*')
+                ->where('o.buy_id',$userId)
+                ->select();
+                echo json_encode($this->actionSuccess($data,1,'正在为您退款审核中'));
+            }else{
+                echo json_encode($this->actionFail('退款审核失败~'));
+            }
+        }else{
+            echo json_encode($this->actionFail('用户id不正确'));
+        }
+
+        
+    }
+    //评价表
+    public function evaluateClick(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        //订单号
+        $order_num = getPost()['order_num'];
+        //卖家id
+        $sell_id = getPost()['sell_id'];
+        //买家id
+        $buy_id = getPost()['buy_id'];
+        //车辆id
+        $vehicle_id = getPost()['vehicle_id'];
+        //评价内容
+        $content = getPost()['content'];
+        //评价分数
+        $comment_num = getPost()['comment_num'];
+        //判断用户
+        if($buy_id == $userId){
+            //换状态
+            $res = db('order')->where('buy_id', $buy_id)->where('sell_id', $sell_id)->where('vehicle_id', $vehicle_id)->where('order_num', $order_num)->update(['state' => '交易完成']);
+            if($res){
+                $data = db('order')
+                ->alias('o')
+                ->join('user u','o.sell_id = u.id')
+                ->join('vehicle v','o.vehicle_id = v.vehicle_id')
+                ->field('o.state o_state,v.*,u.*,o.*')
+                ->where('o.buy_id',$userId)
+                ->select();
+                if($data){
+                    //存入评价数据库
+                    $content = [
+                        'user_id' => $buy_id,
+                        'sell_id' => $sell_id,
+                        'content' => $content,
+                        'comment_num' =>$comment_num
+                    ];
+                    //存评价
+                    $result = db('comment')->insert($content);
+                    if($result){
+                        echo json_encode($this->actionSuccess($data,1,'感谢您献上宝贵的评价'));
+                    }else{
+
+                    }
+                }else{
+                    echo json_encode($this->actionFail('评价失败~'));
+                }  
+            }else{
+                echo json_encode($this->actionFail('评价失败~'));
+            }
+        }else{
+            echo json_encode($this->actionFail('用户id不正确'));
+        }
+    }
+    //完成交易
+    public function successClick(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        //订单号
+        $order_num = getPost()['order_num'];
+        //卖家id
+        $sell_id = getPost()['sell_id'];
+        //买家id
+        $buy_id = getPost()['buy_id'];
+        //车辆id
+        $vehicle_id = getPost()['vehicle_id'];
+        //判断用户
+        if($buy_id == $userId){
+            //换状态
+            $res = db('order')->where('buy_id', $buy_id)->where('sell_id', $sell_id)->where('vehicle_id', $vehicle_id)->where('order_num', $order_num)->update(['state' => '交易完成']);
+            if($res){
+                $data = db('order')
+                ->alias('o')
+                ->join('user u','o.sell_id = u.id')
+                ->join('vehicle v','o.vehicle_id = v.vehicle_id')
+                ->field('o.state o_state,v.*,u.*,o.*')
+                ->where('o.buy_id',$userId)
+                ->select();
+                echo json_encode($this->actionSuccess($data,1,'恭喜你~完成交易啦'));
+            }else{
+                echo json_encode($this->actionFail('完成交易失败~'));
+            }
+        }else{
+            echo json_encode($this->actionFail('用户id不正确'));
+        }
+    }
+    //渲染卖车页
+    public function sellingCars(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        $res = db('order')
+        ->alias('o')
+        ->join('user u','o.buy_id = u.id')
+        ->join('vehicle v','o.vehicle_id = v.vehicle_id')
+        ->field('o.state o_state,v.*,u.*,o.*')
+        ->where('o.sell_id',$userId)
+        ->where('o.state','交易完成')
+        ->select();
+        if($res){
+            echo json_encode($this->actionSuccess($res,1,'查找用户卖车内容成功'));
+        }else{
+            echo json_encode($this->actionFail('查找用户卖车失败~'));
+        }
+    }
+    //已上架
+    public function userOnTheShelf(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        $res = db('vehicle')
+        ->alias('v')
+        ->join('user u','v.sell_id = u.id')
+        ->where('v.sell_id',$userId)
+        ->where('v.vehicle_state','已上架')
+        ->select();
+        if($res){
+            echo json_encode($this->actionSuccess($res,1,'查找用户上架车辆成功'));
+        }else{
+            echo json_encode($this->actionFail('查找用户上架车辆失败~'));
+        }
+    }
+    //已下架
+    public function userUndercarriage(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        $res = db('vehicle')
+        ->alias('v')
+        ->join('user u','v.sell_id = u.id')
+        ->where('v.sell_id',$userId)
+        ->where('v.vehicle_state','已下架')
+        ->select();
+        if($res){
+            echo json_encode($this->actionSuccess($res,1,'查找用户下架车辆成功'));
+        }else{
+            echo json_encode($this->actionFail('查找用户下架车辆失败~'));
+        }
+    }
+    //拍卖中
+    public function userAtAuction(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        $res = db('vehicle')
+        ->alias('v')
+        ->join('user u','v.sell_id = u.id')
+        ->where('v.sell_id',$userId)
+        ->where('v.vehicle_state','拍卖中')
+        ->select();
+        if($res){
+            echo json_encode($this->actionSuccess($res,1,'查找用户拍卖中车辆成功'));
+        }else{
+            echo json_encode($this->actionFail('查找用户拍卖中车辆失败~'));
+        }
+    }
+    //已拍卖
+    public function userAuctioned(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        $res = db('vehicle')
+        ->alias('v')
+        ->join('user u','v.sell_id = u.id')
+        ->where('v.sell_id',$userId)
+        ->where('v.vehicle_state','已拍卖')
+        ->select();
+        if($res){
+            echo json_encode($this->actionSuccess($res,1,'查找用户已拍卖车辆成功'));
+        }else{
+            echo json_encode($this->actionFail('查找用户已拍卖车辆失败~'));
+        }
+    }
+    //未审核
+    public function userNotReviewed(){
+        //找用户id
+        $token = getPost()['token'];
+        $userData = $this->redis->get($token);
+        $tokenJson = json_decode ($userData);
+        $tokenAdd = $tokenJson->token;
+        //用户id
+        $userId = $tokenJson->id;
+        $res = db('vehicle')
+        ->alias('v')
+        ->join('user u','v.sell_id = u.id')
+        ->where('v.sell_id',$userId)
+        ->where('v.vehicle_state','未审核')
+        ->select();
+        if($res){
+            echo json_encode($this->actionSuccess($res,1,'查找用户未审核车辆成功'));
+        }else{
+            echo json_encode($this->actionFail('查找用户未审核车辆失败~'));
+        }
     }
 }
