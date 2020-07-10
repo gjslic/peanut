@@ -131,4 +131,16 @@ class Center extends Index
       echo json_encode($this->actionFail());
     }
   }
+  /**
+   * [chat聊天]
+   */
+  public function chat(){
+    $sql = "select * from peanut_chat where receiver='adminServer' or sender='adminServer'";
+    $res = Db::query($sql);
+    if ($res) {
+      echo json_encode($this->actionSuccess($res));
+    } else {
+      echo json_encode($this->actionFail());
+    }
+  }
 }
