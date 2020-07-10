@@ -66,6 +66,7 @@ class Login extends ModuleBaseController
     private function setToken($token,$res)
     {
         $this->redis->set($token, $res);
+        $this->redis->set($token, $res);
         $this->redis->expire($token, self::TOKEN_EXPIRE_TIME);
     }
     
@@ -84,7 +85,7 @@ class Login extends ModuleBaseController
      */
     private function deleteOldToken($oldToken)
     {
-        $this->redis->del($oldToken);
+        $this->redis->delete($oldToken);
     }
 
     /**
@@ -130,33 +131,37 @@ class Login extends ModuleBaseController
         $result = db('user') ->where($where)->find ();
         if($result){
             if($result["state"]=='解锁'){
-                $userId = $result["id"];
-                //创建一个token
-                $token = md5(time() + rand(0, 999999));
-                $data =[
-                    'id' => $userId,
-                    'token' => $token   
-                ];
-                $this->setToken($token,json_encode($data));//设置缓存到redis
-                //旧token
-                $oldToken = $result["token"];
-                //找到服务器旧的token，有就删了
-                if($oldToken){
-                    $this->deleteOldToken($oldToken);//oldToken从数据获取，删除
+                if($result["credit"] > 80){
+                    $userId = $result["id"];
+                    //创建一个token
+                    $token = md5(time() + rand(0, 999999));
+                    $data =[
+                        'id' => $userId,
+                        'token' => $token   
+                    ];
+                    $this->setToken($token,json_encode($data));//设置缓存到redis
+                    //旧token
+                    $oldToken = $result["token"];
+                    //找到服务器旧的token，有就删了
+                    if($oldToken){
+                        $this->deleteOldToken($oldToken);//oldToken从数据获取，删除
+                    }
+                    //新token
+                    $res = [
+                        'token' => $token
+                    ];
+                    //新登录时间,新token存入数据库
+                    $newTimeToken = [
+                        'last_time' => $lastTime,
+                        'token' => $token
+                    ];
+                    //将时间,新token存进去
+                    $userTime = db('user')->where('phone',$phone)->update($newTimeToken);
+            
+                    echo json_encode($this->actionSuccess($res,1,'登录成功~快去看车吧~'));
+                }else{
+                    echo json_encode($this->actionFail('您的账号信誉分在80以下,无法登录'));
                 }
-                //新token
-                $res = [
-                    'token' => $token
-                ];
-                //新登录时间,新token存入数据库
-                $newTimeToken = [
-                    'last_time' => $lastTime,
-                    'token' => $token
-                ];
-                //将时间,新token存进去
-                $userTime = db('user')->where('phone',$phone)->update($newTimeToken);
-        
-                echo json_encode($this->actionSuccess($res,1,'登录成功~快去看车吧~'));
             }else{
                 echo json_encode($this->actionFail('您的账号已被锁定,请联系工作人员进行解锁'));
             }
