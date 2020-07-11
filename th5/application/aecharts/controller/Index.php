@@ -42,7 +42,8 @@ class Index extends ModuleBaseController
     //销量
     public function sale()
     {
-        $result = Db::query("select count(*) as sum , MONTH(transaction_time) as months from peanut_order  where 1 = 1 GROUP BY months");
+        $state = '交易完成';
+        $result = Db::query("select count(*) as sum , MONTH(transaction_time) as months from peanut_order where state = '$state' GROUP BY months");
         if($result){
             $newArr = array();//新数组
 		    foreach ($result as $key => $value) {
@@ -62,7 +63,7 @@ class Index extends ModuleBaseController
     }
 
 
-     // 月份搜索
+     // 注册成功月份搜索
      public function regMonth()
      {
         $starTime = getPost()['starTime'];
@@ -88,14 +89,15 @@ class Index extends ModuleBaseController
      }
     
 
-    // 月份搜索
+    // 订单交易完成月份搜索
     public function saleMonth()
     {
         // 接收前端传的值
         $starTime = getPost()['starTime'];
         $endTime = getPost()['endTime'];
+        $state = '交易完成';
         $result = Db::query("select count(*) as sum , MONTH(transaction_time) as months from peanut_order where transaction_time BETWEEN
-        '$starTime' and '$endTime' GROUP BY months");
+        '$starTime' and '$endTime' and state = '$state' GROUP BY months");
         if($result){
             $newArr = array();//新数组
             foreach ($result as $key => $value) {
@@ -115,12 +117,19 @@ class Index extends ModuleBaseController
     }
          
 
-
-
-
-
-
-
-
+    //订单状态饼状图
+    public function pie()
+    {
+        $result1 = Db::query("select state as name ,count(*) as value from peanut_order where state = '交易完成'");
+        $result2 = Db::query("select state as name ,count(*) as value from peanut_order where state = '待验收' ");
+        $result3 = Db::query("select state as name ,count(*) as value from peanut_order where state = '退款完成' ");
+        $result4 = Db::query("select state as name ,count(*) as value from peanut_order where state = '退款审核中' ");
+        if($result1 || $result2  || $result3 || $result4){
+		    echo json_encode(array($result1,$result2,$result3,$result4));
+        }
+        else{
+            echo json_encode(array("code"=>1001,"msg"=>'失败'));
+        }
+    }
 
 }

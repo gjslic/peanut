@@ -28,9 +28,10 @@ class Index extends ModuleBaseController
     public function update()
     {
         $id = getPost()['id'];
+        $sellId = getPost()['sellId'];
         $credit = getPost()['credit'];
         $where = [
-            'id' => $id
+            'id' => $sellId//商家id
         ];
         $update = [
             'credit' => $credit
@@ -38,9 +39,12 @@ class Index extends ModuleBaseController
         $update2 = [
             'comment_state' => '已审'
         ];
+        $where2 = [
+            'id' => $id//订单的id
+        ];
         $result = db('user')->where($where)->update($update);
-        $result2 = db('comment')->where($where)->update($update2);
-        if ($result && $result2) {
+        $result2 = db('comment')->where($where2)->update($update2);
+        if ($result) {
             echo json_encode($this->actionSuccess($result,1,'成功'));
         } else {
             echo json_encode($this->actionFail('失败'));
