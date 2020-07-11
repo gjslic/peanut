@@ -106,7 +106,7 @@ class Login extends ModuleBaseController
         if (empty($userData)) {
             return json_encode($this->actionFail());
         }
-        return json_encode($this->actionSuccess());
+        return json_encode($this->actionSuccess($userData));
     }
 
     /**
