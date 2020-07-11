@@ -34,6 +34,8 @@ class Buycar extends ModuleBaseController
             $timeBaseNum = $data['timeBaseNum'] ? $data['timeBaseNum'] : '';
             // 价格排序
             $priceBaseNum = $data['priceBaseNum'] ? $data['priceBaseNum'] : '';
+            // 城市排序
+            $citID = $data['citID'] ? $data['citID'] : '';
             // 排序条件
             $order = "";
             // 查询车辆条件
@@ -43,6 +45,9 @@ class Buycar extends ModuleBaseController
             }
             if($seriesID != ''){
                 $where = $where.' and v.series_id='.$seriesID;
+            }
+            if($citID != ''){
+                $where = $where.' and v.city_id='.$citID;
             }
             if($price != ''){
                 if($price==50){
