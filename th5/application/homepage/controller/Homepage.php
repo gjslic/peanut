@@ -1,9 +1,138 @@
 <?php
 namespace app\homepage\controller; //模块
 use think\Db;
+
+use app\base\controller\ModuleBaseController;
+use think\Request;
 // 控制器
-class Homepage
-{
+class Homepage extends ModuleBaseController
+{   
+     /**
+     * redis
+     * @var null
+     */
+    private $redis = null;
+
+    /**
+     * header数据
+     * @var null
+     */
+    private $header = null;
+
+    /**
+     * token时长
+     */
+    const TOKEN_EXPIRE_TIME = 7 * 24 * 60 * 60;
+
+    /**
+     * 构造函数
+     * Index constructor.
+     * @param Request|null $request
+     */
+    public function __construct(Request $request = null){
+        parent::__construct($request);
+        $this->redis = $this->getRedis();
+        $this->header = Request::instance()->header();
+    }
+
+    /**
+     * 获取redis
+     * @return \Redis
+     */
+    private function getRedis(){
+        $redis = new \Redis();
+        $redis->connect('127.0.0.1', 6379);
+        $redis->auth('123456');
+        return $redis;
+    }
+
+    /**
+     * 获取token
+     * @return string
+     */
+    // public function getToken()//login 操作
+    // {
+    //     $token = md5(time() + rand(0, 999999));
+    //     $this->setToken($token);//保存到数据库
+    //     $this->deleteOldToken($oldToken);//oldToken从数据获取
+    //     $res = [
+    //         'token' => $token,
+    //     ];
+    //     return json_encode($res);
+    // }
+
+    /**
+     * 设置缓存到redis
+     * @param $token
+     */
+    private function setToken($token,$res)
+    {
+        $this->redis->set($token, $res);
+        $this->redis->set($token, $res);
+        $this->redis->expire($token, self::TOKEN_EXPIRE_TIME);
+    }
+    
+    /**
+     * 更新缓存时间
+     * @param $token
+     */
+    private function refreshToken($token)
+    {
+        $this->redis->expire($token, self::TOKEN_EXPIRE_TIME);
+    }
+
+    /**
+     * 删除旧token
+     * @param $oldToken
+     */
+    private function deleteOldToken($oldToken)
+    {
+        $this->redis->del($oldToken);
+    }
+
+   /**
+     * 验证token
+     * @return false|string
+     */
+    public function validateToken($token){
+        //Request::instance()->header();
+        $userData = $this->redis->get($token);
+        //1、判断redis key是否存在；2、判断用户数据是否存在
+        $exists = $this->redis->exists($token);
+        if (!$exists) {
+            return false;
+        }
+        if (empty($userData)) {
+            return false;
+        }
+        return json_decode($userData);
+    }
+
+
+
+
+
+
+    //获取到用户的头像和名称
+    public function getuserinfo()
+    {
+        $token = getPost()['usertoken'];
+        $utoken = $this->validateToken($token);
+
+        if($utoken){
+            $userid = $utoken->id;
+
+            //到数据库获取数据
+            $where = [
+                'id'=>$userid
+            ];
+            $result = db('user')->where($where)->find();
+            return json_encode($result);
+            // var_dump($result);
+            // exit();
+        }
+    }
+
     //获取到城市
     public function getcity()
     {
@@ -122,23 +251,6 @@ class Homepage
             
      }
 
-     //传递价格
-     public function passprice()
-     {
-        //获取到传来的参数
-        //到车辆表比对车标id
-        $price_id = getPost()['price_id'];
-
-     }
-
-     //传递车型
-     public function passstyle()
-     {
-        //获取到传来的参数
-        //到车辆表比对车标id
-        $style_id = getPost()['style_id'];
-     }
-
      //传递推荐车辆
      public function passReccar()
      {
@@ -152,8 +264,6 @@ class Homepage
         $result = db('vehicle')->where($where)->select();
         
         return json_encode($result);
-        // var_dump($result);
-        // exit();
 
      }
 
@@ -169,9 +279,6 @@ class Homepage
         $result = db('vehicle')->where($where)->select();
         
         return json_encode($result);
-        
-        // var_dump($result);
-        // exit();
      }
 
      //買車頁城市

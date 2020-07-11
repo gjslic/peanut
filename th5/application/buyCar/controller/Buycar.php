@@ -34,8 +34,8 @@ class Buycar extends ModuleBaseController
             $timeBaseNum = $data['timeBaseNum'] ? $data['timeBaseNum'] : '';
             // 价格排序
             $priceBaseNum = $data['priceBaseNum'] ? $data['priceBaseNum'] : '';
-            //省份ID
-            $citID = getPost()['citID'] ? getPost()['citID'] : '';
+            // 城市排序
+            $citID = $data['citID'] ? $data['citID'] : '';
             // 排序条件
             $order = "";
             // 查询车辆条件
@@ -45,6 +45,9 @@ class Buycar extends ModuleBaseController
             }
             if($seriesID != ''){
                 $where = $where.' and v.series_id='.$seriesID;
+            }
+            if($citID != ''){
+                $where = $where.' and v.city_id='.$citID;
             }
             if($price != ''){
                 if($price==50){
@@ -59,13 +62,10 @@ class Buycar extends ModuleBaseController
             if($priceBaseNum != ''){
                 $order = $priceBaseNum == 1 ? 'v.price desc' : 'v.price asc';
             }
-            if($search !=''){
+            if($search){
                 $where = $where." and v.vehicle_name like '%$search%' ";
             }
-            if($citID !=''){
-                $where = $where." and v.city_id = $citID ";
-            }
-            $vehicleArr = db('vehicle v,peanut_brand b,peanut_series ')->field("v.*")->where($where)->orderRaw($order)->select();
+            $vehicleArr = db('vehicle v,peanut_brand b,peanut_series s')->field("v.*")->where($where)->orderRaw($order)->select();
         }else{
             $vehicleArr = Db::name('vehicle')->where('vehicle_state','=','已上架')->select();
         }

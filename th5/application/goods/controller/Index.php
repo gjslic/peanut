@@ -197,7 +197,7 @@ class Index extends ModuleBaseController
   {
     $id = getPost()['id'];
     $res = db('vehicle')
-      ->update(['vehicle_state' => '已审核', 'vehicle_id' => $id]);
+      ->update(['vehicle_state' => '拍卖中', 'vehicle_id' => $id]);
     if ($res) {
       $data = db('vehicle')
         ->alias('v')
@@ -229,6 +229,7 @@ class Index extends ModuleBaseController
         ->whereOr('vehicle_state', '未审核')
         ->whereOr('vehicle_state', '已拍卖')
         ->select();
+      
       echo json_encode($this->actionSuccess($data));
     } else {
       echo json_encode($this->actionFail());
@@ -288,7 +289,7 @@ class Index extends ModuleBaseController
         // 输出 jpg
         // echo $info->getExtension();
         // 输出 20160820/42a79759f284b767dfcb2a0197904287.jpg
-        $url = 'http://127.0.0.1/peanut/th5/public/uploads/';
+        $url = 'http://127.0.0.1/th5/public/uploads/';
         echo json_encode($url . $info->getSaveName());
         // echo $info->getSaveName();
         // 输出 42a79759f284b767dfcb2a0197904287.jpg
