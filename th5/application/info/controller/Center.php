@@ -135,8 +135,29 @@ class Center extends Index
    * [chat聊天]
    */
   public function chat(){
-    $sql = "select * from peanut_chat where receiver='adminServer' or sender='adminServer'";
-    $res = Db::query($sql);
+    // $sql = "select * from peanut_chat where receiver='adminServer' or sender='adminServer'";
+    // $res = Db::query($sql);
+    $res =db('chat')
+    ->alias('c')
+    ->join('user u','u.id = c.sender or u.id = c.receiver')
+    ->where("c.receiver='adminServer' or c.sender='adminServer'")
+    ->select();
+    if ($res) {
+      echo json_encode($this->actionSuccess($res));
+    } else {
+      echo json_encode($this->actionFail());
+    }
+  }
+  /**
+   * [userChat用户聊天]
+   */
+  public function userChat(){
+    $id = getPost()['id'];
+    $res =db('chat')
+    ->alias('c')
+    ->join('user u','u.id = c.sender')
+    ->where("c.receiver=$id or c.sender=$id")
+    ->select();
     if ($res) {
       echo json_encode($this->actionSuccess($res));
     } else {
