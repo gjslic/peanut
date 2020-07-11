@@ -179,4 +179,16 @@ class Index extends ModuleBaseController
       }
     }
   }
+  /**
+   * [getUser用户信息]
+   */
+  public function getUser(){
+    $id = getPost()['id']; 
+    $res = db('user')->where('id',$id)->find();
+    if ($res) {
+      echo json_encode($this->actionSuccess($res));
+    } else {
+      echo json_encode($this->actionFail());
+    }
+  }
 }
