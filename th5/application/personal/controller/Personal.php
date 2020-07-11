@@ -85,7 +85,7 @@ class Personal extends ModuleBaseController
      */
     private function deleteOldToken($oldToken)
     {
-        $this->redis->delete($oldToken);
+        $this->redis->del($oldToken);
     }
 
     /**
@@ -271,6 +271,25 @@ class Personal extends ModuleBaseController
             echo json_encode($this->actionFail('修改性别失败~'));
         }
     }
+    //修改名字
+    public function modifyNameClick(){
+        //用户id
+        $id = getPost()['id'];
+        
+        $name = getPost()['name'];
+        //找到相同名称
+        $whName = db('user') ->where('name',$name)->find ();
+        if($whName){
+            echo json_encode($this->actionFail('已有该名称的用户啦~'));
+        }else{
+            $newName = db('user')->where('id',$id)->update(['name' => $name]);
+            if($newName){
+                echo json_encode($this->actionSuccess($name,1,'恭喜你~修改名字成功~')); 
+            }else{
+                echo json_encode($this->actionFail('修改名字失败~'));
+            }
+        }
+    }
     //修改地址
     public function address(){
         //找用户id
@@ -343,6 +362,7 @@ class Personal extends ModuleBaseController
         ->join('vehicle v','c.vehicle_id = v.vehicle_id')
         ->field('o.id o_id,v.*,u.*,o.*,c.*')
         ->where('c.user_id',$userId)
+        ->order('o.id desc')
         ->select();
         if($res){
             echo json_encode($this->actionSuccess($res,1,'查找用户收藏内容成功'));
@@ -383,6 +403,7 @@ class Personal extends ModuleBaseController
             ->join('vehicle v','c.vehicle_id = v.vehicle_id')
             ->join('user u','o.sell_id = u.id')
             ->where('c.user_id',$userId)
+            ->order('o.id desc')
             ->select();
             echo json_encode($this->actionSuccess($res,1,'取消收藏成功'));
         }else{
@@ -405,6 +426,7 @@ class Personal extends ModuleBaseController
         ->join('vehicle v','o.vehicle_id = v.vehicle_id')
         ->field('o.state o_state,v.*,u.*,o.*')
         ->where('o.buy_id',$userId)
+        ->order('o.transaction_time desc')
         ->select();
         if($res){
             echo json_encode($this->actionSuccess($res,1,'查找用户买车内容成功'));
@@ -440,6 +462,7 @@ class Personal extends ModuleBaseController
                 ->join('vehicle v','o.vehicle_id = v.vehicle_id')
                 ->field('o.state o_state,v.*,u.*,o.*')
                 ->where('o.buy_id',$userId)
+                ->order('o.transaction_time desc')
                 ->select();
                 echo json_encode($this->actionSuccess($data,1,'验收车辆成功'));
             }else{
@@ -479,6 +502,7 @@ class Personal extends ModuleBaseController
                 ->join('vehicle v','o.vehicle_id = v.vehicle_id')
                 ->field('o.state o_state,v.*,u.*,o.*')
                 ->where('o.buy_id',$userId)
+                ->order('o.transaction_time desc')
                 ->select();
                 echo json_encode($this->actionSuccess($data,1,'正在为您退款审核中'));
             }else{
@@ -522,6 +546,7 @@ class Personal extends ModuleBaseController
                 ->join('vehicle v','o.vehicle_id = v.vehicle_id')
                 ->field('o.state o_state,v.*,u.*,o.*')
                 ->where('o.buy_id',$userId)
+                ->order('o.transaction_time desc')
                 ->select();
                 if($data){
                     //存入评价数据库
@@ -576,6 +601,7 @@ class Personal extends ModuleBaseController
                 ->join('vehicle v','o.vehicle_id = v.vehicle_id')
                 ->field('o.state o_state,v.*,u.*,o.*')
                 ->where('o.buy_id',$userId)
+                ->order('o.transaction_time desc')
                 ->select();
                 echo json_encode($this->actionSuccess($data,1,'恭喜你~完成交易啦'));
             }else{
@@ -601,6 +627,7 @@ class Personal extends ModuleBaseController
         ->field('o.state o_state,v.*,u.*,o.*')
         ->where('o.sell_id',$userId)
         ->where('o.state','交易完成')
+        ->order('o.transaction_time desc')
         ->select();
         if($res){
             echo json_encode($this->actionSuccess($res,1,'查找用户卖车内容成功'));
