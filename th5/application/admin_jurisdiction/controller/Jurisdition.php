@@ -38,7 +38,7 @@ class Jurisdition extends ModuleBaseController{
   public function getJurisditionTree(){
     $id = json_decode(input('get.idArr'),1);
     if($id){
-      $res = db('menu')->where('id','in',$id)->field('id,menu_name as label,menu_url,fid,menu_class')->select();
+      $res = db('menu')->where('id','in',$id)->field('id,menu_name as label,icon,menu_url,fid,menu_class')->select();
       return $res ? json_encode($this->actionSuccess($res)) : json_encode($this->actionFail('无权限'));
     }else{
       return json_encode($this->actionFail('无权限'));
