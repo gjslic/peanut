@@ -100,6 +100,23 @@ class Center extends Index
     }
   }
   /**
+   * [editAvatar修改头像]
+   */
+  public function editAvatar(){
+    $id = getPost()['id'];
+    $imgUrl = getPost()['imgUrl'];
+    $res = db('staff')
+    ->where('id', $id)
+    ->data(['head_img' => $imgUrl])
+    ->update();
+    
+    if ($res) {
+      echo json_encode($this->actionSuccess());
+    } else {
+      echo json_encode($this->actionFail());
+    }
+  }
+  /**
    * getMenu渲染权限菜单
    */
   public function getMenu(){
@@ -110,6 +127,18 @@ class Center extends Index
     $menu = db('menu')->select();
     if ($res && $menu) {
       echo json_encode(['menu'=>$menu,'data'=>$res,'code'=>1]);
+    } else {
+      echo json_encode($this->actionFail());
+    }
+  }
+  /**
+   * [chat聊天]
+   */
+  public function chat(){
+    $sql = "select * from peanut_chat where receiver='adminServer' or sender='adminServer'";
+    $res = Db::query($sql);
+    if ($res) {
+      echo json_encode($this->actionSuccess($res));
     } else {
       echo json_encode($this->actionFail());
     }
