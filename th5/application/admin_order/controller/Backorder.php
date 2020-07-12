@@ -67,6 +67,7 @@ class Backorder extends ModuleBaseController{
    */
   public function editState(){
     $orderId = input('post.nowId');
+    $carState = db('vehicle v,peanut_order o')->field('v.vehicle_state')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->find();
     $buyerAcc = input('post.buyId');
     $price = input('post.price');
     $seller = db('order o , peanut_user u')->field('u.acc,u.money')->where("o.id = '$orderId' and o.sell_id = u.id")->find();
