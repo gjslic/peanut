@@ -180,7 +180,7 @@ class Homepage extends ModuleBaseController
             $where =[
                 'tab_id' =>1,
             ];
-            $result = db('vehicle')->where($where)->limit(4)->select();
+            $result = db('vehicle')->where($where)->limit(8)->select();
             return json_encode($result);
         break;
 
@@ -188,7 +188,7 @@ class Homepage extends ModuleBaseController
             $where =[
                 'tab_id' =>2,
             ];
-            $result = db('vehicle')->where($where)->limit(4)->select();
+            $result = db('vehicle')->where($where)->limit(8)->select();
             return json_encode($result);
         break;
 
@@ -196,7 +196,7 @@ class Homepage extends ModuleBaseController
             $where =[
                 'tab_id' =>3,
             ];
-            $result = db('vehicle')->where($where)->limit(4)->select();
+            $result = db('vehicle')->where($where)->limit(8)->select();
             return json_encode($result);
         break;
 
@@ -204,7 +204,7 @@ class Homepage extends ModuleBaseController
             $where =[
                 'tab_id' =>4,
             ];
-            $result = db('vehicle')->where($where)->limit(4)->select();
+            $result = db('vehicle')->where($where)->limit(8)->select();
             return json_encode($result);
         break;
 
@@ -212,7 +212,7 @@ class Homepage extends ModuleBaseController
             $where =[
                 'tab_id' =>5,
             ];
-            $result = db('vehicle')->where($where)->limit(4)->select();
+            $result = db('vehicle')->where($where)->limit(8)->select();
             return json_encode($result);
         break;
         }
@@ -223,7 +223,7 @@ class Homepage extends ModuleBaseController
      {
          $get = $_GET;
          $where = [];
-         $result = db('vehicle')->where($where)->limit(4)->select();
+         $result = db('vehicle')->where($where)->limit(8)->select();
         return json_encode($result);
      }
     
