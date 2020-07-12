@@ -114,28 +114,45 @@ class Sellcar extends ModuleBaseController{
            $imgUrl = getPost()['imgUrl'];
            $ruleForm = getPost()['ruleForm'];
            $usertoken = getPost()['usetoken'];
-   
+           $auctiontime = getPost()['auctiontime'];
            $utoken = $this->validateToken($usertoken);
-        //    var_dump($utoken);
-        //    exit();
+
            if($utoken){
                $userid = $utoken->id;
-               //    添加到车辆表
-                $carinfo=[
-                    'city_id' => $ruleForm['name'], //城市id
-                    'series_id' => $ruleForm['brand'][1], //系列id
-                    'vehicle_distance' => $ruleForm['num'], //行驶距离
-                    'introduce' => $ruleForm['resource'], //车辆状况
-                    'price' => $ruleForm['salePrice'], //车辆价格
-                    'img' => $imgUrl, // 车辆图片
-                    'vehicle_state' => '已上架', //拍卖状态
-                    'sell_id' => $userid ,//卖家id
-                    'vehicle_name' => $ruleForm['carname'], //车辆名称信息
-                    'tab_id' => $ruleForm['tab'] //车辆标签
-                ];
-                $res = db('vehicle')->insert($carinfo);
-                // var_dump($res);
-                // exit();
+            //    $auctiontime = $ruleForm['auction'];
+               if($auctiontime == 0){
+                    // 添加到车辆表
+                    $carinfo=[
+                        'city_id' => $ruleForm['name'], //城市id
+                        'series_id' => $ruleForm['brand'][1], //系列id
+                        'vehicle_distance' => $ruleForm['num'], //行驶距离
+                        'introduce' => $ruleForm['resource'], //车辆状况
+                        'price' => $ruleForm['salePrice'], //车辆价格
+                        'img' => $imgUrl, // 车辆图片
+                        'vehicle_state' => '已上架', //拍卖状态
+                        'sell_id' => $userid ,//卖家id
+                        'vehicle_name' => $ruleForm['carname'], //车辆名称信息
+                        'tab_id' => $ruleForm['tab'],//车辆标签
+                    ];
+                    $res = db('vehicle')->insert($carinfo);
+               }else{
+                     // 添加到车辆表
+                     $carinfo=[
+                        'city_id' => $ruleForm['name'], //城市id
+                        'series_id' => $ruleForm['brand'][1], //系列id
+                        'vehicle_distance' => $ruleForm['num'], //行驶距离
+                        'introduce' => $ruleForm['resource'], //车辆状况
+                        'price' => $ruleForm['salePrice'], //车辆价格
+                        'img' => $imgUrl, // 车辆图片
+                        'vehicle_state' => '未审核', //拍卖状态
+                        'sell_id' => $userid ,//卖家id
+                        'vehicle_name' => $ruleForm['carname'], //车辆名称信息
+                        'tab_id' => $ruleForm['tab'],//车辆标签
+                        'auction_id'=>$ruleForm['auction']
+                    ];
+                    $res = db('vehicle')->insert($carinfo);
+               }
+             
            }
        }
 
@@ -186,6 +203,15 @@ class Sellcar extends ModuleBaseController{
         $get = $_GET;
         $where = [];
         $result = db('tab')->where($where)->select();
+        return json_encode($result);
+    }
+
+    //获取到拍卖场次
+    public function showaction()
+    {
+        $get = $_GET;
+        $where = [];
+        $result = db('auction')->where($where)->select();
         return json_encode($result);
     }
 
