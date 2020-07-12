@@ -167,7 +167,7 @@ class Sellcar extends ModuleBaseController{
         if($file){
             $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
             if($info){
-                $url = 'http://127.0.0.1/nodejs/peanut/th5/public/uploads/';
+                $url = 'http://127.0.0.1/th5/public/uploads/';
                 echo json_encode($url . $info->getSaveName());
             }else{
                 //上传失败
