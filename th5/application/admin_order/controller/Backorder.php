@@ -13,8 +13,8 @@ class Backorder extends ModuleBaseController{
   public function getOrderArr(){
     $type = input('post.showType');
     $orderNum = input('post.searchInfo') ?? '';
-    $endOrder = "'交易完成','退款完成'";
-    $unfinish = "'待验收','待评价','待确认','退款审核中'";
+    $endOrder = "'交易完成','退款完成','退款失败'";
+    $unfinish = "'待验收','待评价','退款审核中'";
     switch($type){
       case '全部订单':
         $where = ' 1 = 1';
@@ -26,7 +26,7 @@ class Backorder extends ModuleBaseController{
         $where = "o.state in ($endOrder)";
       break;
       case '待审核':
-        $where = 'o.state = "退款审核中" or o.state = "待确认"';
+        $where = 'o.state = "退款审核中"';
       break;
     }
     if($orderNum){
@@ -57,42 +57,50 @@ class Backorder extends ModuleBaseController{
    * $price        => 车辆价格
    * $seller       => 卖家信息（账号，余额）
    * $buyer        => 买家余额
-   * $money        => 退款
    * $carState     => 当前车辆状态
    * $editCarState => 修改当前车辆状态
-   * $editSell     => 卖家余额修改
    * $editbuyer    => 买家余额修改
    * $creditBuyer  => 扣除买家信誉分结果
    * $editState    => 修改订单状态
    */
   public function editState(){
     $orderId = input('post.nowId');
-    $carState = db('vehicle v,peanut_order o')->field('v.vehicle_state')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->find();
     $buyerAcc = input('post.buyId');
     $price = input('post.price');
-    $seller = db('order o , peanut_user u')->field('u.acc,u.money')->where("o.id = '$orderId' and o.sell_id = u.id")->find();
     $buyer = db('user')->field('money')->where("acc = '$buyerAcc'")->find();
-    $money = ($price * 10000) - ($price * 0.05 * 10000);
-    if($seller['money'] - $money > 0){
-      $carState = db('vehicle v,peanut_order o')->field('v.vehicle_state')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->find();
-      if($carState['vehicle_state'] == '已拍卖'){
-        $state = '拍卖中';
-      }else if($carState['vehicle_state'] == '已下架'){
-        $state = '已上架';
-      }
-      $editCarState = db('vehicle v,peanut_order o')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->update(['v.vehicle_state' => $state , 'v.buy_id' => null]);
-      $editSell = db('user')->where('acc',$seller['acc'])->setDec('money',$money);
-      $editbuyer = db('user')->where('acc',$buyerAcc)->setInc('money',$money);
-      $orderWhere = "acc = $buyerAcc AND credit >= 80";
-      $creditBuyer = db('user')->where($orderWhere)->setDec('credit',3);
-      $editState = db('order')->where('id',$orderId)->setField('state','退款完成');
-      echo json_encode($this->actionSuccess([],0,'退款成功'));
-    }else{
-      $sellerAcc = $seller['acc'];
-      $orderWhere = "acc = '$sellerAcc' AND credit >= 80";
-      $creditSeller = db('user')->where($orderWhere)->setDec('credit',3);
-      $editState = db('order')->where('id',$orderId)->setField('state','待确认');
-      echo json_encode($this->actionFail('卖家余额不足，请提醒卖家尽快充值'));
+    $carState = db('vehicle v,peanut_order o')->field('v.vehicle_state')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->find();
+    if($carState['vehicle_state'] == '已拍卖'){
+      $state = '拍卖中';
+    }else if($carState['vehicle_state'] == '已下架'){
+      $state = '已上架';
     }
+    $editCarState = db('vehicle v,peanut_order o')->where("v.vehicle_id = o.vehicle_id and o.id = '$orderId'")->update(['v.vehicle_state' => $state , 'v.buy_id' => null]);
+    $editbuyer = db('user')->where('acc',$buyerAcc)->setInc('money',$price);
+    $orderWhere = "acc = $buyerAcc AND credit >= 80";
+    $creditBuyer = db('user')->where($orderWhere)->setDec('credit',3);
+    $editState = db('order')->where('id',$orderId)->setField('state','退款完成');
+    echo json_encode($this->actionSuccess([],0,'退款成功'));
+  }
+
+  /**
+   * [reasonRefund 查看退款理由]
+   */
+  public function reasonRefund(){
+    $id = input('post.nowId');
+    $orderNum = db('order')->field('order_num')->where('id',$id)->find();
+    $res = db('report')->where('order_num',$orderNum['order_num'])->find();
+    if($res){
+      echo json_encode($this->actionSuccess($res));
+    }else{
+      echo json_encode($this->actionSuccess(['id'=>$id,'order_num'=>$orderNum['order_num'],'img_content'=>'','report_time'=>'','text_content'=>'']));
+    }
+  }
+  /**
+   * [cancel 拒绝退款]
+   */
+  public function cancel(){
+    $id = input('post.nowId');
+    $res = db('order')->where('id',$id)->update(['state'=>'退款失败']);
+    return $res ? json_encode($this->actionSuccess($res)) : json_encode($this->actionFail('网络异常，请刷新重试'));
   }
 }

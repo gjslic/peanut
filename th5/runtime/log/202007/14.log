@@ -1,0 +1,3133 @@
+---------------------------------------------------------------
+[ 2020-07-14T00:04:08+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.924456s] [吞吐率：1.08req/s] [内存消耗：2,532.24kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '全部订单',
+  'searchInfo' => '',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.445027s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.173679s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.227518s ]
+---------------------------------------------------------------
+[ 2020-07-14T00:04:11+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.737687s] [吞吐率：1.36req/s] [内存消耗：2,520.04kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '待审核',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.292726s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.189529s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (  o.state = "退款审核中" or o.state = "待确认" ) [ RunTime:0.199844s ]
+---------------------------------------------------------------
+[ 2020-07-14T08:18:19+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/alogin/index/validateToken
+[运行时间：0.097810s] [吞吐率：10.22req/s] [内存消耗：1,620.91kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'alogin',
+    1 => 'index',
+    2 => 'validateToken',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'access-token' => 'f56f0b80a7f022687145b60fd764d6e0',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\alogin\controller\Index->validateToken[ F:\phpStudy\phpstudy_pro\WWW\th5\application\alogin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T08:18:19+08:00 ] 0.0.0.0 POST localhost/th5/public/admin_order/Backorder/getOrderArr
+[运行时间：0.442384s] [吞吐率：2.26req/s] [内存消耗：2,532.25kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin_order',
+    1 => 'Backorder',
+    2 => 'getOrderArr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'same-site',
+  'content-type' => 'application/json;charset=UTF-8',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '65',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'showType' => '全部订单',
+  'searchInfo' => '',
+  'page' => 1,
+  'pageSize' => 5,
+)
+[ info ] [ RUN ] app\admin_order\controller\Backorder->getOrderArr[ F:\phpStudy\phpstudy_pro\WWW\th5\application\admin_order\controller\Backorder.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104394s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_order` [ RunTime:0.069214s ]
+[ sql ] [ SQL ] SELECT `o`.`id`,o.order_num as orderNum,`o`.`state`,o.transaction_time as orderTime,u.acc as buyer,`u`.`phone`,`u`.`head_img`,u.name as uName,`v`.`price`,v.vehicle_name as carName,v.img as carImg FROM `peanut_order` `o` INNER JOIN `peanut_user` `u` ON `o`.`buy_id`=`u`.`id` INNER JOIN `peanut_vehicle` `v` ON `o`.`vehicle_id`=`v`.`vehicle_id` WHERE  (   1 = 1 ) [ RunTime:0.068988s ]
+---------------------------------------------------------------
+[ 2020-07-14T08:18:19+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/info/Center/getMenu
+[运行时间：0.564352s] [吞吐率：1.77req/s] [内存消耗：2,533.15kb] [文件加载：48]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'info',
+    1 => 'Center',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-site' => 'cross-site',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  '{"rid":1}' => '',
+)
+[ info ] [ RUN ] app\info\controller\Center->getMenu[ F:\phpStudy\phpstudy_pro\WWW\th5\application\info\controller\Center.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111427s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_jurisdiction` [ RunTime:0.075009s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_jurisdiction` WHERE  `role_id` = 1 [ RunTime:0.075994s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_menu` [ RunTime:0.075518s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_menu` [ RunTime:0.075739s ]
+---------------------------------------------------------------
+[ 2020-07-14T08:18:38+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/wechatLogin
+[运行时间：0.051846s] [吞吐率：19.29req/s] [内存消耗：1,744.16kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'wechatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043T7yim0Ogf4p1lAYjm0OYxim0T7yiG',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T10:10:12+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.062923s] [吞吐率：15.89req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T10:19:09+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.062375s] [吞吐率：16.03req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T12:07:22+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/login
+[运行时间：1.021026s] [吞吐率：0.98req/s] [内存消耗：2,479.15kb] [文件加载：47]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'acc' => '13395059606',
+  'phone' => '13395059606',
+  'password' => 'qwertyuiop',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.228450s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.196286s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = '6eea9b7ef19179a06954edd0f6c05ceb' LIMIT 1 [ RunTime:0.221617s ]
+[ sql ] [ SQL ] UPDATE `peanut_user`  SET `last_time`='2020-07-14 12:07:21',`token`='8cf1f705edf2b352f252ca15230f5db2'  WHERE  `phone` = 13395059606 [ RunTime:0.297039s ]
+---------------------------------------------------------------
+[ 2020-07-14T13:13:21+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.050755s] [吞吐率：19.70req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:06:35+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/login
+[运行时间：0.932173s] [吞吐率：1.07req/s] [内存消耗：2,479.15kb] [文件加载：47]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'acc' => '13395059606',
+  'phone' => '13395059606',
+  'password' => 'qwertyuiop',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.286691s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.157459s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = '6eea9b7ef19179a06954edd0f6c05ceb' LIMIT 1 [ RunTime:0.180952s ]
+[ sql ] [ SQL ] UPDATE `peanut_user`  SET `last_time`='2020-07-14 02:06:34',`token`='57854eb9b5748056a9006bbce57cdb69'  WHERE  `phone` = 13395059606 [ RunTime:0.197150s ]
+---------------------------------------------------------------
+[ 2020-07-14T14:17:38+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/login
+[运行时间：0.998180s] [吞吐率：1.00req/s] [内存消耗：2,479.15kb] [文件加载：47]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'acc' => '13395059606',
+  'phone' => '13395059606',
+  'password' => 'qwertyuiop',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.293784s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.179515s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059606  AND `password` = '6eea9b7ef19179a06954edd0f6c05ceb' LIMIT 1 [ RunTime:0.217781s ]
+[ sql ] [ SQL ] UPDATE `peanut_user`  SET `last_time`='2020-07-14 02:17:38',`token`='0fd6f69fd50c8ea3eda2a979e3569b42'  WHERE  `phone` = 13395059606 [ RunTime:0.208545s ]
+---------------------------------------------------------------
+[ 2020-07-14T14:19:12+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.039906s] [吞吐率：25.06req/s] [内存消耗：1,620.23kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '2',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:10+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.040365s] [吞吐率：24.77req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:13+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.062259s] [吞吐率：16.06req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:13+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.064208s] [吞吐率：15.57req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:13+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.056481s] [吞吐率：17.71req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:13+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.055811s] [吞吐率：17.92req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:13+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.064009s] [吞吐率：15.62req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.033826s] [吞吐率：29.56req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.045869s] [吞吐率：21.80req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.048524s] [吞吐率：20.61req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.046151s] [吞吐率：21.67req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.035431s] [吞吐率：28.22req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.037046s] [吞吐率：26.99req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:20+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.049298s] [吞吐率：20.28req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:38:23+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.037860s] [吞吐率：26.41req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:40:22+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.050677s] [吞吐率：19.73req/s] [内存消耗：1,622.34kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '312',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:41:04+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.035331s] [吞吐率：28.30req/s] [内存消耗：1,621.92kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '201',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'Christmas Island',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:42:28+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.046921s] [吞吐率：21.31req/s] [内存消耗：1,622.02kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '201',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'Christmas Island',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:46:10+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.067044s] [吞吐率：14.92req/s] [内存消耗：1,751.92kb] [文件加载：44]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '201',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'Christmas Island',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: ni[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:179]
+---------------------------------------------------------------
+[ 2020-07-14T14:46:45+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.061610s] [吞吐率：16.23req/s] [内存消耗：1,623.03kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '201',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'Christmas Island',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:46:45+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.062231s] [吞吐率：16.07req/s] [内存消耗：1,623.03kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '201',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'Christmas Island',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T14:55:16+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.044563s] [吞吐率：22.44req/s] [内存消耗：1,623.03kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '201',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'head_img' => 'https://wx.qlogo.cn/mmopen/vi_32/xFYL1ACN7wPicjg6zHXZMTXFqWaUCRtT1gs3WYIMNMMBibVZG1BcxqjAeGsdibIdyINhqjjBnAfCJiaYCpvJTA7pYg/132',
+  'nickName' => '겐호 3',
+  'address' => 'Christmas Island',
+  'sex' => 1,
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T16:40:47+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/login
+[运行时间：0.550370s] [吞吐率：1.82req/s] [内存消耗：2,512.49kb] [文件加载：47]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'acc' => '13395059606',
+  'phone' => '13395059622',
+  'password' => 'qwertyuiop',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.216963s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.128417s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059622  AND `password` = '6eea9b7ef19179a06954edd0f6c05ceb' LIMIT 1 [ RunTime:0.137634s ]
+---------------------------------------------------------------
+[ 2020-07-14T16:40:54+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/login
+[运行时间：0.660495s] [吞吐率：1.51req/s] [内存消耗：2,512.49kb] [文件加载：47]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '67',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'acc' => '13395059606',
+  'phone' => '13395059622',
+  'password' => 'qwertyuiop',
+)
+[ info ] [ RUN ] app\login\controller\Login->login[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.266126s ] mysql:host=118.190.149.14;port=3306;dbname=peanut;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `peanut_user` [ RunTime:0.178078s ]
+[ sql ] [ SQL ] SELECT * FROM `peanut_user` WHERE  `acc` = '13395059606'  AND `phone` = 13395059622  AND `password` = '6eea9b7ef19179a06954edd0f6c05ceb' LIMIT 1 [ RunTime:0.151001s ]
+---------------------------------------------------------------
+[ 2020-07-14T17:18:11+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/weChatLogin
+[运行时间：0.080608s] [吞吐率：12.41req/s] [内存消耗：1,624.14kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'weChatLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:43804',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '581',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'qq' => 'HzBPvZy6plr4tZrXKIHpyjzPoJaQh43p5iX7Kex0DmcyGZZ6KpmVfeXGZo5spR7HSsZ2wcjc8BFhDNrWA3vtq1xc9rUkFxsyl848OlmuvPo2Xitd3D/UbWnf+vDnrQm3FrGNeI8ieEYksPhMYs7BLQ2qDr+sU5vLMyxH+lkqpoOf8DGdtLwkeB9b21qIBuzVN4p6XgXbtmOXXGCcLtIwLtS+HWQxjroKD7GobqAj6kuO9t4Gyq0U2eGRTJx9v4yfpjquPUEDiFTJTktN9fc10ej4TkiP6mtsfFnNNju3DCjuZdhOsVmWDDs2YNRaJZEIzzhspd4VddO0/SFqEnc6p8JsbJiYK8XhgklzKTnG4aCgoqIm/kdS7TZ9ZwnFl/4hkY9v83I0A9XRy6F+lMLclsbH2mhrCt+kyQj73+xskLA6/1oE4qCAej0UpKp0FtJ953VgRGXhJvs9te3vqkaRjIfXosoxtpvjOzA+YcIzgt0=',
+  'ww' => '/1UE44Ity6qjuhALJk3Nrw==',
+  'aa' => '16d512f20e67620c5a326beffa9a062f4d5897e6',
+)
+[ info ] [ RUN ] app\login\controller\Login->weChatLogin[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T21:56:32+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.073386s] [吞吐率：13.63req/s] [内存消耗：1,757.54kb] [文件加载：44]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043U4AnO0pdbW62NQbmO0jNAnO0U4AnT',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: getPost[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:177]
+---------------------------------------------------------------
+[ 2020-07-14T21:57:11+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.074982s] [吞吐率：13.34req/s] [内存消耗：1,755.52kb] [文件加载：43]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033OzvWB0QJ2wj28zOWB09twWB0OzvW9',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function app\login\controller\httpRequest()[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:178]
+---------------------------------------------------------------
+[ 2020-07-14T21:58:02+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.874258s] [吞吐率：1.14req/s] [内存消耗：1,628.53kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023RHdL52viDoP0AW3L52shdL52RHdLT',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T21:59:27+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.921238s] [吞吐率：1.09req/s] [内存消耗：1,628.53kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033Pa64W1S0s601lDk2W1KR64W1Pa64v',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:00:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：1.400842s] [吞吐率：0.71req/s] [内存消耗：1,628.53kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0436tsz61hX8SO1Qxuy61QMsz616tszG',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:04:14+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.828021s] [吞吐率：1.21req/s] [内存消耗：1,571.75kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033bKT6q0r0GXl1y4J4q0VpT6q0bKT6b',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:05:19+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.747506s] [吞吐率：1.34req/s] [内存消耗：1,628.82kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033Aq8ZR0JwVJ329SRVR0jF7ZR0Aq8Zc',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:06:26+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：3.967191s] [吞吐率：0.25req/s] [内存消耗：1,628.82kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033pMV9v0FK0Lf1RLF9v04nV9v0pMV9f',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:06:27+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：2.431439s] [吞吐率：0.41req/s] [内存消耗：1,628.82kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023Ylj9A0ZixDb1g2P9A0jzi9A0Ylj9z',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:09:21+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.866230s] [吞吐率：1.15req/s] [内存消耗：1,757.79kb] [文件加载：44]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0339ATcy1QZtid0paycy15eTcy19ATcj',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Illegal string offset 'session_key'[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:183]
+---------------------------------------------------------------
+[ 2020-07-14T22:11:27+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.902775s] [吞吐率：1.11req/s] [内存消耗：1,628.85kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043Jbx9H0HEgrd2CiwcH0Szx9H0Jbx9l',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:12:02+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：3.760747s] [吞吐率：0.27req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043Rv2Y30AP8YG1XdVX30vi3Y30Rv2Yd',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:13:53+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.829385s] [吞吐率：1.21req/s] [内存消耗：1,573.12kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043zhQZy1nkrMb0qNOWy14YPZy1zhQZk',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:14:29+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.800994s] [吞吐率：1.25req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0337seX32AimcS0oUqZ32haeX327seXh',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:14:50+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.850573s] [吞吐率：1.18req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033hIQqr10zeck0rUrsr1X8Rqr1hIQqR',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T22:51:46+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.736191s] [吞吐率：1.36req/s] [内存消耗：1,758.02kb] [文件加载：44]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033IUtwc0BCYpx16iTxc0UEuwc0IUtwY',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Illegal string offset 'session_key'[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:182]
+---------------------------------------------------------------
+[ 2020-07-14T22:52:00+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.893319s] [吞吐率：1.12req/s] [内存消耗：1,758.02kb] [文件加载：44]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033Gm7MR05iBw32C2tKR0vd7MR0Gm7M4',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Illegal string offset 'appid'[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:182]
+---------------------------------------------------------------
+[ 2020-07-14T22:58:52+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：1.206152s] [吞吐率：0.83req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033szpZo1Ctddm0RapWo1CjpZo1szpZ0',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:02:01+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.746783s] [吞吐率：1.34req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043wOshr14uZ4k0JJ8hr1pythr1wOshB',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:02:16+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.702890s] [吞吐率：1.42req/s] [内存消耗：1,628.85kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023CKvsq1fF9sl0NBUtq1y1wsq1CKvsH',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:02:38+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.568791s] [吞吐率：1.76req/s] [内存消耗：1,628.85kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033nqbFI0QBEEc2dgZGI0mbbFI0nqbFz',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:05:00+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.479788s] [吞吐率：2.08req/s] [内存消耗：1,628.85kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023dDRJW1ICWzY0YomIW1gtSJW1dDRJE',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:07:05+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.392993s] [吞吐率：2.54req/s] [内存消耗：1,628.70kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033cBZfQ1CcKK51AVSiQ16k0gQ1cBZfI',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:07:49+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.377621s] [吞吐率：2.65req/s] [内存消耗：1,628.70kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043v7AMF0DrLvg2qP8JF0jhAMF0v7AMp',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:13:08+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.663385s] [吞吐率：1.51req/s] [内存消耗：1,572.37kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043805EC1BxlH80tIMFC1dK4EC1805EC',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:17:01+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.633456s] [吞吐率：1.58req/s] [内存消耗：1,571.86kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033ISqUb2lM8gK0AFtTb2zFqUb2ISqUB',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:17:29+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.044737s] [吞吐率：22.35req/s] [内存消耗：1,572.11kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0231wwS41uZxIR1J1cU41CGvS411wwSQ',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:18:15+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.056303s] [吞吐率：17.76req/s] [内存消耗：1,572.11kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0236EktN17h3p71MwWrN1bYjtN16EktA',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:18:53+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.042478s] [吞吐率：23.54req/s] [内存消耗：1,572.11kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043doXEj2kKd5C0YZpDj2jJXEj2doXEm',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:19:10+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.039129s] [吞吐率：25.56req/s] [内存消耗：1,572.11kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0336kkp004K4eK1HqTp00HCjp006kkp8',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:19:27+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：2.341755s] [吞吐率：0.43req/s] [内存消耗：1,628.70kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023LqVgD0JZ4Ci2XAsfD0PfVgD0LqVg-',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:19:43+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.759177s] [吞吐率：1.32req/s] [内存消耗：1,571.61kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033jjRFP1tTO451mzbDP1XRQFP1jjRFr',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:22:52+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.741264s] [吞吐率：1.35req/s] [内存消耗：1,571.61kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023tAAPc1We05z0KouRc1EmBPc1tAAPJ',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:23:43+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：1.132202s] [吞吐率：0.88req/s] [内存消耗：1,628.70kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033RmKwd1oc1xx07qizd1TDKwd1RmKwS',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:36:20+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.039487s] [吞吐率：25.32req/s] [内存消耗：1,757.73kb] [文件加载：44]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0337oAlG1lD5A50QmFlG1ILAlG17oAlv',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:177]
+---------------------------------------------------------------
+[ 2020-07-14T23:37:09+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.043049s] [吞吐率：23.23req/s] [内存消耗：1,757.73kb] [文件加载：44]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043QxPfs0FnUFj1NIugs07OPfs0QxPfJ',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php:177]
+---------------------------------------------------------------
+[ 2020-07-14T23:37:30+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.045843s] [吞吐率：21.81req/s] [内存消耗：1,571.82kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023KgnYY0WZgcX1mzNXY0ITnYY0KgnYo',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:37:39+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.559895s] [吞吐率：1.79req/s] [内存消耗：1,628.85kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '03313R78177BbO1CKJ981OjR78113R7M',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:38:16+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.462688s] [吞吐率：2.16req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023IFqsH1GMcs40D57uH10wrsH1IFqsQ',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:41:34+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：1.187907s] [吞吐率：0.84req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033eP8152ybCZQ03T2452Za9152eP81F',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:42:52+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.956642s] [吞吐率：1.05req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043hjLnu0TFogh1UNopu0pzKnu0hjLnb',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:43:54+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.526067s] [吞吐率：1.90req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023rYbns0U5gGj1wcBks0fBbns0rYbnu',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:44:10+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.501254s] [吞吐率：1.99req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043VmjLm0Is5an1EMvIm0WyiLm0VmjLq',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:44:57+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.492427s] [吞吐率：2.03req/s] [内存消耗：1,572.62kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '023toJi22vvqIS04r1g22NNJi22toJi8',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:51:58+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：1.090146s] [吞吐率：0.92req/s] [内存消耗：1,572.07kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033lOwdr090RPk1DyYcr02swdr0lOwdV',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:52:13+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.692068s] [吞吐率：1.44req/s] [内存消耗：1,572.07kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0235cgHK1BU5O00wiRHK1JZfHK15cgHb',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:52:26+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.750099s] [吞吐率：1.33req/s] [内存消耗：1,572.07kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043D02x40wVqxH1d50x40RS2x40D02xy',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:54:25+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.932732s] [吞吐率：1.07req/s] [内存消耗：1,572.07kb] [文件加载：38]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043rS7Wc1DEfZw0NiWYc1c68Wc1rS7Wm',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-07-14T23:55:11+08:00 ] 127.0.0.1 POST 127.0.0.1/th5/public/index.php/login/Login/getCode
+[运行时间：0.737772s] [吞吐率：1.36req/s] [内存消耗：1,628.80kb] [文件加载：40]
+[ info ] [ LANG ] F:\phpStudy\phpstudy_pro\WWW\th5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'Login',
+    2 => 'getCode',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://servicewechat.com/wx888ca9a5467e0ed7/devtools/page-frame.html',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-site',
+  'sec-fetch-dest' => 'empty',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1 wechatdevtools/1.03.2005140 MicroMessenger/7.0.4 Language/zh_CN webview/',
+  'origin' => 'http://127.0.0.1:59446',
+  'sec-fetch-mode' => 'cors',
+  'sec-ch-ua' => 'nwjs 75',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '43',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'code' => '033oY73s0tN2rj1v0I3s09S83s0oY739',
+)
+[ info ] [ RUN ] app\login\controller\Login->getCode[ F:\phpStudy\phpstudy_pro\WWW\th5\application\login\controller\Login.php ]
+[ info ] [ LOG ] INIT File

@@ -2,6 +2,7 @@
 namespace app\login\controller;
 use app\base\controller\ModuleBaseController;
 use think\Request;
+// use app\login\controller\WXBizMsgCrypt;
 
 class Login extends ModuleBaseController
 {   
@@ -168,5 +169,109 @@ class Login extends ModuleBaseController
         }else{
             echo json_encode($this->actionFail('您登录内容有误~'));
         }
+    }
+    /**
+     * [getCode 获取用户个人信息]
+     */
+    public function getCode(){
+       // 前台参数
+       $encryptedData = getPost()['encryptedData'];
+       $code          = getPost()['code'];
+       $iv            = getPost()['iv'];
+
+       // 小程序 appid 和 appsecret
+       $appid     = 'wx888ca9a5467e0ed7';
+       $appsecret = '2ad88466f0112b2342323d78e45db173';
+
+       // step1
+       // 通过 code 用 curl 向腾讯服务器发送请求获取 session_key
+       $session_key = $this->sendCode($appid, $appsecret, $code);
+
+       // step2
+       // 用过 session_key 用 sdk 获得用户信息
+       $save = [];
+
+       // 相关参数为空判断
+       if (empty($session_key) || empty($encryptedData) || empty($iv)) {
+           $msg = "信息不全";
+           return json_encode($this->actionSuccess($save,0,$msg));
+       }
+
+       //进行解密 (获取session_key openid)
+       $userinfo = $this->getUserInfo($encryptedData, $iv, $session_key, $appid);
+       var_dump($userinfo);
+       exit;
+       // 解密成功判断
+       if (isset($userinfo['code']) && 10001 == $userinfo['code']) {
+           $msg = "请重试"; // 用户不应看到程序细节
+           return json_encode($this->actionSuccess($save,0,$msg));
+       }
+
+       session('myinfo', $userinfo);
+       $save['openid']    = &$userinfo['openId'];
+       $save['uname']     = &$userinfo['nickName'];
+       $save['unex']      = &$userinfo['gender'];
+       $save['address']   = &$userinfo['city'];
+       $save['avatarUrl'] = &$userinfo['avatarUrl'];
+       $save['time']      = time();
+       $map['openid']     = &$userinfo['openId'];
+
+       $msg = "获取成功";
+
+       //返回用户信息
+       return json_encode($this->actionSuccess($save,0,$msg));
+    }
+
+  //获取微信用户信息
+  private function sendCode($appid, $appsecret, $code){
+      // 拼接请求地址
+      $url = 'https://api.weixin.qq.com/sns/jscode2session?appid='
+          . $appid . '&secret=' . $appsecret . '&js_code='
+          . $code . '&grant_type=authorization_code';
+
+      $arr = $this->httpRequest($url);
+      $arr = json_decode($arr, true);
+      // var_dump($arr);
+      // exit;
+      return $arr['session_key'];
+  }
+    
+       //信息解密
+  private function getUserInfo($encryptedData, $iv, $session_key, $APPID){
+    Vendor('phpSDK.wxBizDataCrypt');
+    //进行解密
+    $pc         = new \wxBizDataCrypt($APPID, $session_key);
+    $decodeData = "";
+    $errCode    = $pc->decryptData($encryptedData, $iv, $decodeData);
+    //判断解密是否成功
+    if ($errCode != 0) {
+        return [
+            'code'    => 10001,
+            'message' => 'encryptedData 解密失败',
+        ];
+    }
+    //返回解密数据
+    return json_decode($decodeData, true);
+  }
+
+  // 获取用户手机号
+  public function getPhoneNumber(){
+    var_dump($_POST);
+  }
+
+    function httpRequest($url,$type = 'GET',$postData = []){
+      $curl = curl_init();
+      curl_setopt($curl, CURLOPT_HEADER, 0);
+      curl_setopt($curl, CURLOPT_VERBOSE, 0);
+      curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;)");
+      curl_setopt($curl,CURLOPT_URL,$url); 
+      curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,false);
+      curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,false);
+      curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);
+      curl_setopt($curl,CURLOPT_POST,1);
+      curl_setopt($curl,CURLOPT_POSTFIELDS,$postData);
+      $result = curl_exec($curl);
+      curl_close($curl);
+      return $result;
     }
 }
